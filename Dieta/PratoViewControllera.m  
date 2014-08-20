@@ -1,0 +1,260 @@
+//
+//  ViewController.m
+//  Dieta
+//
+//  Created by senac2012 on 16/04/14.
+//  Copyright (c) 2014 senac2012. All rights reserved.
+//
+
+#import "PratoViewController.h"
+
+
+@interface PratoViewController ()
+    
+
+    @end
+
+@implementation PratoViewController
+@synthesize prato, alimentosPrato, foodScroller;
+
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+    
+    alimentosPrato = [[NSMutableArray alloc] init];
+    
+    foodScroller = [[UIScrollView alloc] initWithFrame:CGRectMake(874, 0, 150, self.view.bounds.size.height)];
+    [foodScroller setContentSize:CGSizeMake(1500, (self.foodScroller.bounds.size.height + 200))];
+    [foodScroller setPagingEnabled:YES];
+    
+    //Começo Frutas
+    Alimento *maca = [[Alimento alloc] initWithFrame:CGRectMake(0, 30, 128, 128)];
+    [maca setImagemAlimento:[UIImage imageNamed:@"maca.png"]];
+    [maca defineImagem];
+    
+    Alimento *laranja = [[Alimento alloc] initWithFrame:CGRectMake(150, 30, 128, 128)];
+    [laranja setImagemAlimento:[UIImage imageNamed:@"laranja.png"]];
+    [laranja defineImagem];
+    
+    Alimento *cereja = [[Alimento alloc] initWithFrame:CGRectMake(300, 30, 128, 128)];
+    [cereja setImagemAlimento:[UIImage imageNamed:@"cereja.png"]];
+    [cereja defineImagem];
+    
+    Alimento *kiwi = [[Alimento alloc] initWithFrame:CGRectMake(450, 30, 128, 128)];
+    [kiwi setImagemAlimento:[UIImage imageNamed:@"kiwi.png"]];
+    [kiwi defineImagem];
+    
+    Alimento *morango = [[Alimento alloc] initWithFrame:CGRectMake(600, 30, 128, 128)];
+    [morango setImagemAlimento:[UIImage imageNamed:@"morango.png"]];
+    [morango defineImagem];
+    
+    Alimento *pessego = [[Alimento alloc] initWithFrame:CGRectMake(750, 30, 128, 128)];
+    [pessego setImagemAlimento:[UIImage imageNamed:@"pessego.png"]];
+    [pessego defineImagem];
+    
+    Alimento *melancia = [[Alimento alloc] initWithFrame:CGRectMake(900, 30, 128, 128)];
+    [melancia setImagemAlimento:[UIImage imageNamed:@"melancia.png"]];
+    [melancia defineImagem];
+    
+    Alimento *banana = [[Alimento alloc] initWithFrame:CGRectMake(1050, 30, 128, 128)];
+    [banana setImagemAlimento:[UIImage imageNamed:@"banana.png"]];
+    [banana defineImagem];
+    
+    Alimento *manga = [[Alimento alloc] initWithFrame:CGRectMake(1200, 30, 128, 128)];
+    [manga setImagemAlimento:[UIImage imageNamed:@"manga.png"]];
+    [manga defineImagem];
+    
+    Alimento *pera = [[Alimento alloc] initWithFrame:CGRectMake(1350, 30, 128, 128)];
+    [pera setImagemAlimento:[UIImage imageNamed:@"pera.png"]];
+    [pera defineImagem];
+    
+    //Fim frutas
+    
+    /*Alimento *carne = [[Alimento alloc] initWithFrame:CGRectMake(0, 180, 128, 128)];
+    [carne setImagemAlimento:[UIImage imageNamed:@"carne.png"]];
+    [carne defineImagem];*/
+    
+    Alimento *torta = [[Alimento alloc] initWithFrame:CGRectMake(0, 180, 128, 128)];
+    [torta setImagemAlimento:[UIImage imageNamed:@"torta.png"]];
+    [torta defineImagem];
+    
+    Alimento *sushi = [[Alimento alloc] initWithFrame:CGRectMake(150, 180, 128, 128)];
+    [sushi setImagemAlimento:[UIImage imageNamed:@"sushi.png"]];
+    [sushi defineImagem];
+    
+    Alimento *hamburger = [[Alimento alloc] initWithFrame:CGRectMake(300, 180, 128, 128)];
+    [hamburger setImagemAlimento:[UIImage imageNamed:@"hamburguer.png"]];
+    [hamburger defineImagem];
+    
+    /*Alimento *fries = [[Alimento alloc] initWithFrame:CGRectMake(600, 180, 128, 128)];
+    [fries setImagemAlimento:[UIImage imageNamed:@"fries.png"]];
+    [fries defineImagem];*/
+    
+    Alimento *pizza = [[Alimento alloc] initWithFrame:CGRectMake(450, 180, 128, 128)];
+    [pizza setImagemAlimento:[UIImage imageNamed:@"pizza.png"]];
+    [pizza defineImagem];
+
+    
+    
+    UIPanGestureRecognizer *p = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(pan:)];
+    UIPanGestureRecognizer *p1 = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(pan:)];
+    UIPanGestureRecognizer *p2 = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(pan:)];
+    UIPanGestureRecognizer *p3 = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(pan:)];
+    UIPanGestureRecognizer *p4 = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(pan:)];
+    UIPanGestureRecognizer *p5 = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(pan:)];
+    UIPanGestureRecognizer *p6 = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(pan:)];
+    UIPanGestureRecognizer *p7 = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(pan:)];
+    UIPanGestureRecognizer *p8 = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(pan:)];
+    UIPanGestureRecognizer *p9 = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(pan:)];
+    UIPanGestureRecognizer *p10 = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(pan:)];
+    UIPanGestureRecognizer *p11 = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(pan:)];
+    UIPanGestureRecognizer *p12 = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(pan:)];
+    UIPanGestureRecognizer *p13 = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(pan:)];
+    UIPanGestureRecognizer *p14 = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(pan:)];
+    UIPanGestureRecognizer *p15 = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(pan:)];
+    
+    [maca addGestureRecognizer:p];
+    [laranja addGestureRecognizer:p1];
+    [cereja addGestureRecognizer:p2];
+    [kiwi addGestureRecognizer:p3];
+    [morango addGestureRecognizer:p4];
+    [pessego addGestureRecognizer:p5];
+    [melancia addGestureRecognizer:p6];
+    [banana addGestureRecognizer:p7];
+    [manga addGestureRecognizer:p14];
+    [pera addGestureRecognizer:p15];
+    
+    
+    
+    //[carne addGestureRecognizer:p8];
+    [torta addGestureRecognizer:p9];
+    [sushi addGestureRecognizer:p10];
+    [hamburger addGestureRecognizer:p11];
+    //[fries addGestureRecognizer:p12];
+    [pizza addGestureRecognizer:p13];
+    
+    
+    [self.foodScroller addSubview: maca];
+    [self.foodScroller addSubview: laranja];
+    [self.foodScroller addSubview: cereja];
+    [self.foodScroller addSubview: kiwi];
+    [self.foodScroller addSubview: morango];
+    [self.foodScroller addSubview: pessego];
+    [self.foodScroller addSubview: melancia];
+    [self.foodScroller addSubview: banana];
+    [self.foodScroller addSubview: manga];
+    [self.foodScroller addSubview: pera];
+    
+    
+    //[self.foodScroller addSubview: carne];
+    [self.foodScroller addSubview: torta];
+    [self.foodScroller addSubview: sushi];
+    [self.foodScroller addSubview: hamburger];
+    //[self.foodScroller addSubview: fries];
+    [self.foodScroller addSubview: pizza];
+
+    [self.view addSubview:self.foodScroller];
+	
+}
+
+-(IBAction)pan:(UIPanGestureRecognizer *)recognizer{
+    
+    CGPoint translation = [recognizer translationInView:self.view];
+    Alimento *alimento = (Alimento *)recognizer.view;
+
+    if( [alimento estaNaSuperView] == 0){
+        
+        Alimento *copy = [[Alimento alloc] initWithFrame:recognizer.view.frame];
+        [copy setImagemAlimento:alimento.imagemAlimento];
+        [copy defineImagem];
+        UIPanGestureRecognizer *p = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(pan:)];
+        [copy addGestureRecognizer:p];
+
+        [foodScroller addSubview:copy];
+        
+        recognizer.view.center = CGPointMake((recognizer.view.center.x + (874 - (recognizer.view.frame.origin.x))) + translation.x, recognizer.view.center.y + translation.y);
+    }
+    else
+        recognizer.view.center = CGPointMake(recognizer.view.center.x + translation.x, recognizer.view.center.y + translation.y);
+    
+    [recognizer setTranslation:CGPointMake(0,0) inView:self.view];
+
+    [self.view addSubview:recognizer.view];
+    
+    if(recognizer.state == UIGestureRecognizerStateEnded)
+    {
+        //Lixo
+        [self lixeira:(Alimento *)recognizer.view];
+        
+    }
+    
+    
+    [alimento setEstaNaSuperView:1];
+    
+}
+
+
+-(void)lixeira :(Alimento *)alimento {
+    if(alimento.center.x > 0 && alimento.center.y >620 && alimento.center.x < 128 && alimento.center.y < 758){
+        
+        [alimento removeFromSuperview];
+        
+    }
+}
+
+- (void)limparPrato:(id)sender {
+    for( UIView *v in self.view.subviews){
+        if([v isKindOfClass:[Alimento class]]){
+            [v removeFromSuperview];
+        }
+    }
+}
+
+- (IBAction)mostraConfirmacaoParaLimparPrato:(id)sender {
+
+    UIAlertView *alert = [[UIAlertView alloc] init];
+    [alert setTitle:@"Alerta!"];
+    [alert setMessage:@"Tem certeza que quer apagar tudo?"];
+    [alert setDelegate:self];
+    [alert addButtonWithTitle:@"Sim"];
+    [alert addButtonWithTitle:@"Não"];
+    [alert show];
+
+}
+
+- (IBAction)processaAlimentos:(id)sender {
+    for( UIView *v in self.view.subviews){
+        if([v isKindOfClass:[Alimento class]]){
+           
+            if((v.center.x - prato.center.x) < 270 && (v.center.y - prato.center.y) < 270){
+                [alimentosPrato addObject:v];
+            }
+            
+            
+        }
+    }
+    MascoteView *mascote = [[MascoteView alloc] initWithFrameAndAlimentos:CGRectMake(0, 0, 500, 458) :alimentosPrato];
+    [self.view addSubview:mascote];
+}
+
+
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
+{
+    if (buttonIndex == 0)
+    {
+        [self limparPrato:nil];
+    }
+    else if (buttonIndex == 1)
+    {
+        return;
+    }
+}
+
+
+- (void)didReceiveMemoryWarning
+{
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
+}
+
+@end

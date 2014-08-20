@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="3396" systemVersion="12F45" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Alimento" representedClassName="Alimento" syncable="YES">
+        <attribute name="grupoAlimento" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="grupoAux" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="imagem" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="nome" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="preco" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="quantidade" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="valorPorcao" optional="YES" attributeType="Float" defaultValueString="0" syncable="YES"/>
+        <attribute name="valorPorcaoAux" optional="YES" attributeType="Float" defaultValueString="0" syncable="YES"/>
+    </entity>
+    <entity name="Personagem" representedClassName="Personagem" syncable="YES">
+        <attribute name="dinheiro" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="fome" optional="YES" attributeType="Float" defaultValueString="0" syncable="YES"/>
+        <attribute name="nome" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="saude" optional="YES" attributeType="Float" defaultValueString="0" syncable="YES"/>
+        <attribute name="tipo" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Alimento" positionX="0" positionY="0" width="0" height="0"/>
+        <element name="Personagem" positionX="0" positionY="0" width="0" height="0"/>
+    </elements>
+</model>
