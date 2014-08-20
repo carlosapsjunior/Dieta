@@ -356,7 +356,7 @@
                                     <action selector="abreInstrucoes:" destination="VCq-5k-lXB" eventType="touchUpInside" id="eME-aX-05W"/>
                                 </connections>
                             </button>
-                            <view contentMode="scaleToFill" id="LBc-uc-pIp">
+                            <view hidden="YES" contentMode="scaleToFill" id="LBc-uc-pIp">
                                 <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>

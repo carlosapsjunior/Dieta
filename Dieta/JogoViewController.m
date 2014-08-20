@@ -38,6 +38,9 @@
     // Dispose of any resources that can be recreated.
 }
 -(IBAction)abreDrop:(id)sender{
+    
+    [viewInstrucoes setHidden:YES];
+    
     CGRect frame = CGRectMake(0, 0, self.view.bounds.size.width, self.view.bounds.size.height);
     SKView *skView = [[SKView alloc] initWithFrame:frame];
 //    skView.showsFPS = YES;
