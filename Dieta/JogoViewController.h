@@ -10,4 +10,6 @@
 
 @interface JogoViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UIView *viewInstrucoes;
+
 @end

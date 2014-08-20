@@ -15,6 +15,7 @@
 @end
 
 @implementation JogoViewController
+@synthesize viewInstrucoes;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -79,6 +80,11 @@
         //[self dismissViewControllerAnimated:YES completion:nil];
 }
 
+- (IBAction)abreInstrucoes:(id)sender {
+
+    [viewInstrucoes setHidden:NO];
+    
+}
 
 - (IBAction)fechaView:(id)sender {
     [self dismissViewControllerAnimated:NO completion:nil];

@@ -71,7 +71,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <view hidden="YES" contentMode="scaleToFill" id="rM1-O6-1sK">
-                                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                                <rect key="frame" x="378" y="58" width="1024" height="768"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" id="P1q-gS-4TV">
@@ -353,18 +353,119 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="abreDrop:" destination="VCq-5k-lXB" eventType="touchUpInside" id="hAc-Ni-khi"/>
+                                    <action selector="abreInstrucoes:" destination="VCq-5k-lXB" eventType="touchUpInside" id="eME-aX-05W"/>
                                 </connections>
                             </button>
+                            <view contentMode="scaleToFill" id="LBc-uc-pIp">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" id="g0D-vX-wfy">
+                                        <rect key="frame" x="0.0" y="30" width="1024" height="177"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Arraste seu mascote para ele comer as comidas" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Twh-Fh-wEq">
+                                                <rect key="frame" x="230" y="49" width="693" height="36"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="30"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="saudáveis, e evite as porcarias." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="UYu-zR-OeO">
+                                                <rect key="frame" x="230" y="93" width="693" height="36"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="30"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.40000000000000002" colorSpace="calibratedRGB"/>
+                                    </view>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Evitar:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Aik-1y-h0y">
+                                        <rect key="frame" x="475" y="257" width="91" height="48"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="30"/>
+                                        <color key="textColor" red="1" green="0.0" blue="0.043376036708330012" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bolacha.png" id="gHc-nV-sTh">
+                                        <rect key="frame" x="176" y="321" width="128" height="128"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="batatafrita.png" id="LoB-tq-efp">
+                                        <rect key="frame" x="584" y="480" width="128" height="128"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pizza.png" id="X5e-z8-hrd">
+                                        <rect key="frame" x="312" y="474" width="128" height="128"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="refri.png" id="nqQ-i5-O0r">
+                                        <rect key="frame" x="720" y="332" width="128" height="128"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="donut2.png" id="fhh-LX-4fn">
+                                        <rect key="frame" x="448" y="338" width="128" height="128"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bolinho.png" id="agS-QT-R2Q">
+                                        <rect key="frame" x="312" y="321" width="128" height="128"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sorvete2.png" id="VYx-tN-YwQ">
+                                        <rect key="frame" x="584" y="332" width="128" height="128"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hamburguer.png" id="mm3-rH-rbs">
+                                        <rect key="frame" x="448" y="474" width="128" height="128"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="7k5-CQ-hPb">
+                                        <rect key="frame" x="460" y="696" width="105" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <state key="normal" title="Começar">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="abreDrop:" destination="VCq-5k-lXB" eventType="touchUpInside" id="m90-Pb-S3s"/>
+                                        </connections>
+                                    </button>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="doutora.png" id="xOT-hw-otX">
+                                        <rect key="frame" x="20" y="20" width="200" height="200"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <connections>
+                        <outlet property="viewInstrucoes" destination="LBc-uc-pIp" id="d60-EH-Jrw"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WYv-W1-J4y" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-3132" y="-351"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="DV1-ue-VBc">
+            <objects>
+                <viewController id="nct-LP-eDV" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wI3-jt-XsQ">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WXp-cj-yh1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1663" y="-461"/>
         </scene>
         <!--Mercado View Controller-->
         <scene sceneID="rAc-cD-MKw">
@@ -591,16 +692,21 @@
         <image name="Mercado.png" width="512" height="512"/>
         <image name="Panela.png" width="512" height="512"/>
         <image name="Voltar.png" width="512" height="512"/>
+        <image name="batatafrita.png" width="128" height="128"/>
         <image name="batatafrita_icone2.png" width="64" height="64"/>
+        <image name="bolacha.png" width="128" height="128"/>
+        <image name="bolinho.png" width="128" height="128"/>
         <image name="bolinho_icone.png" width="64" height="64"/>
         <image name="cenoura_icone.png" width="64" height="64"/>
         <image name="certo.png" width="256" height="256"/>
         <image name="coracao_vazado.png" width="512" height="512"/>
+        <image name="donut2.png" width="128" height="128"/>
         <image name="doutora.png" width="215" height="215"/>
         <image name="errado.png" width="256" height="256"/>
         <image name="estomago.png" width="600" height="758"/>
         <image name="feijao_icone.png" width="64" height="64"/>
         <image name="frango_icone.png" width="64" height="64"/>
+        <image name="hamburguer.png" width="128" height="128"/>
         <image name="iconPrato.png" width="512" height="512"/>
         <image name="maca_icone3.png" width="64" height="64"/>
         <image name="mascote1_1.png" width="215" height="215"/>
@@ -610,8 +716,11 @@
         <image name="moeda3.png" width="64" height="64"/>
         <image name="panela2.png" width="1280" height="740"/>
         <image name="pao_icone.png" width="64" height="64"/>
+        <image name="pizza.png" width="128" height="128"/>
         <image name="prato2.png" width="674" height="673"/>
         <image name="queijo_icone2.png" width="64" height="64"/>
+        <image name="refri.png" width="128" height="128"/>
+        <image name="sorvete2.png" width="128" height="128"/>
         <image name="toldoHD.png" width="3074" height="302"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
