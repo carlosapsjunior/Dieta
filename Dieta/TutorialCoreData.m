@@ -85,6 +85,90 @@
     }
 }
 
+-(void)mercado01 {
+    NSNumber *number = [[NSNumber alloc] initWithInt:1];
+    
+    NSArray *fetchedRecords = [self pegaTutorial];
+    Tutorial *tutorial = [fetchedRecords objectAtIndex:0];
+    
+    [tutorial setMercado01:number];
+    
+    NSError *error;
+    if (![_managedObjectContext save:&error]) {
+        NSLog(@"Whoops, couldn't save: %@", [error localizedDescription]);
+    }
+}
+
+-(void)mercado02 {
+    NSNumber *number = [[NSNumber alloc] initWithInt:1];
+    
+    NSArray *fetchedRecords = [self pegaTutorial];
+    Tutorial *tutorial = [fetchedRecords objectAtIndex:0];
+    
+    [tutorial setMercado02:number];
+    
+    NSError *error;
+    if (![_managedObjectContext save:&error]) {
+        NSLog(@"Whoops, couldn't save: %@", [error localizedDescription]);
+    }
+}
+
+-(void)panela01 {
+    NSNumber *number = [[NSNumber alloc] initWithInt:1];
+    
+    NSArray *fetchedRecords = [self pegaTutorial];
+    Tutorial *tutorial = [fetchedRecords objectAtIndex:0];
+    
+    [tutorial setPanela01:number];
+    
+    NSError *error;
+    if (![_managedObjectContext save:&error]) {
+        NSLog(@"Whoops, couldn't save: %@", [error localizedDescription]);
+    }
+}
+
+-(void)panela02 {
+    NSNumber *number = [[NSNumber alloc] initWithInt:1];
+    
+    NSArray *fetchedRecords = [self pegaTutorial];
+    Tutorial *tutorial = [fetchedRecords objectAtIndex:0];
+    
+    [tutorial setPanela02:number];
+    
+    NSError *error;
+    if (![_managedObjectContext save:&error]) {
+        NSLog(@"Whoops, couldn't save: %@", [error localizedDescription]);
+    }
+}
+
+-(void)prato01 {
+    NSNumber *number = [[NSNumber alloc] initWithInt:1];
+    
+    NSArray *fetchedRecords = [self pegaTutorial];
+    Tutorial *tutorial = [fetchedRecords objectAtIndex:0];
+    
+    [tutorial setPrato01:number];
+    
+    NSError *error;
+    if (![_managedObjectContext save:&error]) {
+        NSLog(@"Whoops, couldn't save: %@", [error localizedDescription]);
+    }
+}
+
+-(void)prato02 {
+    NSNumber *number = [[NSNumber alloc] initWithInt:1];
+    
+    NSArray *fetchedRecords = [self pegaTutorial];
+    Tutorial *tutorial = [fetchedRecords objectAtIndex:0];
+    
+    [tutorial setPrato02:number];
+    
+    NSError *error;
+    if (![_managedObjectContext save:&error]) {
+        NSLog(@"Whoops, couldn't save: %@", [error localizedDescription]);
+    }
+}
+
 //FUNCOES DO COREDATA
 
 - (NSManagedObjectContext *) managedObjectContext {

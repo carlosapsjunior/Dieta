@@ -20,5 +20,11 @@
 - (Tutorial*)returnTutorial;
 
 -(void)intro02;
+-(void)mercado01;
+-(void)mercado02;
+-(void)panela01;
+-(void)panela02;
+-(void)prato01;
+-(void)prato02;
 
 @end
