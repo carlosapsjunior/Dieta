@@ -64,6 +64,15 @@
     [btnPaosCereaisTuberculosRaizesView addTarget:self action:@selector(mudaViewMercado:) forControlEvents:UIControlEventTouchUpInside];
     [btnVerdurasLegumesHortalicasView addTarget:self action:@selector(mudaViewMercado:) forControlEvents:UIControlEventTouchUpInside];
 
+    [self alocaMascote];
+
+}
+
+
+-(void)alocaMascote {
+    MascoteView *mascote = [[MascoteView alloc] initWithFrameAndAlimentos:CGRectMake(0, 0, 1024, 768) :nil];
+    [mascote falaMercado];
+    [self.view addSubview:mascote];
 }
 
 - (IBAction)fechaView:(id)sender {

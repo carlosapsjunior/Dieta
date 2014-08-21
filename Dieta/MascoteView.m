@@ -28,8 +28,6 @@
         [viewDialogo setBackgroundColor:[UIColor colorWithWhite:0 alpha:0.5]];
         [self addSubview:viewDialogo];
         
-       
-        
         lblDialogo = [[UITextView alloc] initWithFrame:CGRectMake(280, 100, 500, 140)];
         [lblDialogo setBackgroundColor:[UIColor colorWithWhite:0 alpha:0]];
         [lblDialogo setTextColor:[UIColor whiteColor]];
@@ -83,6 +81,27 @@
     [lblDialogo setFrame:CGRectMake(280, 360, 500, 140)];
     NSMutableArray *arrayFala = [[NSMutableArray alloc] init];
     [arrayFala addObject:@"Olá, meu nome é Cristina sou nutricionista, e vou ajudar você a alimentar corretamente seu amigo."];
+    
+    dialogo = arrayFala;
+    
+    [lblDialogo setText:[NSString stringWithFormat:@"%@", [dialogo objectAtIndex:count]]];
+}
+
+
+-(void)falaPanela{
+    
+    NSMutableArray *arrayFala = [[NSMutableArray alloc] init];
+    [arrayFala addObject:@"Panela."];
+    
+    dialogo = arrayFala;
+    
+    [lblDialogo setText:[NSString stringWithFormat:@"%@", [dialogo objectAtIndex:count]]];
+}
+
+-(void)falaMercado{
+    
+    NSMutableArray *arrayFala = [[NSMutableArray alloc] init];
+    [arrayFala addObject:@"Mercado."];
     
     dialogo = arrayFala;
     

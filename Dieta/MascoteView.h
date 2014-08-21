@@ -29,5 +29,7 @@
 -(void)falaAnaliseAlimento;
 -(void)falaInicial;
 -(void)falaHome;
+-(void)falaPanela;
+-(void)falaMercado;
 
 @end

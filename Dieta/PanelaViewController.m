@@ -41,9 +41,16 @@
     [self alocaFoodScroller];
     [self alocaAudioController];
     [self inicializaAlimentos];
+    [self alocaMascote];
     
     //[gerenciadorCoreData mostraCoreData];
     //[gerenciadorCoreData atualizarQuantidade:3 index:@"maça"];
+}
+
+-(void)alocaMascote {
+    MascoteView *mascote = [[MascoteView alloc] initWithFrameAndAlimentos:CGRectMake(0, 0, 1024, 768) :nil];
+    [mascote falaPanela];
+    [self.view addSubview:mascote];
 }
 
 -(void)copiaAlimento: (AlimentoView*)alimentoView {

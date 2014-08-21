@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "GerenciadorCoreData.h"
 #import "PersonagemCoreData.h"
+#import "MascoteView.h"
 #import "AudioController.h"
 
 @interface MercadoViewController : UIViewController <UICollectionViewDelegate, UICollectionViewDataSource>

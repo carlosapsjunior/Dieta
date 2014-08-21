@@ -39,15 +39,13 @@
         vozIntro2 = [[AVAudioPlayer alloc] initWithContentsOfURL:url error:nil];
     }
     
-    //[NSTimer scheduledTimerWithTimeInterval:60.0 target:self selector:@selector(diminui) userInfo:nil repeats:YES];
+    [NSTimer scheduledTimerWithTimeInterval:60.0 target:self selector:@selector(diminuiFome) userInfo:nil repeats:YES];
+    [NSTimer scheduledTimerWithTimeInterval:60.0 target:self selector:@selector(diminuiSaude) userInfo:nil repeats:YES];
     
     gerenciadorCoreData = [[GerenciadorCoreData alloc]init];
     personagemCoreData = [[PersonagemCoreData alloc]init];
     
     [gerenciadorCoreData iniciaCoreData];
-
-    [personagemCoreData atualizarFome:33];
-    [personagemCoreData atualizarSaude:57];
     
     Personagem *personagem = [personagemCoreData returnPersonagem];
     NSString *dindin = [NSString stringWithFormat:@"%d", [[personagem dinheiro] intValue]];
@@ -77,19 +75,36 @@
     [personagemView setImage:[UIImage imageNamed:imageName]];
     [self.view addSubview:personagemView];
     
+    [self alocaMascote];
 	// Do any additional setup after loading the view.
 }
 
--(void)diminui{
-    float novaFome = [[[personagemCoreData returnPersonagem] fome]floatValue] - 1.8;
+-(void)diminuiFome{
+    Personagem *personagemFome =[personagemCoreData returnPersonagem];
+    float novaFome = [[personagemFome fome]floatValue] - 1.8;
     
     if(novaFome  > 0) {
     [personagemCoreData atualizarFome:novaFome];
-        NSLog(@"%f,%f", [[[personagemCoreData returnPersonagem] fome]floatValue], novaFome);
-        [fomeBar setFrame:CGRectMake(320, 210, ([[[personagemCoreData returnPersonagem] fome] floatValue]*300)/100, 50)];
+        [fomeBar setFrame:CGRectMake(0, 200, fomeBar.bounds.size.width, -([[personagemFome fome] floatValue]*200)/100)];
     }
 }
 
+-(void)diminuiSaude{
+    Personagem *personagemSaude =[personagemCoreData returnPersonagem];
+    float novaSaude = [[personagemSaude saude]floatValue] - 1.8;
+    if ([[personagemSaude fome]floatValue] < 10) {
+        if(novaSaude  > 0) {
+            [personagemCoreData atualizarSaude:novaSaude];
+            [saudeBar setFrame:CGRectMake(0, 200, saudeBar.bounds.size.width, -([[personagemSaude saude] floatValue]*200)/100)];
+        }
+    }
+}
+
+-(void)alocaMascote {
+    MascoteView *mascote = [[MascoteView alloc] initWithFrameAndAlimentos:CGRectMake(0, 0, 1024, 768) :nil];
+    [mascote falaHome];
+    [self.view addSubview:mascote];
+}
 
 -(void)atualizaDinheiro {
     Personagem *personagem = [personagemCoreData returnPersonagem];
