@@ -21,12 +21,12 @@
     [self.view setBackgroundColor:[UIColor colorWithPatternImage:[UIImage imageNamed:@"cozinha.png"]]];
     
     ingredienteDaVez = 0;
-    receita = [[Receita alloc] init];
+    /*receita = [[Receita alloc] init];
     [receita setNome:@"Pizza"];
     [receita setImagemReceita:[UIImage imageNamed:@"pizza.png"]];
     //[receita adicionaIngrediente:@"tomate" : [UIImage imageNamed:@"tomate3.png"]];
     [receita adicionaIngrediente:@"queijo" : [UIImage imageNamed:@"queijo.png"]];
-    //[receita adicionaIngrediente:@"frango" : [UIImage imageNamed:@"frango.png"]];
+    //[receita adicionaIngrediente:@"frango" : [UIImage imageNamed:@"frango.png"]];*/
     
     [nomeReceita setText: [receita nome]];
     

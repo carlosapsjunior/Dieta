@@ -107,6 +107,7 @@
 		FC948432190AF69A007EFAAA /* somVassoura.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FC94842D190AF69A007EFAAA /* somVassoura.mp3 */; };
 		FC948434190AFA4E007EFAAA /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC948433190AFA4E007EFAAA /* AVFoundation.framework */; };
 		FC948436190AFA54007EFAAA /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC948435190AFA54007EFAAA /* CoreAudio.framework */; };
+		FCAA085519A671FD00646874 /* ListaReceitasViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCAA085419A671FD00646874 /* ListaReceitasViewController.m */; };
 		FCAB44B8199D2EB200953009 /* certo.png in Resources */ = {isa = PBXBuildFile; fileRef = FCAB44B6199D2EB200953009 /* certo.png */; };
 		FCAB44B9199D2EB200953009 /* errado.png in Resources */ = {isa = PBXBuildFile; fileRef = FCAB44B7199D2EB200953009 /* errado.png */; };
 		FCAB44BB199D379400953009 /* coracao_vazado.png in Resources */ = {isa = PBXBuildFile; fileRef = FCAB44BA199D379400953009 /* coracao_vazado.png */; };
@@ -281,6 +282,8 @@
 		FC94842D190AF69A007EFAAA /* somVassoura.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = somVassoura.mp3; sourceTree = "<group>"; };
 		FC948433190AFA4E007EFAAA /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		FC948435190AFA54007EFAAA /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
+		FCAA085319A671FD00646874 /* ListaReceitasViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListaReceitasViewController.h; sourceTree = "<group>"; };
+		FCAA085419A671FD00646874 /* ListaReceitasViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListaReceitasViewController.m; sourceTree = "<group>"; };
 		FCAB44B6199D2EB200953009 /* certo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = certo.png; sourceTree = "<group>"; };
 		FCAB44B7199D2EB200953009 /* errado.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = errado.png; sourceTree = "<group>"; };
 		FCAB44BA199D379400953009 /* coracao_vazado.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = coracao_vazado.png; sourceTree = "<group>"; };
@@ -467,6 +470,8 @@
 				3DA02ADA1992C0C20098C507 /* FoodDrop.h */,
 				3DA02ADB1992C0C20098C507 /* FoodDrop.m */,
 				7E679F02190EFA1E00F99B59 /* Main_iPad.storyboard */,
+				FCAA085319A671FD00646874 /* ListaReceitasViewController.h */,
+				FCAA085419A671FD00646874 /* ListaReceitasViewController.m */,
 				FCC1C4841999550300044C55 /* HomeViewController.h */,
 				FCC1C4851999550300044C55 /* HomeViewController.m */,
 				3DA02AD41992A2A90098C507 /* JogoViewController.h */,
@@ -913,6 +918,7 @@
 				7E7090A219254CCE00A4BCC8 /* Model.xcdatamodeld in Sources */,
 				3DA02AD61992A2A90098C507 /* JogoViewController.m in Sources */,
 				FC1C2F68199BD885005186C2 /* Ingrediente.m in Sources */,
+				FCAA085519A671FD00646874 /* ListaReceitasViewController.m in Sources */,
 				7EE42287195B405200E9B7C1 /* MascoteViewController.m in Sources */,
 				79FA5A0119019A8F000BD111 /* MascoteView.m in Sources */,
 				FCC1C4861999550300044C55 /* HomeViewController.m in Sources */,

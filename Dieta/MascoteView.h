@@ -20,11 +20,13 @@
 @property int count;
 @property NSMutableArray *dialogo;
 @property NSArray *listAlimentos;
+@property UIView *viewDialogo;
 
 @property AVAudioPlayer *somOla;
 
 - (id)initWithFrameAndAlimentos:(CGRect)frame :(NSMutableArray *)alimentos;
 -(void)falaAnaliseAlimento;
 -(void)falaInicial;
+-(void)falaHome;
 
 @end
