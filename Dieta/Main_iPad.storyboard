@@ -38,7 +38,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" id="P1q-gS-4TV">
-                                        <rect key="frame" x="256" y="192" width="512" height="384"/>
+                                        <rect key="frame" x="256" y="122" width="512" height="384"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <subviews>
                                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Receita Concluída." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="LTP-IX-481">
@@ -213,7 +213,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7vI-yp-1lH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3836" y="-1308"/>
+            <point key="canvasLocation" x="-3837" y="-1397"/>
         </scene>
         <!--Home View Controller-->
         <scene sceneID="wQe-NT-11G">

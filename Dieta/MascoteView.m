@@ -11,7 +11,7 @@
 
 
 @implementation MascoteView
-@synthesize lblDialogo, count, dialogo, listAlimentos, somOla, viewDialogo;
+@synthesize lblDialogo, count, dialogo, listAlimentos, somOla, viewDialogo, personagem;
 
 - (id)initWithFrameAndAlimentos:(CGRect)frame :(NSMutableArray *)alimentos
 {
@@ -21,7 +21,7 @@
         listAlimentos = alimentos;
         [self setBackgroundColor:[UIColor colorWithWhite:0.5 alpha:0.5]];
 
-        UIImageView *personagem = [[UIImageView alloc] initWithFrame:CGRectMake(30, 30, 215, 215)];
+        personagem = [[UIImageView alloc] initWithFrame:CGRectMake(30, 30, 215, 215)];
         [personagem setImage:[UIImage imageNamed:@"doutora.png"]];
         
         viewDialogo = [[UIView alloc] initWithFrame:CGRectMake(0, 60, 1024, 160)];
@@ -78,8 +78,11 @@
 
 -(void)falaHome{
     
+    [personagem setFrame:CGRectMake(30, 290, 215, 215)];
+    [viewDialogo setFrame:CGRectMake(0, 320, 1025, 160)];
+    [lblDialogo setFrame:CGRectMake(280, 360, 500, 140)];
     NSMutableArray *arrayFala = [[NSMutableArray alloc] init];
-    [arrayFala addObject:@"Escolha o seu amigo."];
+    [arrayFala addObject:@"Olá, meu nome é Cristina sou nutricionista, e vou ajudar você a alimentar corretamente seu amigo."];
     
     dialogo = arrayFala;
     

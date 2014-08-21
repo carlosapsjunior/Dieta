@@ -21,6 +21,7 @@
 @property NSMutableArray *dialogo;
 @property NSArray *listAlimentos;
 @property UIView *viewDialogo;
+@property UIImageView *personagem;
 
 @property AVAudioPlayer *somOla;
 
