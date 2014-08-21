@@ -40,6 +40,7 @@
 		7E26070219A674C90036FC41 /* prato02.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7E2606FA19A674C90036FC41 /* prato02.mp3 */; };
 		7E26070519A67C1F0036FC41 /* TutorialCoreData.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E26070419A67C1F0036FC41 /* TutorialCoreData.m */; };
 		7E26070819A67D760036FC41 /* Tutorial.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E26070719A67D760036FC41 /* Tutorial.m */; };
+		7E26070A19A683DB0036FC41 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E26070919A683DB0036FC41 /* icon.png */; };
 		7E27E416192FE54A00C05CF7 /* MercadoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E27E412192FE54A00C05CF7 /* MercadoViewController.m */; };
 		7E27E417192FE54A00C05CF7 /* CategoriaMercadoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E27E413192FE54A00C05CF7 /* CategoriaMercadoView.m */; };
 		7E679F03190EFA1E00F99B59 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E679F02190EFA1E00F99B59 /* Main_iPad.storyboard */; };
@@ -206,6 +207,7 @@
 		7E26070419A67C1F0036FC41 /* TutorialCoreData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TutorialCoreData.m; sourceTree = "<group>"; };
 		7E26070619A67D760036FC41 /* Tutorial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tutorial.h; sourceTree = "<group>"; };
 		7E26070719A67D760036FC41 /* Tutorial.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tutorial.m; sourceTree = "<group>"; };
+		7E26070919A683DB0036FC41 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 		7E27E412192FE54A00C05CF7 /* MercadoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MercadoViewController.m; sourceTree = "<group>"; };
 		7E27E413192FE54A00C05CF7 /* CategoriaMercadoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CategoriaMercadoView.m; sourceTree = "<group>"; };
 		7E27E414192FE54A00C05CF7 /* CategoriaMercadoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CategoriaMercadoView.h; sourceTree = "<group>"; };
@@ -698,6 +700,7 @@
 				7E82B19019901A5A00640AE1 /* MASCOTE.png */,
 				FC69933F193511D9002AF42A /* circulo.png */,
 				FCDD606D19993A860078E3D1 /* toldoHD.png */,
+				7E26070919A683DB0036FC41 /* icon.png */,
 				FCBEC4C519085D9C00FBE6D0 /* 1398303537_N02.png */,
 				79DD78A51900935A00119A28 /* lixo.png */,
 				79FA5A0219019BD4000BD111 /* balaoDialogo.png */,
@@ -907,6 +910,7 @@
 				7E679F03190EFA1E00F99B59 /* Main_iPad.storyboard in Resources */,
 				FC7AA59F19098DD700883569 /* cebola.png in Resources */,
 				7EDCD276199952BA006B7F20 /* doutora.png in Resources */,
+				7E26070A19A683DB0036FC41 /* icon.png in Resources */,
 				FC7AA5A919098F1200883569 /* arroz.png in Resources */,
 				7E82B1A21990288000640AE1 /* mascote3_2.png in Resources */,
 				FC17FC3218FEF7B5000E9969 /* InfoPlist.strings in Resources */,

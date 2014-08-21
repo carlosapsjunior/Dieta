@@ -15,4 +15,10 @@
 @property (nonatomic, retain, readonly) NSManagedObjectContext *managedObjectContext;
 @property (nonatomic, retain, readonly) NSPersistentStoreCoordinator *persistentStoreCoordinator;
 
+- (void)iniciarCoreData;
+- (void)mostraCoreData;
+- (Tutorial*)returnTutorial;
+
+-(void)intro02;
+
 @end

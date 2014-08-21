@@ -10,10 +10,12 @@
 #import <AVFoundation/AVFoundation.h>
 #import "PersonagemCoreData.h"
 #import "MascoteViewController.h"
+#import "TutorialCoreData.h"
 
 @interface HomeViewController : UIViewController
 
 @property PersonagemCoreData *personagemCoreData;
+@property TutorialCoreData *tutorialCoreData;
 @property AVAudioPlayer *vozIntro;
 
 @end

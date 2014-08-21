@@ -10,6 +10,7 @@
 #import "GerenciadorCoreData.h"
 #import "PersonagemCoreData.h"
 #import <AVFoundation/AVFoundation.h>
+#import "TutorialCoreData.h"
 
 @interface MascoteViewController : UIViewController
 
@@ -21,6 +22,7 @@
 @property (weak, nonatomic) IBOutlet UIView *saudeBar;
 @property UIImageView *personagemView;
 @property AVAudioPlayer *vozIntro2;
+@property TutorialCoreData *tutorialCoreData;
 
 //313, 58
 //532, 58

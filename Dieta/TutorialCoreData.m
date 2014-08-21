@@ -16,7 +16,6 @@
 
 - (void)iniciarCoreData {
     if (![self coreDataIniciado]) {
-        
         Tutorial *tutorial = [NSEntityDescription insertNewObjectForEntityForName:@"Tutorial" inManagedObjectContext:self.managedObjectContext];
         NSNumber *number = [[NSNumber alloc] initWithInt:0];
         
@@ -62,6 +61,28 @@
     NSArray *fetchedRecords = [self.managedObjectContext executeFetchRequest:fetchRequest error:&error];
     
     return fetchedRecords;
+}
+
+- (Tutorial*)returnTutorial {
+    NSArray *fetchedRecords = [self pegaTutorial];
+    Tutorial *tutorial;
+    tutorial = [fetchedRecords objectAtIndex:0];
+    
+    return tutorial;
+}
+
+-(void)intro02 {
+    NSNumber *number = [[NSNumber alloc] initWithInt:1];
+    
+    NSArray *fetchedRecords = [self pegaTutorial];
+    Tutorial *tutorial = [fetchedRecords objectAtIndex:0];
+    
+    [tutorial setIntro02:number];
+    
+    NSError *error;
+    if (![_managedObjectContext save:&error]) {
+        NSLog(@"Whoops, couldn't save: %@", [error localizedDescription]);
+    }
 }
 
 //FUNCOES DO COREDATA

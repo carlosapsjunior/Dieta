@@ -14,7 +14,7 @@
 
 @implementation MascoteViewController
 
-@synthesize gerenciadorCoreData, personagemCoreData, dinheiro, valorDinheiro, saudeBar, fomeBar, personagemView, vozIntro2;
+@synthesize gerenciadorCoreData, personagemCoreData, dinheiro, valorDinheiro, saudeBar, fomeBar, personagemView, vozIntro2, tutorialCoreData;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -28,13 +28,16 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    NSString *path;
-    NSURL *url;
+    tutorialCoreData = [[TutorialCoreData alloc]init];
+    Tutorial *tutorial = [tutorialCoreData returnTutorial];
     
-    path = [[NSBundle mainBundle] pathForResource:@"intro02" ofType:@"mp3"];
-    url = [NSURL fileURLWithPath:path];
-    
-    vozIntro2 = [[AVAudioPlayer alloc] initWithContentsOfURL:url error:nil];
+    if ([[tutorial intro02] intValue] == 0) {
+        NSString *path;
+        NSURL *url;
+        path = [[NSBundle mainBundle] pathForResource:@"intro02" ofType:@"mp3"];
+        url = [NSURL fileURLWithPath:path];
+        vozIntro2 = [[AVAudioPlayer alloc] initWithContentsOfURL:url error:nil];
+    }
     
     //[NSTimer scheduledTimerWithTimeInterval:60.0 target:self selector:@selector(diminui) userInfo:nil repeats:YES];
     
@@ -79,7 +82,8 @@
 
 -(void)diminui{
     float novaFome = [[[personagemCoreData returnPersonagem] fome]floatValue] - 1.8;
-    if(novaFome  > 0){
+    
+    if(novaFome  > 0) {
     [personagemCoreData atualizarFome:novaFome];
         NSLog(@"%f,%f", [[[personagemCoreData returnPersonagem] fome]floatValue], novaFome);
         [fomeBar setFrame:CGRectMake(320, 210, ([[[personagemCoreData returnPersonagem] fome] floatValue]*300)/100, 50)];
@@ -103,7 +107,12 @@
     [fomeBar setFrame:CGRectMake(0, 200, fomeBar.bounds.size.width, -([[personagem fome] floatValue]*200)/100)];
     [saudeBar setFrame:CGRectMake(0, 200, saudeBar.bounds.size.width, -([[personagem saude] floatValue]*200)/100)];
  
-    [vozIntro2 play];
+    Tutorial *tutorial = [tutorialCoreData returnTutorial];
+    
+    if ([[tutorial intro02] intValue] == 0) {
+        [vozIntro2 play];
+        [tutorialCoreData intro02];
+    }
     
     [self atualizaImagemPersonagem];
 }

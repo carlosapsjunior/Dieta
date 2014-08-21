@@ -15,7 +15,7 @@
 
 @implementation HomeViewController
 
-@synthesize personagemCoreData, vozIntro;
+@synthesize personagemCoreData, vozIntro, tutorialCoreData;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -38,6 +38,10 @@
     vozIntro = [[AVAudioPlayer alloc] initWithContentsOfURL:url error:nil];
     
     personagemCoreData = [[PersonagemCoreData alloc]init];
+    tutorialCoreData = [[TutorialCoreData alloc]init];
+    [tutorialCoreData iniciarCoreData];
+    
+    [tutorialCoreData mostraCoreData];
 }
 
 -(void)viewDidAppear:(BOOL)animated {
