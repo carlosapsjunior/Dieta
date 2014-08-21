@@ -14,7 +14,7 @@
 
 @implementation MascoteViewController
 
-@synthesize gerenciadorCoreData, personagemCoreData, dinheiro, valorDinheiro, saudeBar, fomeBar, personagemView;
+@synthesize gerenciadorCoreData, personagemCoreData, dinheiro, valorDinheiro, saudeBar, fomeBar, personagemView, vozIntro2;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -28,51 +28,27 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    NSString *path;
+    NSURL *url;
+    
+    path = [[NSBundle mainBundle] pathForResource:@"intro02" ofType:@"mp3"];
+    url = [NSURL fileURLWithPath:path];
+    
+    vozIntro2 = [[AVAudioPlayer alloc] initWithContentsOfURL:url error:nil];
+    
     //[NSTimer scheduledTimerWithTimeInterval:60.0 target:self selector:@selector(diminui) userInfo:nil repeats:YES];
     
     gerenciadorCoreData = [[GerenciadorCoreData alloc]init];
     personagemCoreData = [[PersonagemCoreData alloc]init];
     
     [gerenciadorCoreData iniciaCoreData];
-    
-    //[personagemCoreData iniciarCoreData:2];
+
     [personagemCoreData atualizarFome:33];
     [personagemCoreData atualizarSaude:57];
-    //[personagemCoreData atualizarDinheiro:50];
-    //[personagemCoreData mostraCoreData];
     
     Personagem *personagem = [personagemCoreData returnPersonagem];
     NSString *dindin = [NSString stringWithFormat:@"%d", [[personagem dinheiro] intValue]];
     [dinheiro setText:dindin];
-    
-    //[fomeBar setFrame:CGRectMake(0, 200, fomeBar.bounds.size.width, -([[personagem fome] floatValue]*200)/100)];
-    //[saudeBar setFrame:CGRectMake(0, 200, saudeBar.bounds.size.width, -([[personagem saude] floatValue]*200)/100)];
-    
-    /*fomeBar  = [[UIView alloc] initWithFrame:CGRectMake(313, 58, -900, 30)];
-    fomeBar.backgroundColor = [UIColor yellowColor];
-    [self.view addSubview:fomeBar];
-    
-    saudeBar  = [[UIView alloc] initWithFrame:CGRectMake(660, 210, ([[personagem saude] floatValue]*300)/100, 50)];
-    saudeBar.backgroundColor = [UIColor redColor];
-    [self.view addSubview:saudeBar];*/
-    
-    /*UIView *fomeBackground  = [[UIView alloc] initWithFrame:CGRectMake(315, 205, 310, 60)];
-    fomeBackground.backgroundColor = [UIColor blackColor];
-    [self.view addSubview:fomeBackground];
-    
-    UIView *fomeBarMissing  = [[UIView alloc] initWithFrame:CGRectMake(320, 210, 300, 50)];
-    fomeBarMissing.backgroundColor = [UIColor whiteColor];
-    [self.view addSubview:fomeBarMissing];
-    
-    
-    
-    UIView *saudeBackground  = [[UIView alloc] initWithFrame:CGRectMake(655, 205, 310, 60)];
-    saudeBackground.backgroundColor = [UIColor blackColor];
-    [self.view addSubview:saudeBackground];
-    
-    UIView *saudeBarMissing  = [[UIView alloc] initWithFrame:CGRectMake(660, 210, 300, 50)];
-    saudeBarMissing.backgroundColor = [UIColor whiteColor];
-    [self.view addSubview:saudeBarMissing];*/
     
     UIView *personagemBorda  = [[UIView alloc] initWithFrame:CGRectMake(45, 45, 220, 220)];
     personagemBorda.backgroundColor = [UIColor blackColor];
@@ -127,6 +103,8 @@
     [fomeBar setFrame:CGRectMake(0, 200, fomeBar.bounds.size.width, -([[personagem fome] floatValue]*200)/100)];
     [saudeBar setFrame:CGRectMake(0, 200, saudeBar.bounds.size.width, -([[personagem saude] floatValue]*200)/100)];
  
+    [vozIntro2 play];
+    
     [self atualizaImagemPersonagem];
 }
 

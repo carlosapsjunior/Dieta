@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "GerenciadorCoreData.h"
 #import "PersonagemCoreData.h"
+#import <AVFoundation/AVFoundation.h>
 
 @interface MascoteViewController : UIViewController
 
@@ -19,6 +20,7 @@
 @property (weak, nonatomic) IBOutlet UIView *fomeBar;
 @property (weak, nonatomic) IBOutlet UIView *saudeBar;
 @property UIImageView *personagemView;
+@property AVAudioPlayer *vozIntro2;
 
 //313, 58
 //532, 58

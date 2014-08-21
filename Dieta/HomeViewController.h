@@ -7,11 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <AVFoundation/AVFoundation.h>
 #import "PersonagemCoreData.h"
 #import "MascoteViewController.h"
 
 @interface HomeViewController : UIViewController
 
 @property PersonagemCoreData *personagemCoreData;
+@property AVAudioPlayer *vozIntro;
 
 @end

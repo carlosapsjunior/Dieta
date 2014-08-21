@@ -15,7 +15,7 @@
 
 @implementation HomeViewController
 
-@synthesize personagemCoreData;
+@synthesize personagemCoreData, vozIntro;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -29,12 +29,23 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    NSString *path;
+    NSURL *url;
+    
+    path = [[NSBundle mainBundle] pathForResource:@"intro01" ofType:@"mp3"];
+    url = [NSURL fileURLWithPath:path];
+    
+    vozIntro = [[AVAudioPlayer alloc] initWithContentsOfURL:url error:nil];
+    
     personagemCoreData = [[PersonagemCoreData alloc]init];
 }
 
 -(void)viewDidAppear:(BOOL)animated {
     if ([personagemCoreData coreDataIniciado]) {
         [self mostraViewMascote];
+    }
+    else {
+        [vozIntro play];
     }
 }
 

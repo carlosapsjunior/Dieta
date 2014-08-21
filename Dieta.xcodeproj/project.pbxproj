@@ -30,6 +30,16 @@
 		79FA5A0519019BD4000BD111 /* personagem.png in Resources */ = {isa = PBXBuildFile; fileRef = 79FA5A0319019BD4000BD111 /* personagem.png */; };
 		7E25A5041926AE0C0005568F /* AnalisaReficaoTestes.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E25A5031926AE0C0005568F /* AnalisaReficaoTestes.m */; };
 		7E25A5061926AF610005568F /* ProblemaAlimentarTestes.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E25A5051926AF610005568F /* ProblemaAlimentarTestes.m */; };
+		7E2606FB19A674C90036FC41 /* intro01.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7E2606F319A674C90036FC41 /* intro01.mp3 */; };
+		7E2606FC19A674C90036FC41 /* intro02.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7E2606F419A674C90036FC41 /* intro02.mp3 */; };
+		7E2606FD19A674C90036FC41 /* mercado01.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7E2606F519A674C90036FC41 /* mercado01.mp3 */; };
+		7E2606FE19A674C90036FC41 /* mercado02.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7E2606F619A674C90036FC41 /* mercado02.mp3 */; };
+		7E2606FF19A674C90036FC41 /* panela01.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7E2606F719A674C90036FC41 /* panela01.mp3 */; };
+		7E26070019A674C90036FC41 /* panela02.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7E2606F819A674C90036FC41 /* panela02.mp3 */; };
+		7E26070119A674C90036FC41 /* prato01.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7E2606F919A674C90036FC41 /* prato01.mp3 */; };
+		7E26070219A674C90036FC41 /* prato02.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7E2606FA19A674C90036FC41 /* prato02.mp3 */; };
+		7E26070519A67C1F0036FC41 /* TutorialCoreData.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E26070419A67C1F0036FC41 /* TutorialCoreData.m */; };
+		7E26070819A67D760036FC41 /* Tutorial.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E26070719A67D760036FC41 /* Tutorial.m */; };
 		7E27E416192FE54A00C05CF7 /* MercadoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E27E412192FE54A00C05CF7 /* MercadoViewController.m */; };
 		7E27E417192FE54A00C05CF7 /* CategoriaMercadoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E27E413192FE54A00C05CF7 /* CategoriaMercadoView.m */; };
 		7E679F03190EFA1E00F99B59 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E679F02190EFA1E00F99B59 /* Main_iPad.storyboard */; };
@@ -184,6 +194,18 @@
 		79FA5A0319019BD4000BD111 /* personagem.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = personagem.png; sourceTree = "<group>"; };
 		7E25A5031926AE0C0005568F /* AnalisaReficaoTestes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AnalisaReficaoTestes.m; path = ../AnalisaReficaoTestes.m; sourceTree = "<group>"; };
 		7E25A5051926AF610005568F /* ProblemaAlimentarTestes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProblemaAlimentarTestes.m; sourceTree = "<group>"; };
+		7E2606F319A674C90036FC41 /* intro01.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = intro01.mp3; sourceTree = "<group>"; };
+		7E2606F419A674C90036FC41 /* intro02.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = intro02.mp3; sourceTree = "<group>"; };
+		7E2606F519A674C90036FC41 /* mercado01.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = mercado01.mp3; sourceTree = "<group>"; };
+		7E2606F619A674C90036FC41 /* mercado02.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = mercado02.mp3; sourceTree = "<group>"; };
+		7E2606F719A674C90036FC41 /* panela01.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = panela01.mp3; sourceTree = "<group>"; };
+		7E2606F819A674C90036FC41 /* panela02.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = panela02.mp3; sourceTree = "<group>"; };
+		7E2606F919A674C90036FC41 /* prato01.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = prato01.mp3; sourceTree = "<group>"; };
+		7E2606FA19A674C90036FC41 /* prato02.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = prato02.mp3; sourceTree = "<group>"; };
+		7E26070319A67C1F0036FC41 /* TutorialCoreData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TutorialCoreData.h; sourceTree = "<group>"; };
+		7E26070419A67C1F0036FC41 /* TutorialCoreData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TutorialCoreData.m; sourceTree = "<group>"; };
+		7E26070619A67D760036FC41 /* Tutorial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tutorial.h; sourceTree = "<group>"; };
+		7E26070719A67D760036FC41 /* Tutorial.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tutorial.m; sourceTree = "<group>"; };
 		7E27E412192FE54A00C05CF7 /* MercadoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MercadoViewController.m; sourceTree = "<group>"; };
 		7E27E413192FE54A00C05CF7 /* CategoriaMercadoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CategoriaMercadoView.m; sourceTree = "<group>"; };
 		7E27E414192FE54A00C05CF7 /* CategoriaMercadoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CategoriaMercadoView.h; sourceTree = "<group>"; };
@@ -380,6 +402,21 @@
 			name = Testes;
 			sourceTree = "<group>";
 		};
+		7E2606F219A674BF0036FC41 /* Vozes */ = {
+			isa = PBXGroup;
+			children = (
+				7E2606F319A674C90036FC41 /* intro01.mp3 */,
+				7E2606F419A674C90036FC41 /* intro02.mp3 */,
+				7E2606F519A674C90036FC41 /* mercado01.mp3 */,
+				7E2606F619A674C90036FC41 /* mercado02.mp3 */,
+				7E2606F719A674C90036FC41 /* panela01.mp3 */,
+				7E2606F819A674C90036FC41 /* panela02.mp3 */,
+				7E2606F919A674C90036FC41 /* prato01.mp3 */,
+				7E2606FA19A674C90036FC41 /* prato02.mp3 */,
+			);
+			name = Vozes;
+			sourceTree = "<group>";
+		};
 		7E82B1921990287400640AE1 /* Mascotes */ = {
 			isa = PBXGroup;
 			children = (
@@ -463,6 +500,8 @@
 				7ECF7E52192BEEDF00B19436 /* GerenciadorCoreData.m */,
 				7EC2156C199178AC000F6D6A /* PersonagemCoreData.h */,
 				7EC2156D199178AC000F6D6A /* PersonagemCoreData.m */,
+				7E26070319A67C1F0036FC41 /* TutorialCoreData.h */,
+				7E26070419A67C1F0036FC41 /* TutorialCoreData.m */,
 				7EAB0E7C192406F800EDD4A7 /* GrupoAlimentar.h */,
 				7EAB0E7D192406F800EDD4A7 /* GrupoAlimentar.m */,
 				751E17F419707A5100DE124C /* JogoSkate.h */,
@@ -493,6 +532,8 @@
 				FC1C2F66199BD885005186C2 /* Ingrediente.h */,
 				FC1C2F67199BD885005186C2 /* Ingrediente.m */,
 				7E7090A019254CCE00A4BCC8 /* Model.xcdatamodeld */,
+				7E26070619A67D760036FC41 /* Tutorial.h */,
+				7E26070719A67D760036FC41 /* Tutorial.m */,
 				FC17FC2E18FEF7B5000E9969 /* Supporting Files */,
 			);
 			path = Dieta;
@@ -615,6 +656,7 @@
 		FC948428190AF685007EFAAA /* Sons */ = {
 			isa = PBXGroup;
 			children = (
+				7E2606F219A674BF0036FC41 /* Vozes */,
 				FC948429190AF69A007EFAAA /* somClick.mp3 */,
 				FC94842A190AF69A007EFAAA /* somConfirma.mp3 */,
 				FC94842B190AF69A007EFAAA /* somLixo.mp3 */,
@@ -812,6 +854,7 @@
 				FCDD607519993BB60078E3D1 /* cenoura_icone.png in Resources */,
 				3DA02B0F19941E980098C507 /* Confirma.png in Resources */,
 				FCDD607A19993BB60078E3D1 /* batatafrita_icone2.png in Resources */,
+				7E26070219A674C90036FC41 /* prato02.mp3 in Resources */,
 				FC94842E190AF69A007EFAAA /* somClick.mp3 in Resources */,
 				3DA02B1219941E980098C507 /* Mercado.png in Resources */,
 				3DA02B1119941E980098C507 /* iconPrato.png in Resources */,
@@ -822,15 +865,20 @@
 				3DA02B0E19941E980098C507 /* Cancela.png in Resources */,
 				75193D75197461B00071E959 /* normal1.png in Resources */,
 				3DA02B1519941EB80098C507 /* FundoPrato.jpg in Resources */,
+				7E2606FE19A674C90036FC41 /* mercado02.mp3 in Resources */,
 				7E82B1A31990288000640AE1 /* mascote2_1.png in Resources */,
 				FCDD607819993BB60078E3D1 /* pao_icone.png in Resources */,
 				FCBEC4BE190845D300FBE6D0 /* kiwi.png in Resources */,
 				FC7AA5A519098E3600883569 /* refri.png in Resources */,
+				7E2606FF19A674C90036FC41 /* panela01.mp3 in Resources */,
 				FC7AA59119098CED00883569 /* frango.png in Resources */,
+				7E26070119A674C90036FC41 /* prato01.mp3 in Resources */,
 				7E82B19119901A5A00640AE1 /* MASCOTE.png in Resources */,
 				FCBEC4AC190843B800FBE6D0 /* torta.png in Resources */,
+				7E2606FB19A674C90036FC41 /* intro01.mp3 in Resources */,
 				FC7AA5AD19098F3200883569 /* feijao.png in Resources */,
 				FCBEC4A2190842F200FBE6D0 /* maca.png in Resources */,
+				7E2606FD19A674C90036FC41 /* mercado01.mp3 in Resources */,
 				FC94842F190AF69A007EFAAA /* somConfirma.mp3 in Resources */,
 				FC17FC4318FEF7B5000E9969 /* Images.xcassets in Resources */,
 				FC1C2F6A199C008D005186C2 /* panela2.png in Resources */,
@@ -842,6 +890,7 @@
 				7E82B1AA1990288000640AE1 /* mascote1_3.png in Resources */,
 				FCAB44BD199D3A9F00953009 /* estomago.png in Resources */,
 				7E82B1A81990288000640AE1 /* mascote1_1.png in Resources */,
+				7E2606FC19A674C90036FC41 /* intro02.mp3 in Resources */,
 				FC948432190AF69A007EFAAA /* somVassoura.mp3 in Resources */,
 				FCBEC4B61908442C00FBE6D0 /* morango.png in Resources */,
 				FCAB44B8199D2EB200953009 /* certo.png in Resources */,
@@ -870,6 +919,7 @@
 				FC7A55301995680C00C47E91 /* toldo.png in Resources */,
 				FCBEC4C619085D9C00FBE6D0 /* 1398303537_N02.png in Resources */,
 				FC7AA5A319098E2000883569 /* abobora.png in Resources */,
+				7E26070019A674C90036FC41 /* panela02.mp3 in Resources */,
 				7E82B1A11990288000640AE1 /* mascote4_2.png in Resources */,
 				FC948424190AF20B007EFAAA /* tomate3.png in Resources */,
 				75193D74197461B00071E959 /* block.png in Resources */,
@@ -904,6 +954,7 @@
 				7EC2156E199178AC000F6D6A /* PersonagemCoreData.m in Sources */,
 				FC6E01E71906F0A900C342F7 /* AnalisaRefeicao.m in Sources */,
 				7EF219AD192E923E006B94D1 /* AlimentoView.m in Sources */,
+				7E26070519A67C1F0036FC41 /* TutorialCoreData.m in Sources */,
 				7EAB0E7E192406F800EDD4A7 /* GrupoAlimentar.m in Sources */,
 				FC948427190AF670007EFAAA /* AudioController.m in Sources */,
 				7EC2157119917CA3000F6D6A /* Personagem.m in Sources */,
@@ -922,6 +973,7 @@
 				7EE42287195B405200E9B7C1 /* MascoteViewController.m in Sources */,
 				79FA5A0119019A8F000BD111 /* MascoteView.m in Sources */,
 				FCC1C4861999550300044C55 /* HomeViewController.m in Sources */,
+				7E26070819A67D760036FC41 /* Tutorial.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

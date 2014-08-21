@@ -171,7 +171,7 @@ static const uint32_t maComidaCategory        =  0x1 << 2;
     eater.physicsBody.collisionBitMask = 0;
     eater.physicsBody.usesPreciseCollisionDetection = YES;
     
-    eater.physicsBody.dynamic =NO;
+    eater.physicsBody.dynamic = NO;
     
     [self addChild:eater];
     
@@ -200,7 +200,6 @@ static const uint32_t maComidaCategory        =  0x1 << 2;
         NSLog(@"Pontos: %d", pontos);
 
         [secondBody.node removeFromParent];
-        
     }
     
     if (contact.bodyA.categoryBitMask < contact.bodyB.categoryBitMask)
@@ -214,17 +213,13 @@ static const uint32_t maComidaCategory        =  0x1 << 2;
         secondBody = contact.bodyA;
     }
     
-    if ((firstBody.categoryBitMask & eaterCategory) != 0 &&
-        (secondBody.categoryBitMask & maComidaCategory) != 0)
-    {
-
+    if ((firstBody.categoryBitMask & eaterCategory) != 0 && (secondBody.categoryBitMask & maComidaCategory) != 0) {
         vidas--;
         NSLog(@"Vidas: %d", vidas);
         [secondBody.node removeFromParent];
         if (vidas < 1 ) {
             [self gameOver];
         }
-
     }
 }
 
@@ -236,8 +231,10 @@ static const uint32_t maComidaCategory        =  0x1 << 2;
     [self addChild:over];
     
     Personagem *personagem = [personagemCoreData returnPersonagem];
-    NSNumber *novoDinheiro = [[NSNumber alloc]initWithInt:[[personagem dinheiro] intValue] + pontos ];
-    [personagem setDinheiro:novoDinheiro];
+    [personagemCoreData atualizarDinheiro: [[personagem dinheiro] intValue] + pontos];
+    //NSNumber *novoDinheiro = [[NSNumber alloc]initWithInt:[[personagem dinheiro] intValue] + pontos ];
+    //NSLog(@"%d", [novoDinheiro intValue]);
+    //[personagem setDinheiro:novoDinheiro];
     
     [self.view removeFromSuperview];
     
