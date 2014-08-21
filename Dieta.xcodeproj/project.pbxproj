@@ -85,6 +85,7 @@
 		FC1C2F68199BD885005186C2 /* Ingrediente.m in Sources */ = {isa = PBXBuildFile; fileRef = FC1C2F67199BD885005186C2 /* Ingrediente.m */; };
 		FC1C2F6A199C008D005186C2 /* panela2.png in Resources */ = {isa = PBXBuildFile; fileRef = FC1C2F69199C008D005186C2 /* panela2.png */; };
 		FC1C2F6C199C048E005186C2 /* cozinha.png in Resources */ = {isa = PBXBuildFile; fileRef = FC1C2F6B199C048E005186C2 /* cozinha.png */; };
+		FC1C5D6419A699DE0096E2BB /* carne.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FC1C5D6319A699DE0096E2BB /* carne.mp3 */; };
 		FC50CD91199144FB002ADAF0 /* PanelaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC50CD90199144FB002ADAF0 /* PanelaViewController.m */; };
 		FC50CD9419915430002ADAF0 /* Receita.m in Sources */ = {isa = PBXBuildFile; fileRef = FC50CD9319915430002ADAF0 /* Receita.m */; };
 		FC6961A0194783050043FB66 /* moeda.png in Resources */ = {isa = PBXBuildFile; fileRef = FC69619F194783050043FB66 /* moeda.png */; };
@@ -269,6 +270,7 @@
 		FC1C2F67199BD885005186C2 /* Ingrediente.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Ingrediente.m; sourceTree = "<group>"; };
 		FC1C2F69199C008D005186C2 /* panela2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = panela2.png; sourceTree = "<group>"; };
 		FC1C2F6B199C048E005186C2 /* cozinha.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cozinha.png; sourceTree = "<group>"; };
+		FC1C5D6319A699DE0096E2BB /* carne.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = carne.mp3; sourceTree = "<group>"; };
 		FC50CD8F199144FB002ADAF0 /* PanelaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PanelaViewController.h; sourceTree = "<group>"; };
 		FC50CD90199144FB002ADAF0 /* PanelaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PanelaViewController.m; sourceTree = "<group>"; };
 		FC50CD9219915430002ADAF0 /* Receita.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Receita.h; sourceTree = "<group>"; };
@@ -664,6 +666,7 @@
 				FC94842B190AF69A007EFAAA /* somLixo.mp3 */,
 				FC94842C190AF69A007EFAAA /* somPrato.mp3 */,
 				FC94842D190AF69A007EFAAA /* somVassoura.mp3 */,
+				FC1C5D6319A699DE0096E2BB /* carne.mp3 */,
 				7E82B1AB19902AD900640AE1 /* ola.m4a */,
 			);
 			name = Sons;
@@ -871,6 +874,7 @@
 				7E2606FE19A674C90036FC41 /* mercado02.mp3 in Resources */,
 				7E82B1A31990288000640AE1 /* mascote2_1.png in Resources */,
 				FCDD607819993BB60078E3D1 /* pao_icone.png in Resources */,
+				FC1C5D6419A699DE0096E2BB /* carne.mp3 in Resources */,
 				FCBEC4BE190845D300FBE6D0 /* kiwi.png in Resources */,
 				FC7AA5A519098E3600883569 /* refri.png in Resources */,
 				7E2606FF19A674C90036FC41 /* panela01.mp3 in Resources */,

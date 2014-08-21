@@ -33,6 +33,7 @@
     listaAlimentosCoreData = [[NSMutableArray alloc]init];
     gerenciadorCoreData = [[GerenciadorCoreData alloc]init];
     
+    [[[[receita ingredientes]objectAtIndex:ingredienteDaVez] som]play];
     [imagemProximoIngrediente setImage: [[[receita ingredientes]objectAtIndex:ingredienteDaVez] imagemAlimento]];
     [nomeProximoIngrediente setText:[[[[receita ingredientes]objectAtIndex:ingredienteDaVez ]nome] uppercaseString]];
     

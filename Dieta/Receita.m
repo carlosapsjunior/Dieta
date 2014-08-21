@@ -24,11 +24,12 @@
 }
 
 
--(void)adicionaIngrediente:(NSString *) nome :(UIImage *)image {
+-(void)adicionaIngrediente:(NSString *) nome :(UIImage *)image :(AVAudioPlayer *)som {
         
     Ingrediente *ingrediente = [[Ingrediente alloc] init];
     [ingrediente setNome: nome];
     [ingrediente setImagemAlimento:image];
+    [ingrediente setSom: som];
     [ingredientes addObject:ingrediente];
     
 }

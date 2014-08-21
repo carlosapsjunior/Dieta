@@ -59,9 +59,9 @@
         Receita *receitaPizza = [[Receita alloc] init];
         [receitaPizza setNome:@"Pizza"];
         [receitaPizza setImagemReceita:[UIImage imageNamed:@"pizza.png"]];
-        [receitaPizza adicionaIngrediente:@"tomate" : [UIImage imageNamed:@"tomate3.png"]];
-        [receitaPizza adicionaIngrediente:@"queijo" : [UIImage imageNamed:@"queijo.png"]];
-        [receitaPizza adicionaIngrediente:@"frango" : [UIImage imageNamed:@"frango.png"]];
+        [receitaPizza adicionaIngrediente:@"tomate" : [UIImage imageNamed:@"tomate3.png"] :nil];
+        [receitaPizza adicionaIngrediente:@"queijo" : [UIImage imageNamed:@"queijo.png"] :nil];
+        [receitaPizza adicionaIngrediente:@"frango" : [UIImage imageNamed:@"frango.png"] :nil];
         
         PanelaViewController *panela = [segue destinationViewController];
         panela.receita = receitaPizza;
@@ -73,9 +73,9 @@
         Receita *receitaFrango = [[Receita alloc] init];
         [receitaFrango setNome:@"Frango"];
         [receitaFrango setImagemReceita:[UIImage imageNamed:@"frango.png"]];
-        [receitaFrango adicionaIngrediente:@"frango" : [UIImage imageNamed:@"frango.png"]];
-        [receitaFrango adicionaIngrediente:@"tomate" : [UIImage imageNamed:@"tomate3.png"]];
-        [receitaFrango adicionaIngrediente:@"cebola" : [UIImage imageNamed:@"cebola.png"]];
+        [receitaFrango adicionaIngrediente:@"frango" : [UIImage imageNamed:@"frango.png"] :nil];
+        [receitaFrango adicionaIngrediente:@"tomate" : [UIImage imageNamed:@"tomate3.png"] :nil];
+        [receitaFrango adicionaIngrediente:@"cebola" : [UIImage imageNamed:@"cebola.png"] :nil];
         
         PanelaViewController *panela = [segue destinationViewController];
         panela.receita = receitaFrango;
@@ -86,10 +86,15 @@
         
         Receita *receitaCarne = [[Receita alloc] init];
         [receitaCarne setNome:@"Carne"];
+        
+        NSString *pathCarne = [[NSBundle mainBundle] pathForResource:@"carne" ofType:@"mp3"];
+        NSURL *urlCarne = [NSURL fileURLWithPath:pathCarne];
+        AVAudioPlayer *audioCarne = [[AVAudioPlayer alloc] initWithContentsOfURL:urlCarne error:nil];
+        
         [receitaCarne setImagemReceita:[UIImage imageNamed:@"carne.png"]];
-        [receitaCarne adicionaIngrediente:@"carne" : [UIImage imageNamed:@"carne.png"]];
-        [receitaCarne adicionaIngrediente:@"tomate" : [UIImage imageNamed:@"tomate3.png"]];
-        [receitaCarne adicionaIngrediente:@"cebola" : [UIImage imageNamed:@"cebola.png"]];
+        [receitaCarne adicionaIngrediente:@"carne" : [UIImage imageNamed:@"carne.png"] :audioCarne];
+        [receitaCarne adicionaIngrediente:@"tomate" : [UIImage imageNamed:@"tomate3.png"] :nil];
+        [receitaCarne adicionaIngrediente:@"cebola" : [UIImage imageNamed:@"cebola.png"] :nil];
         
         PanelaViewController *panela = [segue destinationViewController];
         panela.receita = receitaCarne;
@@ -101,11 +106,12 @@
         Receita *receitaHamburger = [[Receita alloc] init];
         [receitaHamburger setNome:@"Hamburger"];
         [receitaHamburger setImagemReceita:[UIImage imageNamed:@"hamburguer.png"]];
-        [receitaHamburger adicionaIngrediente:@"carne" : [UIImage imageNamed:@"carne.png"]];
-        [receitaHamburger adicionaIngrediente:@"tomate" : [UIImage imageNamed:@"tomate3.png"]];
-        [receitaHamburger adicionaIngrediente:@"cebola" : [UIImage imageNamed:@"cebola.png"]];
-        [receitaHamburger adicionaIngrediente:@"alface" : [UIImage imageNamed:@"alface.png"]];
-        [receitaHamburger adicionaIngrediente:@"queijo" : [UIImage imageNamed:@"queijo.png"]];
+        [receitaHamburger adicionaIngrediente:@"pão" : [UIImage imageNamed:@"pao.png"] :nil];
+        [receitaHamburger adicionaIngrediente:@"carne" : [UIImage imageNamed:@"carne.png"] :nil];
+        [receitaHamburger adicionaIngrediente:@"tomate" : [UIImage imageNamed:@"tomate3.png"] :nil];
+        [receitaHamburger adicionaIngrediente:@"cebola" : [UIImage imageNamed:@"cebola.png"] :nil];
+        [receitaHamburger adicionaIngrediente:@"alface" : [UIImage imageNamed:@"alface.png"] :nil];
+        [receitaHamburger adicionaIngrediente:@"queijo" : [UIImage imageNamed:@"queijo.png"] :nil];
         
         
         PanelaViewController *panela = [segue destinationViewController];
