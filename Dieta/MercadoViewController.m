@@ -64,7 +64,15 @@
     [btnPaosCereaisTuberculosRaizesView addTarget:self action:@selector(mudaViewMercado:) forControlEvents:UIControlEventTouchUpInside];
     [btnVerdurasLegumesHortalicasView addTarget:self action:@selector(mudaViewMercado:) forControlEvents:UIControlEventTouchUpInside];
 
-    [self alocaMascote];
+    TutorialCoreData *tutorialCoreData = [[TutorialCoreData alloc]init];
+    Tutorial *tutorial = [tutorialCoreData returnTutorial];
+    
+    if ([[tutorial mercado02] intValue] == 0) {
+        [self alocaMascote];
+        //[tutorialCoreData mercado02];
+    }
+    
+    //[self alocaMascote];
 
 }
 

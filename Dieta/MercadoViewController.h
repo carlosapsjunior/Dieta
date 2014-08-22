@@ -11,6 +11,7 @@
 #import "PersonagemCoreData.h"
 #import "MascoteView.h"
 #import "AudioController.h"
+#import "TutorialCoreData.h"
 
 @interface MercadoViewController : UIViewController <UICollectionViewDelegate, UICollectionViewDataSource>
 

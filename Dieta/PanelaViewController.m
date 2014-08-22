@@ -44,7 +44,14 @@
     [self alocaFoodScroller];
     [self alocaAudioController];
     [self inicializaAlimentos];
-    [self alocaMascote];
+    
+    TutorialCoreData *tutorialCoreData = [[TutorialCoreData alloc]init];
+    Tutorial *tutorial = [tutorialCoreData returnTutorial];
+    
+    if ([[tutorial panela02] intValue] == 0) {
+        [self alocaMascote];
+        //[tutorialCoreData panela02];
+    }
     
     //[gerenciadorCoreData mostraCoreData];
     //[gerenciadorCoreData atualizarQuantidade:3 index:@"maça"];
