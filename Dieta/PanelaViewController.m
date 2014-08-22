@@ -20,7 +20,7 @@
 {
     [self.view setBackgroundColor:[UIColor colorWithPatternImage:[UIImage imageNamed:@"cozinha.png"]]];
     
-    [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(primeiroAudio) userInfo:nil repeats:NO];
+    //[NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(primeiroAudio) userInfo:nil repeats:NO];
     
     ingredienteDaVez = 0;
     /*receita = [[Receita alloc] init];
@@ -49,8 +49,12 @@
     Tutorial *tutorial = [tutorialCoreData returnTutorial];
     
     if ([[tutorial panela02] intValue] == 0) {
+        [NSTimer scheduledTimerWithTimeInterval:5.0 target:self selector:@selector(primeiroAudio) userInfo:nil repeats:NO];
         [self alocaMascote];
         //[tutorialCoreData panela02];
+    }
+    else {
+        [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(primeiroAudio) userInfo:nil repeats:NO];
     }
     
     //[gerenciadorCoreData mostraCoreData];

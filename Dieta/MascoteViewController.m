@@ -33,7 +33,7 @@
     
     if ([[tutorial intro02] intValue] == 0) {
         [self alocaMascote];
-        //[tutorialCoreData intro02];
+        [tutorialCoreData intro02];
     }
 
     gerenciadorCoreData = [[GerenciadorCoreData alloc]init];

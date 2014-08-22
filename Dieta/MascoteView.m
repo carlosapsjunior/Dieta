@@ -124,6 +124,8 @@
     NSURL *url;
     AVAudioPlayer *voz;
     
+    vozes = [[NSMutableArray alloc]init];
+    
     path = [[NSBundle mainBundle] pathForResource:@"panela02" ofType:@"mp3"];
     url = [NSURL fileURLWithPath:path];
     voz = [[AVAudioPlayer alloc] initWithContentsOfURL:url error:nil];
@@ -132,7 +134,7 @@
     [voz play];
     
     NSMutableArray *arrayFala = [[NSMutableArray alloc] init];
-    [arrayFala addObject:@"Panela."];
+    [arrayFala addObject:@"Arraste os ingredientes que eu mostro para a panela."];
     
     dialogo = arrayFala;
     
@@ -144,6 +146,8 @@
     NSURL *url;
     AVAudioPlayer *voz;
     
+    vozes = [[NSMutableArray alloc]init];
+    
     path = [[NSBundle mainBundle] pathForResource:@"mercado02" ofType:@"mp3"];
     url = [NSURL fileURLWithPath:path];
     voz = [[AVAudioPlayer alloc] initWithContentsOfURL:url error:nil];
@@ -152,7 +156,7 @@
     [voz play];
     
     NSMutableArray *arrayFala = [[NSMutableArray alloc] init];
-    [arrayFala addObject:@"Mercado."];
+    [arrayFala addObject:@"Aperte nos alimentos que quer comprar, cada um deles tem seu preço em moedas."];
     
     dialogo = arrayFala;
     
