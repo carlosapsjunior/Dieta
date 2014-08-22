@@ -24,6 +24,8 @@
 @property UIImageView *personagemView;
 @property AVAudioPlayer *vozIntro2;
 @property TutorialCoreData *tutorialCoreData;
+@property NSTimer *timerFome;
+@property NSTimer *timerSaude;
 
 //313, 58
 //532, 58

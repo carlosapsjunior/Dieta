@@ -307,6 +307,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
+                                    <action selector="goPrato:" destination="Rvo-Rn-bZy" eventType="touchUpInside" id="Pzj-Ox-Zb5"/>
                                     <segue destination="BYZ-38-t0r" kind="modal" modalTransitionStyle="crossDissolve" id="Y3t-qP-nEK"/>
                                 </connections>
                             </button>

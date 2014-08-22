@@ -14,7 +14,7 @@
 
 @implementation MascoteViewController
 
-@synthesize gerenciadorCoreData, personagemCoreData, dinheiro, valorDinheiro, saudeBar, fomeBar, personagemView, vozIntro2, tutorialCoreData;
+@synthesize gerenciadorCoreData, personagemCoreData, dinheiro, valorDinheiro, saudeBar, fomeBar, personagemView, vozIntro2, tutorialCoreData, timerFome, timerSaude;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -30,7 +30,7 @@
     
     tutorialCoreData = [[TutorialCoreData alloc]init];
     Tutorial *tutorial = [tutorialCoreData returnTutorial];
-    
+
     if ([[tutorial intro02] intValue] == 0) {
         NSString *path;
         NSURL *url;
@@ -38,18 +38,18 @@
         url = [NSURL fileURLWithPath:path];
         vozIntro2 = [[AVAudioPlayer alloc] initWithContentsOfURL:url error:nil];
     }
-    
-    [NSTimer scheduledTimerWithTimeInterval:60.0 target:self selector:@selector(diminuiFome) userInfo:nil repeats:YES];
-    [NSTimer scheduledTimerWithTimeInterval:60.0 target:self selector:@selector(diminuiSaude) userInfo:nil repeats:YES];
-    
+
     gerenciadorCoreData = [[GerenciadorCoreData alloc]init];
     personagemCoreData = [[PersonagemCoreData alloc]init];
     
     [gerenciadorCoreData iniciaCoreData];
+
     
     Personagem *personagem = [personagemCoreData returnPersonagem];
     NSString *dindin = [NSString stringWithFormat:@"%d", [[personagem dinheiro] intValue]];
     [dinheiro setText:dindin];
+    
+    //[personagemCoreData atualizarFome:55.0f];
     
     UIView *personagemBorda  = [[UIView alloc] initWithFrame:CGRectMake(45, 45, 220, 220)];
     personagemBorda.backgroundColor = [UIColor blackColor];
@@ -78,19 +78,26 @@
     [self alocaMascote];
 	// Do any additional setup after loading the view.
 }
+- (IBAction)goPrato:(id)sender {
+    [timerFome invalidate];
+    timerFome = nil;
+    
+    [timerSaude invalidate];
+    timerSaude = nil;
+}
 
 -(void)diminuiFome{
     Personagem *personagemFome =[personagemCoreData returnPersonagem];
     float novaFome = [[personagemFome fome]floatValue] - 1.8;
     
     if(novaFome  > 0) {
-    [personagemCoreData atualizarFome:novaFome];
+        [personagemCoreData atualizarFome:novaFome];
         [fomeBar setFrame:CGRectMake(0, 200, fomeBar.bounds.size.width, -([[personagemFome fome] floatValue]*200)/100)];
     }
 }
 
 -(void)diminuiSaude{
-    Personagem *personagemSaude =[personagemCoreData returnPersonagem];
+    Personagem *personagemSaude = [personagemCoreData returnPersonagem];
     float novaSaude = [[personagemSaude saude]floatValue] - 1.8;
     if ([[personagemSaude fome]floatValue] < 10) {
         if(novaSaude  > 0) {
@@ -117,6 +124,14 @@
     NSString *dindin = [NSString stringWithFormat:@"%d", [[personagem dinheiro] intValue]];
     [dinheiro setText:dindin];
     
+    if (timerFome == nil) {
+        timerFome = [NSTimer scheduledTimerWithTimeInterval:60.0 target:self selector:@selector(diminuiFome) userInfo:nil repeats:YES];
+    }
+    
+    if (timerSaude == nil) {
+        timerSaude = [NSTimer scheduledTimerWithTimeInterval:60.0 target:self selector:@selector(diminuiSaude) userInfo:nil repeats:YES];
+    }
+
     [fomeBar setBackgroundColor:[UIColor colorWithRed:0.0 green:0.7 blue:0.0f alpha:1.0f]];
     
     [fomeBar setFrame:CGRectMake(0, 200, fomeBar.bounds.size.width, -([[personagem fome] floatValue]*200)/100)];
