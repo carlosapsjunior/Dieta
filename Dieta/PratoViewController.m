@@ -26,7 +26,14 @@
     
     [super viewDidLoad];
     
-    [self alocaMascote];
+    TutorialCoreData *tutorialCoreData = [[TutorialCoreData alloc]init];
+    Tutorial *tutorial = [tutorialCoreData returnTutorial];
+    
+    if ([[tutorial prato02] intValue] == 0) {
+        [self alocaMascote];
+        [tutorialCoreData prato02];
+    }
+    
     [self alocaAlimentosPrato];
     [self alocaFoodScroller];
     [self alocaAudioController];

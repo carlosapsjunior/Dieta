@@ -66,13 +66,21 @@
 }
 
 -(void)falaInicial{
+    NSString *path;
+    NSURL *url;
+    AVAudioPlayer *voz;
+    
+    vozes = [[NSMutableArray alloc]init];
+    
+    path = [[NSBundle mainBundle] pathForResource:@"prato02" ofType:@"mp3"];
+    url = [NSURL fileURLWithPath:path];
+    voz = [[AVAudioPlayer alloc] initWithContentsOfURL:url error:nil];
+    [vozes addObject:voz];
+    
+    [voz play];
     
     NSMutableArray *arrayFala = [[NSMutableArray alloc] init];
-    [arrayFala addObject:@"Olá, meu amigo!"];
-    [arrayFala addObject:@"Vamos ver o que você comeu hoje?"];
-    [arrayFala addObject:@"Clique com os dois dedos nos alimento que você comeu, e os arraste para o prato."];
-    [arrayFala addObject:@"Clicando com um dedo e arrastando ele para o lado, você pode ver e selecionar outros alimentos."];
-    [arrayFala addObject:@"Depois que selecionar tudo o que você comeu, clique no 'jóinha' na parte inferior da tela!"];
+    [arrayFala addObject:@"Para alimentar seu amigo, arraste os alimentos para o prato."];
 
     dialogo = arrayFala;
     

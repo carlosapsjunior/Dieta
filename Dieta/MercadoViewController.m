@@ -69,11 +69,8 @@
     
     if ([[tutorial mercado02] intValue] == 0) {
         [self alocaMascote];
-        //[tutorialCoreData mercado02];
+        [tutorialCoreData mercado02];
     }
-    
-    //[self alocaMascote];
-
 }
 
 

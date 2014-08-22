@@ -14,6 +14,7 @@
 #import "GerenciadorCoreData.h"
 #import "AudioController.h"
 #import "PersonagemCoreData.h"
+#import "TutorialCoreData.h"
 
 @interface PratoViewController : UIViewController <UIAlertViewDelegate>
 

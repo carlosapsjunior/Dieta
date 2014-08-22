@@ -40,8 +40,6 @@
     personagemCoreData = [[PersonagemCoreData alloc]init];
     tutorialCoreData = [[TutorialCoreData alloc]init];
     [tutorialCoreData iniciarCoreData];
-    
-    [tutorialCoreData mostraCoreData];
 }
 
 -(void)viewDidAppear:(BOOL)animated {
