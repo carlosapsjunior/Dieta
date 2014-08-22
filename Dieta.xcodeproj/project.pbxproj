@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D83FAC419A78C99001D02F2 /* vida1.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D83FAC319A78C99001D02F2 /* vida1.png */; };
+		3D83FAC819A7B7C6001D02F2 /* tile01.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D83FAC719A7B7C6001D02F2 /* tile01.png */; };
+		3D83FACA19A7C496001D02F2 /* iconDrop.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D83FAC919A7C496001D02F2 /* iconDrop.png */; };
 		3DA02AD61992A2A90098C507 /* JogoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DA02AD51992A2A90098C507 /* JogoViewController.m */; };
 		3DA02ADC1992C0C20098C507 /* FoodDrop.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DA02ADB1992C0C20098C507 /* FoodDrop.m */; };
 		3DA02B0E19941E980098C507 /* Cancela.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DA02B0819941E980098C507 /* Cancela.png */; };
@@ -175,6 +178,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3D83FAC319A78C99001D02F2 /* vida1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = vida1.png; sourceTree = "<group>"; };
+		3D83FAC719A7B7C6001D02F2 /* tile01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tile01.png; sourceTree = "<group>"; };
+		3D83FAC919A7C496001D02F2 /* iconDrop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iconDrop.png; sourceTree = "<group>"; };
 		3DA02AD41992A2A90098C507 /* JogoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JogoViewController.h; sourceTree = "<group>"; };
 		3DA02AD51992A2A90098C507 /* JogoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JogoViewController.m; sourceTree = "<group>"; };
 		3DA02ADA1992C0C20098C507 /* FoodDrop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoodDrop.h; sourceTree = "<group>"; };
@@ -405,6 +411,8 @@
 				75193D70197461B00071E959 /* background.jpg */,
 				75193D71197461B00071E959 /* block.png */,
 				75193D72197461B00071E959 /* normal1.png */,
+				3D83FAC319A78C99001D02F2 /* vida1.png */,
+				3D83FAC719A7B7C6001D02F2 /* tile01.png */,
 			);
 			name = "Jogo Skate";
 			sourceTree = "<group>";
@@ -715,6 +723,7 @@
 			isa = PBXGroup;
 			children = (
 				FC874EFB194629FF004A222C /* cesto.png */,
+				3D83FAC919A7C496001D02F2 /* iconDrop.png */,
 				FC69619F194783050043FB66 /* moeda.png */,
 				FC6961A1194787250043FB66 /* moeda2.png */,
 				7E9FAD5319915D5200E363AB /* moeda3.png */,
@@ -869,6 +878,7 @@
 				FCB7E8FB190995DA00F2F039 /* carne.png in Resources */,
 				FCB7E90319099A0D00F2F039 /* bolinho.png in Resources */,
 				FC7AA580190989DB00883569 /* limao.png in Resources */,
+				3D83FAC419A78C99001D02F2 /* vida1.png in Resources */,
 				79DD78AA1900BD7300119A28 /* thumbsUp.png in Resources */,
 				7E82B1A01990288000640AE1 /* mascote3_1.png in Resources */,
 				79FA5A0519019BD4000BD111 /* personagem.png in Resources */,
@@ -938,11 +948,13 @@
 				FC45359119A7B7CA000F07E6 /* queijo1.mp3 in Resources */,
 				7EDCD276199952BA006B7F20 /* doutora.png in Resources */,
 				7E26070A19A683DB0036FC41 /* icon.png in Resources */,
+				3D83FAC819A7B7C6001D02F2 /* tile01.png in Resources */,
 				FC7AA5A919098F1200883569 /* arroz.png in Resources */,
 				7E82B1A21990288000640AE1 /* mascote3_2.png in Resources */,
 				FC17FC3218FEF7B5000E9969 /* InfoPlist.strings in Resources */,
 				FCB7E90519099AAE00F2F039 /* donut2.png in Resources */,
 				7E82B1A71990288000640AE1 /* mascote3_3.png in Resources */,
+				3D83FACA19A7C496001D02F2 /* iconDrop.png in Resources */,
 				FCBEC4B41908441300FBE6D0 /* manga.png in Resources */,
 				FC7AA58F19098CDA00883569 /* queijo.png in Resources */,
 				FC45358819A7B40C000F07E6 /* pao.mp3 in Resources */,

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4510" systemVersion="12F45" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" initialViewController="LSr-9p-74q">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13E28" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" initialViewController="LSr-9p-74q">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3742"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
     <scenes>
         <!--Panela View Controller-->
@@ -424,20 +424,13 @@
                                     <action selector="fechaView:" destination="VCq-5k-lXB" eventType="touchUpInside" id="jGg-qI-0Dp"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="hfF-Ew-B1B">
-                                <rect key="frame" x="145" y="141" width="40" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="g3k-IN-Hu0">
+                                <rect key="frame" x="342" y="234" width="340" height="300"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Skate">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="abreSkate:" destination="VCq-5k-lXB" eventType="touchUpInside" id="EaX-Q0-TFG"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="g3k-IN-Hu0">
-                                <rect key="frame" x="481" y="141" width="34" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Drop">
+                                <inset key="titleEdgeInsets" minX="-300" minY="250" maxX="0.0" maxY="0.0"/>
+                                <inset key="imageEdgeInsets" minX="25" minY="-100" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="Drop Food" image="iconDrop.png">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -807,6 +800,7 @@
         <image name="frango.png" width="128" height="128"/>
         <image name="frango_icone.png" width="64" height="64"/>
         <image name="hamburguer.png" width="128" height="128"/>
+        <image name="iconDrop.png" width="300" height="300"/>
         <image name="iconPrato.png" width="512" height="512"/>
         <image name="maca_icone3.png" width="64" height="64"/>
         <image name="mascote1_1.png" width="215" height="215"/>
