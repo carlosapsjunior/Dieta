@@ -40,6 +40,11 @@
         [lblDialogo addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(avanca)]];
         //BalaoView *balaoView = [[BalaoView alloc] initWithFrame:CGRectMake(250, 30, 350, 215)];
         
+        UILabel *toqueParaContinuar = [[UILabel alloc] initWithFrame:CGRectMake(700, 120, 300, 30)];
+        toqueParaContinuar.text = @"Toque para continuar.";
+        toqueParaContinuar.textColor = [UIColor whiteColor];
+        [viewDialogo addSubview:toqueParaContinuar];
+        
         UIImageView *balao = [[UIImageView alloc] initWithFrame:CGRectMake(300, 300, 200, 200)];
         [balao setImage:[UIImage imageNamed:@"balaoDialogo.png"]];
         
