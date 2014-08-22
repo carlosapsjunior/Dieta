@@ -271,6 +271,7 @@ static const uint32_t maComidaCategory        =  0x1 << 2;
 -(void) gameOver {
     
     self.scene.view.paused = YES;
+    [coracao removeFromParent];
     finalizado = YES;
     [vidasLabel removeFromParent];
     pontosLabel.text = [NSString stringWithFormat:@"Sua pontuação foi: %d. Toque na tela para continuar.", pontos];
