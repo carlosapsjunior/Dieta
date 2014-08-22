@@ -55,9 +55,8 @@
     [skView presentScene:scene];
     
 }
+
 -(IBAction)abreSkate:(id)sender{
-    
-    
         CGRect frame = CGRectMake(0, 0, self.view.bounds.size.width, self.view.bounds.size.height);
         SKView *skView = [[SKView alloc] initWithFrame:frame];
         skView.showsFPS = YES;

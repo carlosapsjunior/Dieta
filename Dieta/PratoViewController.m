@@ -255,12 +255,19 @@
 
 -(void)atualizaBarra {
     float value = 0;
-    saude = [self processaAlimentosTempoReal];
+    
+    NSLog(@"%.2f", [self processaAlimentosTempoReal]);
     
     for (AlimentoView *alimento in alimentosPrato) {
         value += ([[alimento valorPorcao] floatValue] + [[alimento valorPorcaoAux] floatValue]) * 3.45;
-        saude += ([[alimento valorPorcao] floatValue] + [[alimento valorPorcaoAux] floatValue]) * 3.45;
+        if (saude + [[personagem saude] floatValue] < 100.0f) {
+            saude += ([[alimento valorPorcao] floatValue] + [[alimento valorPorcaoAux] floatValue]) * 3.45;
+        }
     }
+    
+    NSLog(@"saude: %.2f", (saude + [[personagem fome] floatValue]));
+    
+    saude -= [self processaAlimentosTempoReal];
     
     value += [[personagem fome] floatValue];
     
@@ -282,8 +289,8 @@
     }
     
     [fomeBar setFrame:CGRectMake(250, 720, value * 250 / 100, 30)];
- 
     [saudeBar setFrame:CGRectMake(550, 720, saude * 250 / 100, 30)];
+    
     [self atualizaImagemPersonagem:value];
 }
 
