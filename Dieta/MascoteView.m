@@ -11,7 +11,7 @@
 
 
 @implementation MascoteView
-@synthesize lblDialogo, count, dialogo, listAlimentos, somOla, viewDialogo, personagem;
+@synthesize lblDialogo, count, dialogo, listAlimentos, somOla, viewDialogo, personagem, vozes;
 
 - (id)initWithFrameAndAlimentos:(CGRect)frame :(NSMutableArray *)alimentos
 {
@@ -74,13 +74,46 @@
     [lblDialogo setText:[NSString stringWithFormat:@"%@", [dialogo objectAtIndex:count]]];
 }
 
--(void)falaHome{
+-(void)falaHome {
+    NSString *path;
+    NSURL *url;
+    AVAudioPlayer *vozInicial;
+    AVAudioPlayer *voz;
+    
+    vozes = [[NSMutableArray alloc]init];
+    
+    NSLog(@"count %d", count);
+    
+    path = [[NSBundle mainBundle] pathForResource:@"intro02" ofType:@"mp3"];
+    url = [NSURL fileURLWithPath:path];
+    vozInicial = [[AVAudioPlayer alloc] initWithContentsOfURL:url error:nil];
+    [vozes addObject:vozInicial];
+    
+    [vozInicial play];
+    
+    path = [[NSBundle mainBundle] pathForResource:@"mercado01" ofType:@"mp3"];
+    url = [NSURL fileURLWithPath:path];
+    voz = [[AVAudioPlayer alloc] initWithContentsOfURL:url error:nil];
+    [vozes addObject:voz];
+    
+    path = [[NSBundle mainBundle] pathForResource:@"prato01" ofType:@"mp3"];
+    url = [NSURL fileURLWithPath:path];
+    voz = [[AVAudioPlayer alloc] initWithContentsOfURL:url error:nil];
+    [vozes addObject:voz];
+    
+    path = [[NSBundle mainBundle] pathForResource:@"panela01" ofType:@"mp3"];
+    url = [NSURL fileURLWithPath:path];
+    voz = [[AVAudioPlayer alloc] initWithContentsOfURL:url error:nil];
+    [vozes addObject:voz];
     
     [personagem setFrame:CGRectMake(30, 290, 215, 215)];
     [viewDialogo setFrame:CGRectMake(0, 320, 1025, 160)];
     [lblDialogo setFrame:CGRectMake(280, 360, 500, 140)];
     NSMutableArray *arrayFala = [[NSMutableArray alloc] init];
-    [arrayFala addObject:@"Olá, meu nome é Cristina sou nutricionista, e vou ajudar você a alimentar corretamente seu amigo."];
+    [arrayFala addObject:@"Olá, meu nome é Cristina, e vou ajudar você a alimentar corretamente seu amigo."];
+    [arrayFala addObject:@"Mercado."];
+    [arrayFala addObject:@"Prato."];
+    [arrayFala addObject:@"Panela."];
     
     dialogo = arrayFala;
     
@@ -88,7 +121,7 @@
 }
 
 
--(void)falaPanela{
+-(void)falaPanela {
     
     NSMutableArray *arrayFala = [[NSMutableArray alloc] init];
     [arrayFala addObject:@"Panela."];
@@ -98,7 +131,7 @@
     [lblDialogo setText:[NSString stringWithFormat:@"%@", [dialogo objectAtIndex:count]]];
 }
 
--(void)falaMercado{
+-(void)falaMercado {
     
     NSMutableArray *arrayFala = [[NSMutableArray alloc] init];
     [arrayFala addObject:@"Mercado."];
@@ -108,7 +141,7 @@
     [lblDialogo setText:[NSString stringWithFormat:@"%@", [dialogo objectAtIndex:count]]];
 }
 
--(void)falaAnaliseAlimento{
+-(void)falaAnaliseAlimento {
     AnalisaRefeicao *analiseRefeicao = [[AnalisaRefeicao alloc] initWithAlimentos:listAlimentos];
     [analiseRefeicao verifica];
     //dialogo = [analiseRefeicao  geraDialogo];
@@ -117,21 +150,22 @@
 }
 
 -(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
-    /*if (count == 0) {
-        [somOla play];
-    }*/
     [self avanca];
-    
 }
 
--(void)avanca{
-    count++;
-    if(count < [dialogo count]){
-        [lblDialogo setText:[NSString stringWithFormat:@"%@", [dialogo objectAtIndex:count]]];
-    }
-    else{
-        [self setAlpha:0];
-        count = 0;
+-(void)avanca {
+    AVAudioPlayer *voz = [vozes objectAtIndex:count];
+    if (![voz isPlaying]) {
+        count++;
+        if(count < [dialogo count]) {
+            AVAudioPlayer *voz = [vozes objectAtIndex:count];
+            [voz play];
+            [lblDialogo setText:[NSString stringWithFormat:@"%@", [dialogo objectAtIndex:count]]];
+        }
+        else {
+            [self setAlpha:0];
+            count = 0;
+        }
     }
 }
 

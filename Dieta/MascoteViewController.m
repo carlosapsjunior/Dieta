@@ -14,7 +14,7 @@
 
 @implementation MascoteViewController
 
-@synthesize gerenciadorCoreData, personagemCoreData, dinheiro, valorDinheiro, saudeBar, fomeBar, personagemView, vozIntro2, tutorialCoreData, timerFome, timerSaude;
+@synthesize gerenciadorCoreData, personagemCoreData, dinheiro, valorDinheiro, saudeBar, fomeBar, personagemView, tutorialCoreData, timerFome, timerSaude;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -30,13 +30,10 @@
     
     tutorialCoreData = [[TutorialCoreData alloc]init];
     Tutorial *tutorial = [tutorialCoreData returnTutorial];
-
+    
     if ([[tutorial intro02] intValue] == 0) {
-        NSString *path;
-        NSURL *url;
-        path = [[NSBundle mainBundle] pathForResource:@"intro02" ofType:@"mp3"];
-        url = [NSURL fileURLWithPath:path];
-        vozIntro2 = [[AVAudioPlayer alloc] initWithContentsOfURL:url error:nil];
+        [self alocaMascote];
+        //[tutorialCoreData intro02];
     }
 
     gerenciadorCoreData = [[GerenciadorCoreData alloc]init];
@@ -44,7 +41,6 @@
     
     [gerenciadorCoreData iniciaCoreData];
 
-    
     Personagem *personagem = [personagemCoreData returnPersonagem];
     NSString *dindin = [NSString stringWithFormat:@"%d", [[personagem dinheiro] intValue]];
     [dinheiro setText:dindin];
@@ -75,7 +71,7 @@
     [personagemView setImage:[UIImage imageNamed:imageName]];
     [self.view addSubview:personagemView];
     
-    [self alocaMascote];
+    
 	// Do any additional setup after loading the view.
 }
 - (IBAction)goPrato:(id)sender {
@@ -136,13 +132,6 @@
     
     [fomeBar setFrame:CGRectMake(0, 200, fomeBar.bounds.size.width, -([[personagem fome] floatValue]*200)/100)];
     [saudeBar setFrame:CGRectMake(0, 200, saudeBar.bounds.size.width, -([[personagem saude] floatValue]*200)/100)];
- 
-    Tutorial *tutorial = [tutorialCoreData returnTutorial];
-    
-    if ([[tutorial intro02] intValue] == 0) {
-        [vozIntro2 play];
-        [tutorialCoreData intro02];
-    }
     
     [self atualizaImagemPersonagem];
 }

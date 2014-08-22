@@ -22,7 +22,6 @@
 @property (weak, nonatomic) IBOutlet UIView *fomeBar;
 @property (weak, nonatomic) IBOutlet UIView *saudeBar;
 @property UIImageView *personagemView;
-@property AVAudioPlayer *vozIntro2;
 @property TutorialCoreData *tutorialCoreData;
 @property NSTimer *timerFome;
 @property NSTimer *timerSaude;

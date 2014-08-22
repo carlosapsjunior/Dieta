@@ -20,6 +20,7 @@
 @property int count;
 @property NSMutableArray *dialogo;
 @property NSArray *listAlimentos;
+@property NSMutableArray *vozes;
 @property UIView *viewDialogo;
 @property UIImageView *personagem;
 
