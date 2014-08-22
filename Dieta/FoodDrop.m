@@ -19,14 +19,13 @@ static const uint32_t maComidaCategory        =  0x1 << 2;
 @implementation FoodDrop
 
 
-@synthesize MView, eater, pontos, vidas, personagemCoreData, pontosLabel, vidasLabel, inicio, coracao, coracao2, coracao3;
+@synthesize MView, eater, pontos, vidas, personagemCoreData, pontosLabel, vidasLabel, coracao, coracao2, coracao3, finalizado;
 
 -(id)initWithSize:(CGSize)size {
     if (self = [super initWithSize:size]) {
-//        cenaMontada = NO;
-//        inicio =[[SKSpriteNode alloc] initWithImageNamed:@"Cancela.png"];
-//        inicio.position = CGPointMake(CGRectGetMaxX(self.frame)/2, CGRectGetMaxY(self.frame)/2);
-//        [self addChild:inicio];
+        
+        finalizado = NO;
+
         [self startGame];
 
     }
@@ -39,11 +38,6 @@ static const uint32_t maComidaCategory        =  0x1 << 2;
     
     self.physicsWorld.contactDelegate = self;
     
-//    UIImage *fundo = [[UIImage alloc]initWithContentsOfFile:@"tile01.png"];
-//    
-//    self.backgroundColor = [SKColor colorWithPatternImage:fundo];
-//    SKSpriteNode *bgImage = [SKSpriteNode spriteNodeWithImageNamed:@"tile01.png"];
-//    [self addChild:bgImage];
     CGSize coverageSize = CGSizeMake(2048,1536); //the size of the entire image you want tiled
     CGRect textureSize = CGRectMake(0, 0, 512, 512); //the size of the tile.
     CGImageRef backgroundCGImage = [UIImage imageNamed:@"tile01.png"].CGImage; //change the string to your image name
@@ -277,18 +271,22 @@ static const uint32_t maComidaCategory        =  0x1 << 2;
 -(void) gameOver {
     
     self.scene.view.paused = YES;
-    SKSpriteNode *over = [[SKSpriteNode alloc] initWithImageNamed:@"Confirma.png"];
-    over.position = CGPointMake(CGRectGetMaxX(self.frame)/2, CGRectGetMaxY(self.frame)/2);
-    [self addChild:over];
+    finalizado = YES;
+    [vidasLabel removeFromParent];
+    pontosLabel.text = [NSString stringWithFormat:@"Sua pontuação foi: %d. Toque na tela para continuar.", pontos];
+    pontosLabel.position = CGPointMake(CGRectGetMaxX(self.frame)/2, CGRectGetMaxY(self.frame)/2);
+    pontosLabel.fontColor = [SKColor blackColor];
+    pontosLabel.fontSize = 40;
     
     Personagem *personagem = [personagemCoreData returnPersonagem];
     [personagemCoreData atualizarDinheiro: [[personagem dinheiro] intValue] + pontos];
-    //NSNumber *novoDinheiro = [[NSNumber alloc]initWithInt:[[personagem dinheiro] intValue] + pontos ];
-    //NSLog(@"%d", [novoDinheiro intValue]);
-    //[personagem setDinheiro:novoDinheiro];
     
-    [self.view removeFromSuperview];
+
     
+}
+
+-(void) fecha{
+        [self.view removeFromSuperview];
 }
 
 
@@ -319,15 +317,13 @@ static const uint32_t maComidaCategory        =  0x1 << 2;
     
 }
 -(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
-//            UITouch *touch = [touches anyObject];
-//    point = [touch locationInView:self.view];
-//    if (cenaMontada == NO) {
-//
-//        [inicio removeFromParent];
-//        cenaMontada = YES;
-//        [self startGame];
-//    }
+    UITouch *touch = [touches anyObject];
+    point = [touch locationInView: self.view];
 
+    if (finalizado == YES){
+
+        [self fecha];
+    }
     
 }
 

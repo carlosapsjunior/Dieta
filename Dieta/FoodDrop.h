@@ -18,6 +18,6 @@
 @property SKLabelNode *pontosLabel, *vidasLabel;
 @property int pontos, vidas;
 @property PersonagemCoreData *personagemCoreData;
-@property BOOL cenaMontada;
+@property BOOL finalizado;
 
 @end
