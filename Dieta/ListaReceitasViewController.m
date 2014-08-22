@@ -56,12 +56,24 @@
     
     if([segue.identifier isEqualToString:@"Pizza"]){
         
+        NSString *pathTomate = [[NSBundle mainBundle] pathForResource:@"tomate1" ofType:@"mp3"];
+        NSURL *urlTomate = [NSURL fileURLWithPath:pathTomate];
+        AVAudioPlayer *audioTomate = [[AVAudioPlayer alloc] initWithContentsOfURL:urlTomate error:nil];
+        
+        NSString *pathQueijo = [[NSBundle mainBundle] pathForResource:@"queijo1" ofType:@"mp3"];
+        NSURL *urlQueijo = [NSURL fileURLWithPath:pathQueijo];
+        AVAudioPlayer *audioQueijo = [[AVAudioPlayer alloc] initWithContentsOfURL:urlQueijo error:nil];
+        
+        NSString *pathFrango = [[NSBundle mainBundle] pathForResource:@"frango1" ofType:@"mp3"];
+        NSURL *urlFrango = [NSURL fileURLWithPath:pathFrango];
+        AVAudioPlayer *audioFrango = [[AVAudioPlayer alloc] initWithContentsOfURL:urlFrango error:nil];
+        
         Receita *receitaPizza = [[Receita alloc] init];
         [receitaPizza setNome:@"Pizza"];
         [receitaPizza setImagemReceita:[UIImage imageNamed:@"pizza.png"]];
-        [receitaPizza adicionaIngrediente:@"tomate" : [UIImage imageNamed:@"tomate3.png"] :nil];
-        [receitaPizza adicionaIngrediente:@"queijo" : [UIImage imageNamed:@"queijo.png"] :nil];
-        [receitaPizza adicionaIngrediente:@"frango" : [UIImage imageNamed:@"frango.png"] :nil];
+        [receitaPizza adicionaIngrediente:@"tomate" : [UIImage imageNamed:@"tomate3.png"] :audioTomate];
+        [receitaPizza adicionaIngrediente:@"queijo" : [UIImage imageNamed:@"queijo.png"] :audioQueijo];
+        [receitaPizza adicionaIngrediente:@"frango" : [UIImage imageNamed:@"frango.png"] :audioFrango];
         
         PanelaViewController *panela = [segue destinationViewController];
         panela.receita = receitaPizza;
@@ -70,12 +82,24 @@
     
     if([segue.identifier isEqualToString:@"Frango"]){
         
+        NSString *pathTomate = [[NSBundle mainBundle] pathForResource:@"tomate1" ofType:@"mp3"];
+        NSURL *urlTomate = [NSURL fileURLWithPath:pathTomate];
+        AVAudioPlayer *audioTomate = [[AVAudioPlayer alloc] initWithContentsOfURL:urlTomate error:nil];
+        
+        NSString *pathCebola = [[NSBundle mainBundle] pathForResource:@"cebola1" ofType:@"mp3"];
+        NSURL *urlCebola = [NSURL fileURLWithPath:pathCebola];
+        AVAudioPlayer *audioCebola = [[AVAudioPlayer alloc] initWithContentsOfURL:urlCebola error:nil];
+        
+        NSString *pathFrango = [[NSBundle mainBundle] pathForResource:@"frango1" ofType:@"mp3"];
+        NSURL *urlFrango = [NSURL fileURLWithPath:pathFrango];
+        AVAudioPlayer *audioFrango = [[AVAudioPlayer alloc] initWithContentsOfURL:urlFrango error:nil];
+        
         Receita *receitaFrango = [[Receita alloc] init];
         [receitaFrango setNome:@"Frango"];
         [receitaFrango setImagemReceita:[UIImage imageNamed:@"frango.png"]];
-        [receitaFrango adicionaIngrediente:@"frango" : [UIImage imageNamed:@"frango.png"] :nil];
-        [receitaFrango adicionaIngrediente:@"tomate" : [UIImage imageNamed:@"tomate3.png"] :nil];
-        [receitaFrango adicionaIngrediente:@"cebola" : [UIImage imageNamed:@"cebola.png"] :nil];
+        [receitaFrango adicionaIngrediente:@"frango" : [UIImage imageNamed:@"frango.png"] :audioFrango];
+        [receitaFrango adicionaIngrediente:@"tomate" : [UIImage imageNamed:@"tomate3.png"] :audioTomate];
+        [receitaFrango adicionaIngrediente:@"cebola" : [UIImage imageNamed:@"cebola.png"] :audioCebola];
         
         PanelaViewController *panela = [segue destinationViewController];
         panela.receita = receitaFrango;
@@ -91,10 +115,18 @@
         NSURL *urlCarne = [NSURL fileURLWithPath:pathCarne];
         AVAudioPlayer *audioCarne = [[AVAudioPlayer alloc] initWithContentsOfURL:urlCarne error:nil];
         
+        NSString *pathTomate = [[NSBundle mainBundle] pathForResource:@"tomate1" ofType:@"mp3"];
+        NSURL *urlTomate = [NSURL fileURLWithPath:pathTomate];
+        AVAudioPlayer *audioTomate = [[AVAudioPlayer alloc] initWithContentsOfURL:urlTomate error:nil];
+        
+        NSString *pathCebola = [[NSBundle mainBundle] pathForResource:@"cebola1" ofType:@"mp3"];
+        NSURL *urlCebola = [NSURL fileURLWithPath:pathCebola];
+        AVAudioPlayer *audioCebola = [[AVAudioPlayer alloc] initWithContentsOfURL:urlCebola error:nil];
+        
         [receitaCarne setImagemReceita:[UIImage imageNamed:@"carne.png"]];
         [receitaCarne adicionaIngrediente:@"carne" : [UIImage imageNamed:@"carne.png"] :audioCarne];
-        [receitaCarne adicionaIngrediente:@"tomate" : [UIImage imageNamed:@"tomate3.png"] :nil];
-        [receitaCarne adicionaIngrediente:@"cebola" : [UIImage imageNamed:@"cebola.png"] :nil];
+        [receitaCarne adicionaIngrediente:@"tomate" : [UIImage imageNamed:@"tomate3.png"] :audioTomate];
+        [receitaCarne adicionaIngrediente:@"cebola" : [UIImage imageNamed:@"cebola.png"] :audioCebola];
         
         PanelaViewController *panela = [segue destinationViewController];
         panela.receita = receitaCarne;
@@ -103,15 +135,39 @@
     
     if([segue.identifier isEqualToString:@"Hamburger"]){
         
+        NSString *pathPao = [[NSBundle mainBundle] pathForResource:@"pao" ofType:@"mp3"];
+        NSURL *urlPao = [NSURL fileURLWithPath:pathPao];
+        AVAudioPlayer *audioPao = [[AVAudioPlayer alloc] initWithContentsOfURL:urlPao error:nil];
+        
+        NSString *pathCarne = [[NSBundle mainBundle] pathForResource:@"carne" ofType:@"mp3"];
+        NSURL *urlCarne = [NSURL fileURLWithPath:pathCarne];
+        AVAudioPlayer *audioCarne = [[AVAudioPlayer alloc] initWithContentsOfURL:urlCarne error:nil];
+        
+        NSString *pathTomate = [[NSBundle mainBundle] pathForResource:@"tomate1" ofType:@"mp3"];
+        NSURL *urlTomate = [NSURL fileURLWithPath:pathTomate];
+        AVAudioPlayer *audioTomate = [[AVAudioPlayer alloc] initWithContentsOfURL:urlTomate error:nil];
+        
+        NSString *pathCebola = [[NSBundle mainBundle] pathForResource:@"cebola1" ofType:@"mp3"];
+        NSURL *urlCebola = [NSURL fileURLWithPath:pathCebola];
+        AVAudioPlayer *audioCebola = [[AVAudioPlayer alloc] initWithContentsOfURL:urlCebola error:nil];
+        
+        NSString *pathAlface = [[NSBundle mainBundle] pathForResource:@"alface1" ofType:@"mp3"];
+        NSURL *urlAlface = [NSURL fileURLWithPath:pathAlface];
+        AVAudioPlayer *audioAlface = [[AVAudioPlayer alloc] initWithContentsOfURL:urlAlface error:nil];
+        
+        NSString *pathQueijo = [[NSBundle mainBundle] pathForResource:@"queijo1" ofType:@"mp3"];
+        NSURL *urlQueijo = [NSURL fileURLWithPath:pathQueijo];
+        AVAudioPlayer *audioQueijo = [[AVAudioPlayer alloc] initWithContentsOfURL:urlQueijo error:nil];
+        
         Receita *receitaHamburger = [[Receita alloc] init];
         [receitaHamburger setNome:@"Hamburger"];
         [receitaHamburger setImagemReceita:[UIImage imageNamed:@"hamburguer.png"]];
-        [receitaHamburger adicionaIngrediente:@"pão" : [UIImage imageNamed:@"pao.png"] :nil];
-        [receitaHamburger adicionaIngrediente:@"carne" : [UIImage imageNamed:@"carne.png"] :nil];
-        [receitaHamburger adicionaIngrediente:@"tomate" : [UIImage imageNamed:@"tomate3.png"] :nil];
-        [receitaHamburger adicionaIngrediente:@"cebola" : [UIImage imageNamed:@"cebola.png"] :nil];
-        [receitaHamburger adicionaIngrediente:@"alface" : [UIImage imageNamed:@"alface.png"] :nil];
-        [receitaHamburger adicionaIngrediente:@"queijo" : [UIImage imageNamed:@"queijo.png"] :nil];
+        [receitaHamburger adicionaIngrediente:@"pão" : [UIImage imageNamed:@"pao.png"] :audioPao];
+        [receitaHamburger adicionaIngrediente:@"carne" : [UIImage imageNamed:@"carne.png"] :audioCarne];
+        [receitaHamburger adicionaIngrediente:@"tomate" : [UIImage imageNamed:@"tomate3.png"] :audioTomate];
+        [receitaHamburger adicionaIngrediente:@"cebola" : [UIImage imageNamed:@"cebola.png"] :audioCebola];
+        [receitaHamburger adicionaIngrediente:@"alface" : [UIImage imageNamed:@"alface.png"] :audioAlface];
+        [receitaHamburger adicionaIngrediente:@"queijo" : [UIImage imageNamed:@"queijo.png"] :audioQueijo];
         
         
         PanelaViewController *panela = [segue destinationViewController];

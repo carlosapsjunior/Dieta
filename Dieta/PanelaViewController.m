@@ -20,6 +20,8 @@
 {
     [self.view setBackgroundColor:[UIColor colorWithPatternImage:[UIImage imageNamed:@"cozinha.png"]]];
     
+    [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(primeiroAudio) userInfo:nil repeats:NO];
+    
     ingredienteDaVez = 0;
     /*receita = [[Receita alloc] init];
     [receita setNome:@"Pizza"];
@@ -33,7 +35,7 @@
     listaAlimentosCoreData = [[NSMutableArray alloc]init];
     gerenciadorCoreData = [[GerenciadorCoreData alloc]init];
     
-    [[[[receita ingredientes]objectAtIndex:ingredienteDaVez] som]play];
+    
     [imagemProximoIngrediente setImage: [[[receita ingredientes]objectAtIndex:ingredienteDaVez] imagemAlimento]];
     [nomeProximoIngrediente setText:[[[[receita ingredientes]objectAtIndex:ingredienteDaVez ]nome] uppercaseString]];
     
@@ -46,6 +48,10 @@
     
     //[gerenciadorCoreData mostraCoreData];
     //[gerenciadorCoreData atualizarQuantidade:3 index:@"maça"];
+}
+
+-(void)primeiroAudio{
+    [[[[receita ingredientes]objectAtIndex:ingredienteDaVez] som]play];
 }
 
 -(void)alocaMascote {
@@ -155,6 +161,7 @@
                 ingredienteDaVez++;
                 [imagemProximoIngrediente setImage: [[[receita ingredientes]objectAtIndex:ingredienteDaVez] imagemAlimento]];
                 [nomeProximoIngrediente setText:[[[[receita ingredientes]objectAtIndex:ingredienteDaVez] nome] uppercaseString]];
+                [[[[receita ingredientes]objectAtIndex:ingredienteDaVez]som ]play];
             }
             
         }

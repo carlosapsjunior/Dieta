@@ -86,6 +86,12 @@
 		FC1C2F6A199C008D005186C2 /* panela2.png in Resources */ = {isa = PBXBuildFile; fileRef = FC1C2F69199C008D005186C2 /* panela2.png */; };
 		FC1C2F6C199C048E005186C2 /* cozinha.png in Resources */ = {isa = PBXBuildFile; fileRef = FC1C2F6B199C048E005186C2 /* cozinha.png */; };
 		FC1C5D6419A699DE0096E2BB /* carne.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FC1C5D6319A699DE0096E2BB /* carne.mp3 */; };
+		FC45358819A7B40C000F07E6 /* pao.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FC45358719A7B40C000F07E6 /* pao.mp3 */; };
+		FC45358E19A7B7CA000F07E6 /* alface1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FC45358919A7B7CA000F07E6 /* alface1.mp3 */; };
+		FC45358F19A7B7CA000F07E6 /* cebola1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FC45358A19A7B7CA000F07E6 /* cebola1.mp3 */; };
+		FC45359019A7B7CA000F07E6 /* frango1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FC45358B19A7B7CA000F07E6 /* frango1.mp3 */; };
+		FC45359119A7B7CA000F07E6 /* queijo1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FC45358C19A7B7CA000F07E6 /* queijo1.mp3 */; };
+		FC45359219A7B7CA000F07E6 /* tomate1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FC45358D19A7B7CA000F07E6 /* tomate1.mp3 */; };
 		FC50CD91199144FB002ADAF0 /* PanelaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC50CD90199144FB002ADAF0 /* PanelaViewController.m */; };
 		FC50CD9419915430002ADAF0 /* Receita.m in Sources */ = {isa = PBXBuildFile; fileRef = FC50CD9319915430002ADAF0 /* Receita.m */; };
 		FC6961A0194783050043FB66 /* moeda.png in Resources */ = {isa = PBXBuildFile; fileRef = FC69619F194783050043FB66 /* moeda.png */; };
@@ -271,6 +277,12 @@
 		FC1C2F69199C008D005186C2 /* panela2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = panela2.png; sourceTree = "<group>"; };
 		FC1C2F6B199C048E005186C2 /* cozinha.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cozinha.png; sourceTree = "<group>"; };
 		FC1C5D6319A699DE0096E2BB /* carne.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = carne.mp3; sourceTree = "<group>"; };
+		FC45358719A7B40C000F07E6 /* pao.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = pao.mp3; sourceTree = "<group>"; };
+		FC45358919A7B7CA000F07E6 /* alface1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = alface1.mp3; sourceTree = "<group>"; };
+		FC45358A19A7B7CA000F07E6 /* cebola1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = cebola1.mp3; sourceTree = "<group>"; };
+		FC45358B19A7B7CA000F07E6 /* frango1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = frango1.mp3; sourceTree = "<group>"; };
+		FC45358C19A7B7CA000F07E6 /* queijo1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = queijo1.mp3; sourceTree = "<group>"; };
+		FC45358D19A7B7CA000F07E6 /* tomate1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = tomate1.mp3; sourceTree = "<group>"; };
 		FC50CD8F199144FB002ADAF0 /* PanelaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PanelaViewController.h; sourceTree = "<group>"; };
 		FC50CD90199144FB002ADAF0 /* PanelaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PanelaViewController.m; sourceTree = "<group>"; };
 		FC50CD9219915430002ADAF0 /* Receita.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Receita.h; sourceTree = "<group>"; };
@@ -664,9 +676,15 @@
 				FC948429190AF69A007EFAAA /* somClick.mp3 */,
 				FC94842A190AF69A007EFAAA /* somConfirma.mp3 */,
 				FC94842B190AF69A007EFAAA /* somLixo.mp3 */,
+				FC45358919A7B7CA000F07E6 /* alface1.mp3 */,
+				FC45358A19A7B7CA000F07E6 /* cebola1.mp3 */,
+				FC45358B19A7B7CA000F07E6 /* frango1.mp3 */,
+				FC45358C19A7B7CA000F07E6 /* queijo1.mp3 */,
+				FC45358D19A7B7CA000F07E6 /* tomate1.mp3 */,
 				FC94842C190AF69A007EFAAA /* somPrato.mp3 */,
 				FC94842D190AF69A007EFAAA /* somVassoura.mp3 */,
 				FC1C5D6319A699DE0096E2BB /* carne.mp3 */,
+				FC45358719A7B40C000F07E6 /* pao.mp3 */,
 				7E82B1AB19902AD900640AE1 /* ola.m4a */,
 			);
 			name = Sons;
@@ -830,6 +848,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FC6961A0194783050043FB66 /* moeda.png in Resources */,
+				FC45358E19A7B7CA000F07E6 /* alface1.mp3 in Resources */,
 				FCAB44BB199D379400953009 /* coracao_vazado.png in Resources */,
 				FCDD607C199942650078E3D1 /* maca_icone3.png in Resources */,
 				7E82B19F1990288000640AE1 /* mascote4_1.png in Resources */,
@@ -838,6 +857,7 @@
 				FCB7E8FD190995F600F2F039 /* batatafrita.png in Resources */,
 				79DD78A61900935A00119A28 /* lixo.png in Resources */,
 				FCBEC4C0190846C700FBE6D0 /* pera.png in Resources */,
+				FC45358F19A7B7CA000F07E6 /* cebola1.mp3 in Resources */,
 				FCDD607719993BB60078E3D1 /* feijao_icone.png in Resources */,
 				FCB7E8FF190999D400F2F039 /* sorvete2.png in Resources */,
 				FCAB44B9199D2EB200953009 /* errado.png in Resources */,
@@ -875,6 +895,7 @@
 				7E82B1A31990288000640AE1 /* mascote2_1.png in Resources */,
 				FCDD607819993BB60078E3D1 /* pao_icone.png in Resources */,
 				FC1C5D6419A699DE0096E2BB /* carne.mp3 in Resources */,
+				FC45359019A7B7CA000F07E6 /* frango1.mp3 in Resources */,
 				FCBEC4BE190845D300FBE6D0 /* kiwi.png in Resources */,
 				FC7AA5A519098E3600883569 /* refri.png in Resources */,
 				7E2606FF19A674C90036FC41 /* panela01.mp3 in Resources */,
@@ -888,6 +909,7 @@
 				7E2606FD19A674C90036FC41 /* mercado01.mp3 in Resources */,
 				FC94842F190AF69A007EFAAA /* somConfirma.mp3 in Resources */,
 				FC17FC4318FEF7B5000E9969 /* Images.xcassets in Resources */,
+				FC45359219A7B7CA000F07E6 /* tomate1.mp3 in Resources */,
 				FC1C2F6A199C008D005186C2 /* panela2.png in Resources */,
 				79DD78A81900947800119A28 /* vassoura.png in Resources */,
 				FC7AA5AB19098F2300883569 /* pao.png in Resources */,
@@ -913,6 +935,7 @@
 				FCDD606E19993A860078E3D1 /* toldoHD.png in Resources */,
 				7E679F03190EFA1E00F99B59 /* Main_iPad.storyboard in Resources */,
 				FC7AA59F19098DD700883569 /* cebola.png in Resources */,
+				FC45359119A7B7CA000F07E6 /* queijo1.mp3 in Resources */,
 				7EDCD276199952BA006B7F20 /* doutora.png in Resources */,
 				7E26070A19A683DB0036FC41 /* icon.png in Resources */,
 				FC7AA5A919098F1200883569 /* arroz.png in Resources */,
@@ -922,6 +945,7 @@
 				7E82B1A71990288000640AE1 /* mascote3_3.png in Resources */,
 				FCBEC4B41908441300FBE6D0 /* manga.png in Resources */,
 				FC7AA58F19098CDA00883569 /* queijo.png in Resources */,
+				FC45358819A7B40C000F07E6 /* pao.mp3 in Resources */,
 				FC948431190AF69A007EFAAA /* somPrato.mp3 in Resources */,
 				7E82B1A41990288000640AE1 /* mascote2_2.png in Resources */,
 				FC7A55301995680C00C47E91 /* toldo.png in Resources */,
