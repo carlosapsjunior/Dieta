@@ -282,7 +282,12 @@ static const uint32_t maComidaCategory        =  0x1 << 2;
     Personagem *personagem = [personagemCoreData returnPersonagem];
     [personagemCoreData atualizarDinheiro: [[personagem dinheiro] intValue] + pontos];
     
-
+    float value = [[personagem fome]floatValue] - 10;
+    if (value < 0) {
+        value = 0;
+    }
+    
+    [personagemCoreData atualizarFome:value];
     
 }
 

@@ -45,7 +45,9 @@
     NSString *dindin = [NSString stringWithFormat:@"%d", [[personagem dinheiro] intValue]];
     [dinheiro setText:dindin];
     
-    //[personagemCoreData atualizarFome:55.0f];
+    //[personagemCoreData atualizarFome:25.0f];
+    //[personagemCoreData atualizarSaude:45.0f];
+    //[personagemCoreData atualizarDinheiro:200];
     
     UIView *personagemBorda  = [[UIView alloc] initWithFrame:CGRectMake(45, 45, 220, 220)];
     personagemBorda.backgroundColor = [UIColor blackColor];
@@ -58,7 +60,7 @@
     NSString *imageName;
     
     personagemView = [[UIImageView alloc] initWithFrame:CGRectMake(50, 50, 210, 210)];
-    if( [[personagem fome]intValue] >= 66 || [[personagem saude]intValue] >= 66){
+    if( [[personagem fome]intValue] > 66 || [[personagem saude]intValue] > 66){
         imageName = [NSString stringWithFormat:@"mascote%d_1", [[personagem tipo] intValue]];
     }
     if ([[personagem fome]intValue] <= 66 || [[personagem saude]intValue] <= 66){
@@ -88,8 +90,10 @@
     
     if(novaFome  > 0) {
         [personagemCoreData atualizarFome:novaFome];
-        [fomeBar setFrame:CGRectMake(0, 200, fomeBar.bounds.size.width, -([[personagemFome fome] floatValue]*200)/100)];
+        [fomeBar setFrame:CGRectMake(0, 200, fomeBar.bounds.size.width, -([[personagemFome fome] floatValue]*187)/100)];
     }
+    
+    [self atualizaImagemPersonagem];
 }
 
 -(void)diminuiSaude{
@@ -98,9 +102,11 @@
     if ([[personagemSaude fome]floatValue] < 10) {
         if(novaSaude  > 0) {
             [personagemCoreData atualizarSaude:novaSaude];
-            [saudeBar setFrame:CGRectMake(0, 200, saudeBar.bounds.size.width, -([[personagemSaude saude] floatValue]*200)/100)];
+            [saudeBar setFrame:CGRectMake(0, 200, saudeBar.bounds.size.width, -([[personagemSaude saude] floatValue]*177)/100)];
         }
     }
+    
+    [self atualizaImagemPersonagem];
 }
 
 -(void)alocaMascote {
@@ -130,8 +136,8 @@
 
     [fomeBar setBackgroundColor:[UIColor colorWithRed:0.0 green:0.7 blue:0.0f alpha:1.0f]];
     
-    [fomeBar setFrame:CGRectMake(0, 200, fomeBar.bounds.size.width, -([[personagem fome] floatValue]*200)/100)];
-    [saudeBar setFrame:CGRectMake(0, 200, saudeBar.bounds.size.width, -([[personagem saude] floatValue]*200)/100)];
+    [fomeBar setFrame:CGRectMake(0, 200, fomeBar.bounds.size.width, -([[personagem fome] floatValue]*187)/100)];
+    [saudeBar setFrame:CGRectMake(0, 200, saudeBar.bounds.size.width, -([[personagem saude] floatValue]*177)/100)];
     
     [self atualizaImagemPersonagem];
 }
@@ -140,7 +146,7 @@
     Personagem *personagem = [personagemCoreData returnPersonagem];
     NSString *imageName;
     //UIImageView *personagemView = [[UIImageView alloc] initWithFrame:CGRectMake(50, 50, 210, 210)];
-    if( [[personagem fome]intValue] >= 66 || [[personagem saude]intValue] >= 66){
+    if( [[personagem fome]intValue] > 66 || [[personagem saude]intValue] > 66){
         imageName = [NSString stringWithFormat:@"mascote%d_1", [[personagem tipo] intValue]];
     }
     if ([[personagem fome]intValue] <= 66 || [[personagem saude]intValue] <= 66){
