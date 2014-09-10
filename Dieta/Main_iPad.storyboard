@@ -137,7 +137,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="H7O-UR-K1r" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2546" y="-1397"/>
+            <point key="canvasLocation" x="-2206" y="-1605"/>
         </scene>
         <!--Lista Receitas View Controller-->
         <scene sceneID="B42-tT-R6f">
@@ -213,7 +213,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7vI-yp-1lH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3837" y="-1397"/>
+            <point key="canvasLocation" x="-3932" y="-1605"/>
         </scene>
         <!--Home View Controller-->
         <scene sceneID="wQe-NT-11G">
@@ -396,6 +396,10 @@
                     <nil key="simulatedBottomBarMetrics"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <connections>
+                        <outlet property="btnJogo" destination="tYh-XV-B8P" id="ilt-tp-wng"/>
+                        <outlet property="btnMercado" destination="SFn-rj-uXJ" id="2BX-sF-AEz"/>
+                        <outlet property="btnPanela" destination="boM-8B-MhV" id="NFD-Mu-hU9"/>
+                        <outlet property="btnPrato" destination="Hc8-cg-woo" id="aXP-DF-jAS"/>
                         <outlet property="dinheiro" destination="sJF-wx-wko" id="0aC-s3-QYb"/>
                         <outlet property="fomeBar" destination="w93-7e-0Tu" id="KHB-il-2oU"/>
                         <outlet property="saudeBar" destination="zha-3J-Cwi" id="OeZ-4c-gZ2"/>
@@ -403,7 +407,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XWL-mc-wvc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-5694" y="-767"/>
+            <point key="canvasLocation" x="-6286" y="-767"/>
         </scene>
         <!--Jogo View Controller-->
         <scene sceneID="Ph3-CU-6Nw">
@@ -537,7 +541,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WYv-W1-J4y" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3132" y="-351"/>
+            <point key="canvasLocation" x="-3932" y="-603"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="DV1-ue-VBc">
@@ -553,7 +557,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WXp-cj-yh1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1663" y="-461"/>
+            <point key="canvasLocation" x="-2250" y="-603"/>
         </scene>
         <!--Mercado View Controller-->
         <scene sceneID="rAc-cD-MKw">
@@ -723,7 +727,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ff0-KI-ogw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3132" y="545"/>
+            <point key="canvasLocation" x="-3932" y="389"/>
         </scene>
         <!--Prato View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -780,7 +784,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3132" y="-2342"/>
+            <point key="canvasLocation" x="-3932" y="-2534"/>
         </scene>
     </scenes>
     <resources>
@@ -830,6 +834,6 @@
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="vRv-h3-qEU"/>
+        <segue reference="Zm1-7a-aBA"/>
     </inferredMetricsTieBreakers>
 </document>

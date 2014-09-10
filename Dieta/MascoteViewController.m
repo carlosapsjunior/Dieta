@@ -7,6 +7,7 @@
 //
 
 #import "MascoteViewController.h"
+#import <QuartzCore/QuartzCore.h>
 
 @interface MascoteViewController ()
 
@@ -14,7 +15,7 @@
 
 @implementation MascoteViewController
 
-@synthesize gerenciadorCoreData, personagemCoreData, dinheiro, valorDinheiro, saudeBar, fomeBar, personagemView, tutorialCoreData, timerFome, timerSaude;
+@synthesize gerenciadorCoreData, personagemCoreData, dinheiro, valorDinheiro, saudeBar, fomeBar, personagemView, tutorialCoreData, timerFome, timerSaude,btnJogo,btnMercado,btnPanela,btnPrato;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -29,13 +30,7 @@
     [super viewDidLoad];
     
     tutorialCoreData = [[TutorialCoreData alloc]init];
-    Tutorial *tutorial = [tutorialCoreData returnTutorial];
     
-    if ([[tutorial intro02] intValue] == 0) {
-        [self alocaMascote];
-        [tutorialCoreData intro02];
-    }
-
     gerenciadorCoreData = [[GerenciadorCoreData alloc]init];
     personagemCoreData = [[PersonagemCoreData alloc]init];
     
@@ -76,6 +71,14 @@
     
 	// Do any additional setup after loading the view.
 }
+
+-(void)removeAnimacoes{
+    [btnMercado.layer removeAllAnimations];
+    [btnPanela.layer removeAllAnimations];
+    [btnPrato.layer removeAllAnimations];
+}
+
+
 - (IBAction)goPrato:(id)sender {
     [timerFome invalidate];
     timerFome = nil;
@@ -109,9 +112,84 @@
     [self atualizaImagemPersonagem];
 }
 
--(void)alocaMascote {
+-(void)alocaTutorial {
+    Tutorial *tutorial = [tutorialCoreData returnTutorial];
+    
+    if ([[tutorial mercado02] intValue] == 0) {
+        [self disableButtons:YES panela:NO prato:NO jogo:NO];
+        [self alocaMascoteFalaMercado];
+        [tutorialCoreData mercado01];
+        
+        CABasicAnimation *theAnimation;
+        
+        theAnimation=[CABasicAnimation animationWithKeyPath:@"opacity"];
+        theAnimation.duration=0.5;
+        theAnimation.repeatCount=HUGE_VALF;
+        theAnimation.autoreverses=YES;
+        theAnimation.fromValue=[NSNumber numberWithFloat:1.0];
+        theAnimation.toValue=[NSNumber numberWithFloat:0.0];
+        [btnMercado.layer addAnimation:theAnimation forKey:@"animateOpacity"];
+        
+        
+    }
+    if ([[tutorial panela02] intValue] == 0 && [[tutorial mercado02] intValue] == 1 && [[tutorial mercado01] intValue] == 1) {
+        [self disableButtons:NO panela:YES prato:NO jogo:NO];
+        [self alocaMascoteFalaPanela];
+        [tutorialCoreData panela01];
+        
+        CABasicAnimation *theAnimation;
+        
+        theAnimation=[CABasicAnimation animationWithKeyPath:@"opacity"];
+        theAnimation.duration=0.5;
+        theAnimation.repeatCount=HUGE_VALF;
+        theAnimation.autoreverses=YES;
+        theAnimation.fromValue=[NSNumber numberWithFloat:1.0];
+        theAnimation.toValue=[NSNumber numberWithFloat:0.0];
+        [btnPanela.layer addAnimation:theAnimation forKey:@"animateOpacity"];
+        
+    }
+    if ([[tutorial prato02] intValue] == 0 && [[tutorial panela02] intValue] == 1 && [[tutorial panela01] intValue] == 1) {
+        [self disableButtons:NO panela:NO prato:YES jogo:NO];
+        [self alocaMascoteFalaPrato];
+        [tutorialCoreData prato01];
+        
+        CABasicAnimation *theAnimation;
+        
+        theAnimation=[CABasicAnimation animationWithKeyPath:@"opacity"];
+        theAnimation.duration=0.5;
+        theAnimation.repeatCount=HUGE_VALF;
+        theAnimation.autoreverses=YES;
+        theAnimation.fromValue=[NSNumber numberWithFloat:1.0];
+        theAnimation.toValue=[NSNumber numberWithFloat:0.0];
+        [btnPrato.layer addAnimation:theAnimation forKey:@"animateOpacity"];
+    }
+    if ([[tutorial prato02] intValue] == 1) {
+        [self disableButtons:YES panela:YES prato:YES jogo:YES];
+    }
+}
+
+-(void)disableButtons: (BOOL)mercado panela: (BOOL)panela prato: (BOOL)prato jogo: (BOOL)jogo {
+    [btnMercado setEnabled:mercado];
+    [btnPanela setEnabled:panela];
+    [btnPrato setEnabled:prato];
+    [btnJogo setEnabled:jogo];
+}
+
+-(void)alocaMascoteFalaMercado {
     MascoteView *mascote = [[MascoteView alloc] initWithFrameAndAlimentos:CGRectMake(0, 0, 1024, 768) :nil];
-    [mascote falaHome];
+    [mascote falaHomeMercado];
+    [self.view addSubview:mascote];
+}
+
+-(void)alocaMascoteFalaPanela {
+    MascoteView *mascote = [[MascoteView alloc] initWithFrameAndAlimentos:CGRectMake(0, 0, 1024, 768) :nil];
+    [mascote falaHomePanela];
+    [self.view addSubview:mascote];
+}
+
+-(void)alocaMascoteFalaPrato {
+    MascoteView *mascote = [[MascoteView alloc] initWithFrameAndAlimentos:CGRectMake(0, 0, 1024, 768) :nil];
+    [mascote falaHomePrato];
     [self.view addSubview:mascote];
 }
 
@@ -122,9 +200,15 @@
 }
 
 -(void)viewDidAppear:(BOOL)animated {
+    
+    [self removeAnimacoes];
+    
     Personagem *personagem = [personagemCoreData returnPersonagem];
     NSString *dindin = [NSString stringWithFormat:@"%d", [[personagem dinheiro] intValue]];
     [dinheiro setText:dindin];
+    
+    [self alocaTutorial];
+    
     
     if (timerFome == nil) {
         timerFome = [NSTimer scheduledTimerWithTimeInterval:60.0 target:self selector:@selector(diminuiFome) userInfo:nil repeats:YES];
@@ -140,6 +224,7 @@
     [saudeBar setFrame:CGRectMake(0, 200, saudeBar.bounds.size.width, -([[personagem saude] floatValue]*177)/100)];
     
     [self atualizaImagemPersonagem];
+
 }
 
 -(void)atualizaImagemPersonagem {

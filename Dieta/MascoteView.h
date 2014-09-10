@@ -29,7 +29,10 @@
 - (id)initWithFrameAndAlimentos:(CGRect)frame :(NSMutableArray *)alimentos;
 -(void)falaAnaliseAlimento;
 -(void)falaInicial;
--(void)falaHome;
+-(void)falaHomeMercado;
+-(void)falaHomePanela;
+-(void)falaHomePrato;
+//-(void)falaHome;
 -(void)falaPanela;
 -(void)falaMercado;
 

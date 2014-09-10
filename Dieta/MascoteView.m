@@ -87,7 +87,83 @@
     [lblDialogo setText:[NSString stringWithFormat:@"%@", [dialogo objectAtIndex:count]]];
 }
 
--(void)falaHome {
+-(void)falaHomeMercado {
+    NSString *path;
+    NSURL *url;
+    AVAudioPlayer *vozInicial;
+    AVAudioPlayer *voz;
+    
+    vozes = [[NSMutableArray alloc]init];
+    
+    path = [[NSBundle mainBundle] pathForResource:@"intro02" ofType:@"mp3"];
+    url = [NSURL fileURLWithPath:path];
+    vozInicial = [[AVAudioPlayer alloc] initWithContentsOfURL:url error:nil];
+    [vozes addObject:vozInicial];
+    
+    [vozInicial play];
+    
+    path = [[NSBundle mainBundle] pathForResource:@"mercado01" ofType:@"mp3"];
+    url = [NSURL fileURLWithPath:path];
+    voz = [[AVAudioPlayer alloc] initWithContentsOfURL:url error:nil];
+    [vozes addObject:voz];
+    
+    [personagem setFrame:CGRectMake(30, 290, 215, 215)];
+    [viewDialogo setFrame:CGRectMake(0, 320, 1025, 160)];
+    [lblDialogo setFrame:CGRectMake(280, 360, 500, 140)];
+    NSMutableArray *arrayFala = [[NSMutableArray alloc] init];
+    [arrayFala addObject:@"Olá, meu nome é Cristina, e vou ajudar você a alimentar corretamente o seu amigo."];
+    [arrayFala addObject:@"Primeiro aperte o icone do carrinho para comprar os alimentos do seu amigo."];
+    
+    dialogo = arrayFala;
+    
+    [lblDialogo setText:[NSString stringWithFormat:@"%@", [dialogo objectAtIndex:count]]];
+}
+
+-(void)falaHomePanela {
+    NSString *path;
+    NSURL *url;
+    AVAudioPlayer *voz;
+    
+    vozes = [[NSMutableArray alloc]init];
+    
+    path = [[NSBundle mainBundle] pathForResource:@"panela01" ofType:@"mp3"];
+    url = [NSURL fileURLWithPath:path];
+    voz = [[AVAudioPlayer alloc] initWithContentsOfURL:url error:nil];
+    [vozes addObject:voz];
+    
+    [voz play];
+    
+    NSMutableArray *arrayFala = [[NSMutableArray alloc] init];
+    [arrayFala addObject:@"Agora vamos cozinhar para o seu amigo."];
+    
+    dialogo = arrayFala;
+    
+    [lblDialogo setText:[NSString stringWithFormat:@"%@", [dialogo objectAtIndex:count]]];
+}
+
+-(void)falaHomePrato {
+    NSString *path;
+    NSURL *url;
+    AVAudioPlayer *voz;
+    
+    vozes = [[NSMutableArray alloc]init];
+    
+    path = [[NSBundle mainBundle] pathForResource:@"prato01" ofType:@"mp3"];
+    url = [NSURL fileURLWithPath:path];
+    voz = [[AVAudioPlayer alloc] initWithContentsOfURL:url error:nil];
+    [vozes addObject:voz];
+    
+    [voz play];
+    
+    NSMutableArray *arrayFala = [[NSMutableArray alloc] init];
+    [arrayFala addObject:@"Agora chegou a hora de alimentar seu amigo, aperte o icone do prato para começar."];
+    
+    dialogo = arrayFala;
+    
+    [lblDialogo setText:[NSString stringWithFormat:@"%@", [dialogo objectAtIndex:count]]];
+}
+
+/*-(void)falaHome {
     NSString *path;
     NSURL *url;
     AVAudioPlayer *vozInicial;
@@ -129,7 +205,7 @@
     dialogo = arrayFala;
     
     [lblDialogo setText:[NSString stringWithFormat:@"%@", [dialogo objectAtIndex:count]]];
-}
+}*/
 
 
 -(void)falaPanela {

@@ -25,6 +25,10 @@
 @property TutorialCoreData *tutorialCoreData;
 @property NSTimer *timerFome;
 @property NSTimer *timerSaude;
+@property (weak, nonatomic) IBOutlet UIButton *btnMercado;
+@property (weak, nonatomic) IBOutlet UIButton *btnPrato;
+@property (weak, nonatomic) IBOutlet UIButton *btnPanela;
+@property (weak, nonatomic) IBOutlet UIButton *btnJogo;
 
 //313, 58
 //532, 58
