@@ -5,46 +5,36 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>91366D6C-02F0-4B6D-ADEC-13F4DF006B6B</string>
+	<string>50465111-D220-41F3-A72D-3C8D63D38967</string>
 	<key>IDESourceControlProjectName</key>
 	<string>Dieta</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>9DF80083-EC55-4FC5-8399-6A3F4F2FECF6</key>
-		<string>https://github.com/renanfox2/DietaV6.git</string>
+		<key>15D99A42-1CEE-4A67-81C0-9B2306203F3D</key>
+		<string>https://github.com/carlosapsjunior/DietaV15.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>Dieta.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>9DF80083-EC55-4FC5-8399-6A3F4F2FECF6</key>
+		<key>15D99A42-1CEE-4A67-81C0-9B2306203F3D</key>
 		<string>../..</string>
-		<key>CE876437-C379-4A00-8726-FBAC50DA2B66</key>
-		<string>../../../Estudos/FoodDrop</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/renanfox2/DietaV6.git</string>
+	<string>https://github.com/carlosapsjunior/DietaV15.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>9DF80083-EC55-4FC5-8399-6A3F4F2FECF6</string>
+	<string>15D99A42-1CEE-4A67-81C0-9B2306203F3D</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>9DF80083-EC55-4FC5-8399-6A3F4F2FECF6</string>
+			<string>15D99A42-1CEE-4A67-81C0-9B2306203F3D</string>
 			<key>IDESourceControlWCCName</key>
-			<string>DietaV6</string>
-		</dict>
-		<dict>
-			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
-			<string>public.vcs.git</string>
-			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>CE876437-C379-4A00-8726-FBAC50DA2B66</string>
-			<key>IDESourceControlWCCName</key>
-			<string>FoodDrop</string>
+			<string>DietaV15</string>
 		</dict>
 	</array>
 </dict>
