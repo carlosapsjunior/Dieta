@@ -23,6 +23,4 @@
 - (Personagem*)returnPersonagem;
 - (BOOL)coreDataIniciado;
 
-
-
 @end

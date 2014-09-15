@@ -14,7 +14,6 @@
 #import "AudioController.h"
 #import "GerenciadorCoreData.h"
 #import "AudioController.h"
-#import "TutorialCoreData.h"
 
 
 @interface PanelaViewController : UIViewController

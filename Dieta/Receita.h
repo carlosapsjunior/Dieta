@@ -7,7 +7,6 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <AVFoundation/AVFoundation.h>
 #import "Ingrediente.h"
 
 @interface Receita : NSObject
@@ -17,8 +16,7 @@
 @property NSMutableArray *ingredientes;
 
 
-
--(void)adicionaIngrediente:(NSString *) nome :(UIImage *)image :(AVAudioPlayer *)som;
+-(void)adicionaIngrediente:(NSString *) nome :(UIImage *)image;
 
 
 @end

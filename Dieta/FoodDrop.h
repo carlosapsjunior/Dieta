@@ -14,10 +14,10 @@
     CGPoint point;
 }
 @property UIView *MView;
-@property SKSpriteNode *eater, *inicio, *coracao, *coracao2, *coracao3;
+@property SKSpriteNode *eater, *inicio;
 @property SKLabelNode *pontosLabel, *vidasLabel;
 @property int pontos, vidas;
 @property PersonagemCoreData *personagemCoreData;
-@property BOOL finalizado;
+@property BOOL cenaMontada;
 
 @end

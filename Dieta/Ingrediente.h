@@ -7,12 +7,10 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <AVFoundation/AVFoundation.h>
 
 @interface Ingrediente : NSObject
 
 @property NSString *nome;
 @property UIImage *imagemAlimento;
-@property AVAudioPlayer *som;
 
 @end

@@ -15,7 +15,6 @@
 @end
 
 @implementation JogoViewController
-@synthesize viewInstrucoes;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -37,9 +36,28 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
-
+-(IBAction)abreDrop:(id)sender{
+    CGRect frame = CGRectMake(0, 0, self.view.bounds.size.width, self.view.bounds.size.height);
+    SKView *skView = [[SKView alloc] initWithFrame:frame];
+//    skView.showsFPS = YES;
+//    skView.showsNodeCount = YES;
+//    skView.showsPhysics= YES;
+    [self.view addSubview: skView];
+    
+    FoodDrop *scene = [FoodDrop sceneWithSize:skView.bounds.size];
+    
+    //[scene setClasse:self];
+    
+    [scene setMView:self.view];
+    
+    scene.scaleMode = SKSceneScaleModeAspectFit;
+    
+    [skView presentScene:scene];
+//
+}
 -(IBAction)abreSkate:(id)sender{
+    
+    
         CGRect frame = CGRectMake(0, 0, self.view.bounds.size.width, self.view.bounds.size.height);
         SKView *skView = [[SKView alloc] initWithFrame:frame];
         skView.showsFPS = YES;
@@ -61,11 +79,6 @@
         //[self dismissViewControllerAnimated:YES completion:nil];
 }
 
-- (IBAction)abreInstrucoes:(id)sender {
-
-    [viewInstrucoes setHidden:NO];
-    
-}
 
 - (IBAction)fechaView:(id)sender {
     [self dismissViewControllerAnimated:NO completion:nil];

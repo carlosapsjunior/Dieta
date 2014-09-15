@@ -9,9 +9,6 @@
 #import <UIKit/UIKit.h>
 #import "GerenciadorCoreData.h"
 #import "PersonagemCoreData.h"
-#import "MascoteView.h"
-#import <AVFoundation/AVFoundation.h>
-#import "TutorialCoreData.h"
 
 @interface MascoteViewController : UIViewController
 
@@ -22,13 +19,6 @@
 @property (weak, nonatomic) IBOutlet UIView *fomeBar;
 @property (weak, nonatomic) IBOutlet UIView *saudeBar;
 @property UIImageView *personagemView;
-@property TutorialCoreData *tutorialCoreData;
-@property NSTimer *timerFome;
-@property NSTimer *timerSaude;
-@property (weak, nonatomic) IBOutlet UIButton *btnMercado;
-@property (weak, nonatomic) IBOutlet UIButton *btnPrato;
-@property (weak, nonatomic) IBOutlet UIButton *btnPanela;
-@property (weak, nonatomic) IBOutlet UIButton *btnJogo;
 
 //313, 58
 //532, 58
