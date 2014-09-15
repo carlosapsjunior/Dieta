@@ -299,6 +299,10 @@
 -(void)atualizarPersonagemCoreData {
     float value = 0;
     
+    if (saude == 0) {
+        saude += [[personagem saude] floatValue];
+    }
+    
     for (AlimentoView *alimento in alimentosPrato) {
         value += ([[alimento valorPorcao] floatValue] + [[alimento valorPorcaoAux] floatValue]) * 3.45;
     }
