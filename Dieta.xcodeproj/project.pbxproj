@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D353CFD19C21D2700B70306 /* TelaJogoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D353CFC19C21D2700B70306 /* TelaJogoViewController.m */; };
+		3D353D0019C2247400B70306 /* SkateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D353CFF19C2247400B70306 /* SkateViewController.m */; };
 		3D83FAC419A78C99001D02F2 /* vida1.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D83FAC319A78C99001D02F2 /* vida1.png */; };
 		3D83FAC819A7B7C6001D02F2 /* tile01.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D83FAC719A7B7C6001D02F2 /* tile01.png */; };
 		3D83FACA19A7C496001D02F2 /* iconDrop.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D83FAC919A7C496001D02F2 /* iconDrop.png */; };
@@ -178,6 +180,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3D353CFB19C21D2700B70306 /* TelaJogoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TelaJogoViewController.h; sourceTree = "<group>"; };
+		3D353CFC19C21D2700B70306 /* TelaJogoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TelaJogoViewController.m; sourceTree = "<group>"; };
+		3D353CFE19C2247400B70306 /* SkateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SkateViewController.h; sourceTree = "<group>"; };
+		3D353CFF19C2247400B70306 /* SkateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SkateViewController.m; sourceTree = "<group>"; };
 		3D83FAC319A78C99001D02F2 /* vida1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = vida1.png; sourceTree = "<group>"; };
 		3D83FAC719A7B7C6001D02F2 /* tile01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tile01.png; sourceTree = "<group>"; };
 		3D83FAC919A7C496001D02F2 /* iconDrop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iconDrop.png; sourceTree = "<group>"; };
@@ -533,12 +539,16 @@
 				3DA02ADA1992C0C20098C507 /* FoodDrop.h */,
 				3DA02ADB1992C0C20098C507 /* FoodDrop.m */,
 				7E679F02190EFA1E00F99B59 /* Main_iPad.storyboard */,
+				3D353CFE19C2247400B70306 /* SkateViewController.h */,
+				3D353CFF19C2247400B70306 /* SkateViewController.m */,
 				FCAA085319A671FD00646874 /* ListaReceitasViewController.h */,
 				FCAA085419A671FD00646874 /* ListaReceitasViewController.m */,
 				FCC1C4841999550300044C55 /* HomeViewController.h */,
 				FCC1C4851999550300044C55 /* HomeViewController.m */,
 				3DA02AD41992A2A90098C507 /* JogoViewController.h */,
 				3DA02AD51992A2A90098C507 /* JogoViewController.m */,
+				3D353CFB19C21D2700B70306 /* TelaJogoViewController.h */,
+				3D353CFC19C21D2700B70306 /* TelaJogoViewController.m */,
 				79FA59FF19019A8F000BD111 /* MascoteView.h */,
 				79FA5A0019019A8F000BD111 /* MascoteView.m */,
 				7EE42285195B405200E9B7C1 /* MascoteViewController.h */,
@@ -1001,6 +1011,7 @@
 				7E26070519A67C1F0036FC41 /* TutorialCoreData.m in Sources */,
 				7EAB0E7E192406F800EDD4A7 /* GrupoAlimentar.m in Sources */,
 				FC948427190AF670007EFAAA /* AudioController.m in Sources */,
+				3D353D0019C2247400B70306 /* SkateViewController.m in Sources */,
 				7EC2157119917CA3000F6D6A /* Personagem.m in Sources */,
 				751E17F619707A5100DE124C /* JogoSkate.m in Sources */,
 				FCB7E9081909A2EA00F2F039 /* BalaoView.m in Sources */,
@@ -1011,6 +1022,7 @@
 				3DA02ADC1992C0C20098C507 /* FoodDrop.m in Sources */,
 				7E27E416192FE54A00C05CF7 /* MercadoViewController.m in Sources */,
 				7E7090A219254CCE00A4BCC8 /* Model.xcdatamodeld in Sources */,
+				3D353CFD19C21D2700B70306 /* TelaJogoViewController.m in Sources */,
 				3DA02AD61992A2A90098C507 /* JogoViewController.m in Sources */,
 				FC1C2F68199BD885005186C2 /* Ingrediente.m in Sources */,
 				FCAA085519A671FD00646874 /* ListaReceitasViewController.m in Sources */,
