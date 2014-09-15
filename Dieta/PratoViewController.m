@@ -26,7 +26,14 @@
     
     [super viewDidLoad];
     
-    [self alocaMascote];
+    TutorialCoreData *tutorialCoreData = [[TutorialCoreData alloc]init];
+    Tutorial *tutorial = [tutorialCoreData returnTutorial];
+    
+    if ([[tutorial prato02] intValue] == 0) {
+        [self alocaMascote];
+        [tutorialCoreData prato02];
+    }
+    
     [self alocaAlimentosPrato];
     [self alocaFoodScroller];
     [self alocaAudioController];
@@ -214,7 +221,7 @@
 
 -(void)atualizaImagemPersonagem: (int)fome {
     NSString *imageName;
-    if( fome >= 66 || saude >= 66){
+    if( fome > 66 || saude > 66){
         imageName = [NSString stringWithFormat:@"mascote%d_1", [[personagem tipo] intValue]];
     }
     if( fome <= 66 || saude <= 66){
@@ -248,13 +255,17 @@
 
 -(void)atualizaBarra {
     float value = 0;
-    saude = [self processaAlimentosTempoReal];
+    
+    saude = 0;
+    
+    //NSLog(@"%.2f", [self processaAlimentosTempoReal]);
     
     for (AlimentoView *alimento in alimentosPrato) {
         value += ([[alimento valorPorcao] floatValue] + [[alimento valorPorcaoAux] floatValue]) * 3.45;
         saude += ([[alimento valorPorcao] floatValue] + [[alimento valorPorcaoAux] floatValue]) * 3.45;
     }
     
+    saude += [[personagem saude] floatValue];
     value += [[personagem fome] floatValue];
     
     if (value > 100.0f) {
@@ -264,30 +275,44 @@
         value = 0.0f;
     }
     
-    saude += [[personagem saude] floatValue];
-    
     if (saude > 100.0f) {
         saude = 100.0f;
     }
+    
+    saude += [self processaAlimentosTempoReal];
+    
+    //NSLog(@"saude: %.2f", saude);
     
     if (saude < 0) {
         saude = 0.0f;
     }
     
+    NSLog(@"fome %.2f", value);
+    NSLog(@"saude %.2f", saude);
+    
     [fomeBar setFrame:CGRectMake(250, 720, value * 250 / 100, 30)];
- 
     [saudeBar setFrame:CGRectMake(550, 720, saude * 250 / 100, 30)];
+    
     [self atualizaImagemPersonagem:value];
 }
 
 -(void)atualizarPersonagemCoreData {
-    float value = ([alimentosPrato count] * 3.45) + [[personagem fome] floatValue];
+    float value = 0;
     
-    NSLog(@"%.2f", saude);
+    for (AlimentoView *alimento in alimentosPrato) {
+        value += ([[alimento valorPorcao] floatValue] + [[alimento valorPorcaoAux] floatValue]) * 3.45;
+    }
+    
+    value += [[personagem fome] floatValue];
     
     if (value > 100.0f) {
         value = 100.0f;
     }
+    if (saude == 0) {
+        saude += [[personagem saude] floatValue];
+    }
+    
+    NSLog(@"%.2f / %.2f", value, saude);
     
     [personagemCoreData atualizarFome:value];
     [personagemCoreData atualizarSaude:saude];

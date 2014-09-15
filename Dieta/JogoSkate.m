@@ -47,6 +47,7 @@ static const UInt32 blockCategory = 0x1 << 1;
         mascote.physicsBody.density = 0.5f;
         mascote.physicsBody.restitution = 0.0f;
         [world addChild:mascote];
+//        [self buildScene];
     }
     return self;
 }
@@ -61,11 +62,11 @@ static const UInt32 blockCategory = 0x1 << 1;
     [self.view removeFromSuperview];
     [classe dismissView];
     
-    /*for (UITouch *touch in touches) {
+    for (UITouch *touch in touches) {
         //CGPoint location = [touch locationInNode:self];
         
         
-    }*/
+    }
 }
 
 -(void)didBeginContact:(SKPhysicsContact *)contact {
@@ -136,6 +137,8 @@ static const UInt32 blockCategory = 0x1 << 1;
 
 -(float) randomFloat: (float)Min Max: (float)Max {
     return ((arc4random()%RAND_MAX)/(RAND_MAX*1.0))*(Max-Min)+Min;
+
+ 
 }
 
 @end

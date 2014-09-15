@@ -20,18 +20,21 @@
 {
     [self.view setBackgroundColor:[UIColor colorWithPatternImage:[UIImage imageNamed:@"cozinha.png"]]];
     
+    //[NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(primeiroAudio) userInfo:nil repeats:NO];
+    
     ingredienteDaVez = 0;
-    receita = [[Receita alloc] init];
+    /*receita = [[Receita alloc] init];
     [receita setNome:@"Pizza"];
     [receita setImagemReceita:[UIImage imageNamed:@"pizza.png"]];
     //[receita adicionaIngrediente:@"tomate" : [UIImage imageNamed:@"tomate3.png"]];
     [receita adicionaIngrediente:@"queijo" : [UIImage imageNamed:@"queijo.png"]];
-    //[receita adicionaIngrediente:@"frango" : [UIImage imageNamed:@"frango.png"]];
+    //[receita adicionaIngrediente:@"frango" : [UIImage imageNamed:@"frango.png"]];*/
     
     [nomeReceita setText: [receita nome]];
     
     listaAlimentosCoreData = [[NSMutableArray alloc]init];
     gerenciadorCoreData = [[GerenciadorCoreData alloc]init];
+    
     
     [imagemProximoIngrediente setImage: [[[receita ingredientes]objectAtIndex:ingredienteDaVez] imagemAlimento]];
     [nomeProximoIngrediente setText:[[[[receita ingredientes]objectAtIndex:ingredienteDaVez ]nome] uppercaseString]];
@@ -42,8 +45,30 @@
     [self alocaAudioController];
     [self inicializaAlimentos];
     
+    TutorialCoreData *tutorialCoreData = [[TutorialCoreData alloc]init];
+    Tutorial *tutorial = [tutorialCoreData returnTutorial];
+    
+    if ([[tutorial panela02] intValue] == 0) {
+        [NSTimer scheduledTimerWithTimeInterval:5.2 target:self selector:@selector(primeiroAudio) userInfo:nil repeats:NO];
+        [self alocaMascote];
+        [tutorialCoreData panela02];
+    }
+    else {
+        [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(primeiroAudio) userInfo:nil repeats:NO];
+    }
+    
     //[gerenciadorCoreData mostraCoreData];
     //[gerenciadorCoreData atualizarQuantidade:3 index:@"maça"];
+}
+
+-(void)primeiroAudio{
+    [[[[receita ingredientes]objectAtIndex:ingredienteDaVez] som]play];
+}
+
+-(void)alocaMascote {
+    MascoteView *mascote = [[MascoteView alloc] initWithFrameAndAlimentos:CGRectMake(0, 0, 1024, 768) :nil];
+    [mascote falaPanela];
+    [self.view addSubview:mascote];
 }
 
 -(void)copiaAlimento: (AlimentoView*)alimentoView {
@@ -147,6 +172,7 @@
                 ingredienteDaVez++;
                 [imagemProximoIngrediente setImage: [[[receita ingredientes]objectAtIndex:ingredienteDaVez] imagemAlimento]];
                 [nomeProximoIngrediente setText:[[[[receita ingredientes]objectAtIndex:ingredienteDaVez] nome] uppercaseString]];
+                [[[[receita ingredientes]objectAtIndex:ingredienteDaVez]som ]play];
             }
             
         }

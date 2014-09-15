@@ -7,6 +7,7 @@
 //
 
 #import "MascoteViewController.h"
+#import <QuartzCore/QuartzCore.h>
 
 @interface MascoteViewController ()
 
@@ -14,7 +15,7 @@
 
 @implementation MascoteViewController
 
-@synthesize gerenciadorCoreData, personagemCoreData, dinheiro, valorDinheiro, saudeBar, fomeBar, personagemView;
+@synthesize gerenciadorCoreData, personagemCoreData, dinheiro, valorDinheiro, saudeBar, fomeBar, personagemView, tutorialCoreData, timerFome, timerSaude,btnJogo,btnMercado,btnPanela,btnPrato;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -28,51 +29,20 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    //[NSTimer scheduledTimerWithTimeInterval:60.0 target:self selector:@selector(diminui) userInfo:nil repeats:YES];
+    tutorialCoreData = [[TutorialCoreData alloc]init];
     
     gerenciadorCoreData = [[GerenciadorCoreData alloc]init];
     personagemCoreData = [[PersonagemCoreData alloc]init];
     
     [gerenciadorCoreData iniciaCoreData];
-    
-    //[personagemCoreData iniciarCoreData:2];
-    [personagemCoreData atualizarFome:33];
-    [personagemCoreData atualizarSaude:57];
-    //[personagemCoreData atualizarDinheiro:50];
-    //[personagemCoreData mostraCoreData];
-    
+
     Personagem *personagem = [personagemCoreData returnPersonagem];
     NSString *dindin = [NSString stringWithFormat:@"%d", [[personagem dinheiro] intValue]];
     [dinheiro setText:dindin];
     
-    //[fomeBar setFrame:CGRectMake(0, 200, fomeBar.bounds.size.width, -([[personagem fome] floatValue]*200)/100)];
-    //[saudeBar setFrame:CGRectMake(0, 200, saudeBar.bounds.size.width, -([[personagem saude] floatValue]*200)/100)];
-    
-    /*fomeBar  = [[UIView alloc] initWithFrame:CGRectMake(313, 58, -900, 30)];
-    fomeBar.backgroundColor = [UIColor yellowColor];
-    [self.view addSubview:fomeBar];
-    
-    saudeBar  = [[UIView alloc] initWithFrame:CGRectMake(660, 210, ([[personagem saude] floatValue]*300)/100, 50)];
-    saudeBar.backgroundColor = [UIColor redColor];
-    [self.view addSubview:saudeBar];*/
-    
-    /*UIView *fomeBackground  = [[UIView alloc] initWithFrame:CGRectMake(315, 205, 310, 60)];
-    fomeBackground.backgroundColor = [UIColor blackColor];
-    [self.view addSubview:fomeBackground];
-    
-    UIView *fomeBarMissing  = [[UIView alloc] initWithFrame:CGRectMake(320, 210, 300, 50)];
-    fomeBarMissing.backgroundColor = [UIColor whiteColor];
-    [self.view addSubview:fomeBarMissing];
-    
-    
-    
-    UIView *saudeBackground  = [[UIView alloc] initWithFrame:CGRectMake(655, 205, 310, 60)];
-    saudeBackground.backgroundColor = [UIColor blackColor];
-    [self.view addSubview:saudeBackground];
-    
-    UIView *saudeBarMissing  = [[UIView alloc] initWithFrame:CGRectMake(660, 210, 300, 50)];
-    saudeBarMissing.backgroundColor = [UIColor whiteColor];
-    [self.view addSubview:saudeBarMissing];*/
+    //[personagemCoreData atualizarFome:25.0f];
+    //[personagemCoreData atualizarSaude:45.0f];
+    //[personagemCoreData atualizarDinheiro:200];
     
     UIView *personagemBorda  = [[UIView alloc] initWithFrame:CGRectMake(45, 45, 220, 220)];
     personagemBorda.backgroundColor = [UIColor blackColor];
@@ -85,7 +55,7 @@
     NSString *imageName;
     
     personagemView = [[UIImageView alloc] initWithFrame:CGRectMake(50, 50, 210, 210)];
-    if( [[personagem fome]intValue] >= 66 || [[personagem saude]intValue] >= 66){
+    if( [[personagem fome]intValue] > 66 || [[personagem saude]intValue] > 66){
         imageName = [NSString stringWithFormat:@"mascote%d_1", [[personagem tipo] intValue]];
     }
     if ([[personagem fome]intValue] <= 66 || [[personagem saude]intValue] <= 66){
@@ -98,18 +68,130 @@
     [personagemView setImage:[UIImage imageNamed:imageName]];
     [self.view addSubview:personagemView];
     
+    
 	// Do any additional setup after loading the view.
 }
 
--(void)diminui{
-    float novaFome = [[[personagemCoreData returnPersonagem] fome]floatValue] - 1.8;
-    if(novaFome  > 0){
-    [personagemCoreData atualizarFome:novaFome];
-        NSLog(@"%f,%f", [[[personagemCoreData returnPersonagem] fome]floatValue], novaFome);
-        [fomeBar setFrame:CGRectMake(320, 210, ([[[personagemCoreData returnPersonagem] fome] floatValue]*300)/100, 50)];
+-(void)removeAnimacoes{
+    [btnMercado.layer removeAllAnimations];
+    [btnPanela.layer removeAllAnimations];
+    [btnPrato.layer removeAllAnimations];
+}
+
+
+- (IBAction)goPrato:(id)sender {
+    [timerFome invalidate];
+    timerFome = nil;
+    
+    [timerSaude invalidate];
+    timerSaude = nil;
+}
+
+-(void)diminuiFome{
+    Personagem *personagemFome =[personagemCoreData returnPersonagem];
+    float novaFome = [[personagemFome fome]floatValue] - 1.8;
+    
+    if(novaFome  > 0) {
+        [personagemCoreData atualizarFome:novaFome];
+        [fomeBar setFrame:CGRectMake(0, 200, fomeBar.bounds.size.width, -([[personagemFome fome] floatValue]*187)/100)];
+    }
+    
+    [self atualizaImagemPersonagem];
+}
+
+-(void)diminuiSaude{
+    Personagem *personagemSaude = [personagemCoreData returnPersonagem];
+    float novaSaude = [[personagemSaude saude]floatValue] - 1.8;
+    if ([[personagemSaude fome]floatValue] < 10) {
+        if(novaSaude  > 0) {
+            [personagemCoreData atualizarSaude:novaSaude];
+            [saudeBar setFrame:CGRectMake(0, 200, saudeBar.bounds.size.width, -([[personagemSaude saude] floatValue]*177)/100)];
+        }
+    }
+    
+    [self atualizaImagemPersonagem];
+}
+
+-(void)alocaTutorial {
+    Tutorial *tutorial = [tutorialCoreData returnTutorial];
+    
+    if ([[tutorial mercado02] intValue] == 0) {
+        [self disableButtons:YES panela:NO prato:NO jogo:NO];
+        [self alocaMascoteFalaMercado];
+        [tutorialCoreData mercado01];
+        
+        CABasicAnimation *theAnimation;
+        
+        theAnimation=[CABasicAnimation animationWithKeyPath:@"opacity"];
+        theAnimation.duration=0.5;
+        theAnimation.repeatCount=HUGE_VALF;
+        theAnimation.autoreverses=YES;
+        theAnimation.fromValue=[NSNumber numberWithFloat:1.0];
+        theAnimation.toValue=[NSNumber numberWithFloat:0.0];
+        [btnMercado.layer addAnimation:theAnimation forKey:@"animateOpacity"];
+        
+        
+    }
+    if ([[tutorial panela02] intValue] == 0 && [[tutorial mercado02] intValue] == 1 && [[tutorial mercado01] intValue] == 1) {
+        [self disableButtons:NO panela:YES prato:NO jogo:NO];
+        [self alocaMascoteFalaPanela];
+        [tutorialCoreData panela01];
+        
+        CABasicAnimation *theAnimation;
+        
+        theAnimation=[CABasicAnimation animationWithKeyPath:@"opacity"];
+        theAnimation.duration=0.5;
+        theAnimation.repeatCount=HUGE_VALF;
+        theAnimation.autoreverses=YES;
+        theAnimation.fromValue=[NSNumber numberWithFloat:1.0];
+        theAnimation.toValue=[NSNumber numberWithFloat:0.0];
+        [btnPanela.layer addAnimation:theAnimation forKey:@"animateOpacity"];
+        
+    }
+    if ([[tutorial prato02] intValue] == 0 && [[tutorial panela02] intValue] == 1 && [[tutorial panela01] intValue] == 1) {
+        [self disableButtons:NO panela:NO prato:YES jogo:NO];
+        [self alocaMascoteFalaPrato];
+        [tutorialCoreData prato01];
+        
+        CABasicAnimation *theAnimation;
+        
+        theAnimation=[CABasicAnimation animationWithKeyPath:@"opacity"];
+        theAnimation.duration=0.5;
+        theAnimation.repeatCount=HUGE_VALF;
+        theAnimation.autoreverses=YES;
+        theAnimation.fromValue=[NSNumber numberWithFloat:1.0];
+        theAnimation.toValue=[NSNumber numberWithFloat:0.0];
+        [btnPrato.layer addAnimation:theAnimation forKey:@"animateOpacity"];
+    }
+    if ([[tutorial prato02] intValue] == 1) {
+        [self disableButtons:YES panela:YES prato:YES jogo:YES];
     }
 }
 
+-(void)disableButtons: (BOOL)mercado panela: (BOOL)panela prato: (BOOL)prato jogo: (BOOL)jogo {
+    [btnMercado setEnabled:mercado];
+    [btnPanela setEnabled:panela];
+    [btnPrato setEnabled:prato];
+    [btnJogo setEnabled:jogo];
+}
+
+-(void)alocaMascoteFalaMercado {
+    MascoteView *mascote = [[MascoteView alloc] initWithFrameAndAlimentos:CGRectMake(0, 0, 1024, 768) :nil];
+    [mascote falaHomeMercado];
+    [self.view addSubview:mascote];
+}
+
+-(void)alocaMascoteFalaPanela {
+    MascoteView *mascote = [[MascoteView alloc] initWithFrameAndAlimentos:CGRectMake(0, 0, 1024, 768) :nil];
+    [mascote falaHomePanela];
+    [self.view addSubview:mascote];
+}
+
+-(void)alocaMascoteFalaPrato {
+    MascoteView *mascote = [[MascoteView alloc] initWithFrameAndAlimentos:CGRectMake(0, 0, 1024, 768) :nil];
+    [mascote falaHomePrato];
+    [self.view addSubview:mascote];
+}
 
 -(void)atualizaDinheiro {
     Personagem *personagem = [personagemCoreData returnPersonagem];
@@ -118,23 +200,38 @@
 }
 
 -(void)viewDidAppear:(BOOL)animated {
+    
+    [self removeAnimacoes];
+    
     Personagem *personagem = [personagemCoreData returnPersonagem];
     NSString *dindin = [NSString stringWithFormat:@"%d", [[personagem dinheiro] intValue]];
     [dinheiro setText:dindin];
     
+    [self alocaTutorial];
+    
+    
+    if (timerFome == nil) {
+        timerFome = [NSTimer scheduledTimerWithTimeInterval:60.0 target:self selector:@selector(diminuiFome) userInfo:nil repeats:YES];
+    }
+    
+    if (timerSaude == nil) {
+        timerSaude = [NSTimer scheduledTimerWithTimeInterval:60.0 target:self selector:@selector(diminuiSaude) userInfo:nil repeats:YES];
+    }
+
     [fomeBar setBackgroundColor:[UIColor colorWithRed:0.0 green:0.7 blue:0.0f alpha:1.0f]];
     
-    [fomeBar setFrame:CGRectMake(0, 200, fomeBar.bounds.size.width, -([[personagem fome] floatValue]*200)/100)];
-    [saudeBar setFrame:CGRectMake(0, 200, saudeBar.bounds.size.width, -([[personagem saude] floatValue]*200)/100)];
- 
+    [fomeBar setFrame:CGRectMake(0, 200, fomeBar.bounds.size.width, -([[personagem fome] floatValue]*187)/100)];
+    [saudeBar setFrame:CGRectMake(0, 200, saudeBar.bounds.size.width, -([[personagem saude] floatValue]*177)/100)];
+    
     [self atualizaImagemPersonagem];
+
 }
 
 -(void)atualizaImagemPersonagem {
     Personagem *personagem = [personagemCoreData returnPersonagem];
     NSString *imageName;
     //UIImageView *personagemView = [[UIImageView alloc] initWithFrame:CGRectMake(50, 50, 210, 210)];
-    if( [[personagem fome]intValue] >= 66 || [[personagem saude]intValue] >= 66){
+    if( [[personagem fome]intValue] > 66 || [[personagem saude]intValue] > 66){
         imageName = [NSString stringWithFormat:@"mascote%d_1", [[personagem tipo] intValue]];
     }
     if ([[personagem fome]intValue] <= 66 || [[personagem saude]intValue] <= 66){

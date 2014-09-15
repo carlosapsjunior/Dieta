@@ -17,8 +17,19 @@
         <attribute name="saude" optional="YES" attributeType="Float" defaultValueString="0" syncable="YES"/>
         <attribute name="tipo" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
     </entity>
+    <entity name="Tutorial" representedClassName="Tutorial" syncable="YES">
+        <attribute name="intro01" optional="YES" attributeType="Boolean" defaultValueString="0" syncable="YES"/>
+        <attribute name="intro02" optional="YES" attributeType="Boolean" defaultValueString="0" syncable="YES"/>
+        <attribute name="mercado01" optional="YES" attributeType="Boolean" defaultValueString="0" syncable="YES"/>
+        <attribute name="mercado02" optional="YES" attributeType="Boolean" defaultValueString="0" syncable="YES"/>
+        <attribute name="panela01" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="panela02" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="prato01" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="prato02" optional="YES" attributeType="Boolean" syncable="YES"/>
+    </entity>
     <elements>
         <element name="Alimento" positionX="0" positionY="0" width="0" height="0"/>
         <element name="Personagem" positionX="0" positionY="0" width="0" height="0"/>
+        <element name="Tutorial" positionX="0" positionY="0" width="0" height="0"/>
     </elements>
 </model>

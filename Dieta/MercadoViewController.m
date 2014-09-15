@@ -64,6 +64,20 @@
     [btnPaosCereaisTuberculosRaizesView addTarget:self action:@selector(mudaViewMercado:) forControlEvents:UIControlEventTouchUpInside];
     [btnVerdurasLegumesHortalicasView addTarget:self action:@selector(mudaViewMercado:) forControlEvents:UIControlEventTouchUpInside];
 
+    TutorialCoreData *tutorialCoreData = [[TutorialCoreData alloc]init];
+    Tutorial *tutorial = [tutorialCoreData returnTutorial];
+    
+    if ([[tutorial mercado02] intValue] == 0) {
+        [self alocaMascote];
+        [tutorialCoreData mercado02];
+    }
+}
+
+
+-(void)alocaMascote {
+    MascoteView *mascote = [[MascoteView alloc] initWithFrameAndAlimentos:CGRectMake(0, 0, 1024, 768) :nil];
+    [mascote falaMercado];
+    [self.view addSubview:mascote];
 }
 
 - (IBAction)fechaView:(id)sender {
