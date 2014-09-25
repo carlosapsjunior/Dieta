@@ -74,6 +74,7 @@
 		7EE42287195B405200E9B7C1 /* MascoteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EE42286195B405200E9B7C1 /* MascoteViewController.m */; };
 		7EF219AD192E923E006B94D1 /* AlimentoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EF219AC192E923E006B94D1 /* AlimentoView.m */; };
 		7EF3BD5D192FD637006B6ABE /* Alimento.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EF3BD5C192FD637006B6ABE /* Alimento.m */; };
+		A90DDD5519D48C5500846303 /* AnalisaCafe.m in Sources */ = {isa = PBXBuildFile; fileRef = A90DDD5419D48C5500846303 /* AnalisaCafe.m */; };
 		FC17FC2818FEF7B5000E9969 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC17FC2718FEF7B5000E9969 /* Foundation.framework */; };
 		FC17FC2A18FEF7B5000E9969 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC17FC2918FEF7B5000E9969 /* CoreGraphics.framework */; };
 		FC17FC2C18FEF7B5000E9969 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC17FC2B18FEF7B5000E9969 /* UIKit.framework */; };
@@ -268,6 +269,8 @@
 		7EF219AC192E923E006B94D1 /* AlimentoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlimentoView.m; sourceTree = "<group>"; };
 		7EF3BD5B192FD637006B6ABE /* Alimento.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Alimento.h; sourceTree = "<group>"; };
 		7EF3BD5C192FD637006B6ABE /* Alimento.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Alimento.m; sourceTree = "<group>"; };
+		A90DDD5319D48C5500846303 /* AnalisaCafe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnalisaCafe.h; sourceTree = "<group>"; };
+		A90DDD5419D48C5500846303 /* AnalisaCafe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnalisaCafe.m; sourceTree = "<group>"; };
 		FC17FC2418FEF7B5000E9969 /* Dieta.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dieta.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC17FC2718FEF7B5000E9969 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		FC17FC2918FEF7B5000E9969 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -518,6 +521,8 @@
 				7EF219AC192E923E006B94D1 /* AlimentoView.m */,
 				FC6E01E51906F0A900C342F7 /* AnalisaRefeicao.h */,
 				FC6E01E61906F0A900C342F7 /* AnalisaRefeicao.m */,
+				A90DDD5319D48C5500846303 /* AnalisaCafe.h */,
+				A90DDD5419D48C5500846303 /* AnalisaCafe.m */,
 				7EBF1455190EDD2400832A13 /* AppDelegate.h */,
 				7EBF1456190EDD2400832A13 /* AppDelegate.m */,
 				FC948425190AF670007EFAAA /* AudioController.h */,
@@ -1007,6 +1012,7 @@
 				7E27E417192FE54A00C05CF7 /* CategoriaMercadoView.m in Sources */,
 				7EC2156E199178AC000F6D6A /* PersonagemCoreData.m in Sources */,
 				FC6E01E71906F0A900C342F7 /* AnalisaRefeicao.m in Sources */,
+				A90DDD5519D48C5500846303 /* AnalisaCafe.m in Sources */,
 				7EF219AD192E923E006B94D1 /* AlimentoView.m in Sources */,
 				7E26070519A67C1F0036FC41 /* TutorialCoreData.m in Sources */,
 				7EAB0E7E192406F800EDD4A7 /* GrupoAlimentar.m in Sources */,

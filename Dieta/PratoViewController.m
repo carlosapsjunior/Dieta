@@ -468,8 +468,22 @@
 }
 
 -(float)processaAlimentosTempoReal {
+    
+    NSDate *date = [NSDate date];
+    NSCalendar *calendar = [NSCalendar currentCalendar];
+    NSDateComponents *components = [calendar components:(NSHourCalendarUnit | NSMinuteCalendarUnit) fromDate:date];
+    NSInteger hour = [components hour];
+    NSInteger minute = [components minute];
+    if (hour >= 16 && hour < 17) {
+        NSLog(@"entrou");
+        AnalisaCafe *analiseCafe = [[AnalisaCafe alloc] initWithAlimentos:alimentosPrato];
+            return [analiseCafe verificaSaude];
+    }
+    else{
     AnalisaRefeicao *analiseRefeicao = [[AnalisaRefeicao alloc] initWithAlimentos:alimentosPrato];
     return [analiseRefeicao verificaSaude];
+    }
+
 }
 
 - (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex {

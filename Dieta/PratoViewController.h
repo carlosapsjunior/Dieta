@@ -10,6 +10,7 @@
 #import "AlimentoView.h"
 #import "MascoteView.h"
 #import "AnalisaRefeicao.h"
+#import "AnalisaCafe.h"
 #import "AudioController.h"
 #import "GerenciadorCoreData.h"
 #import "AudioController.h"
