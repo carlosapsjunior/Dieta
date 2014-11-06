@@ -387,6 +387,7 @@
     //Cereais, pães, tubérculos, raízes e massas
     [self addAlimento:@"pão" linha:0 coluna:0 imagem:@"pao.png" grupo:1 grupoAux:0 porcao:2 porcaoAux:0 preco:50];
     [self addAlimento:@"arroz" linha:0 coluna:1 imagem:@"arroz.png" grupo:1 grupoAux:0 porcao:0.5 porcaoAux:0 preco:390];
+    
     //Açúcares e doces
     [self addAlimento:@"bolacha" linha:0 coluna:2 imagem:@"bolacha.png" grupo:7 grupoAux:1 porcao:0.5 porcaoAux:0.34 preco:100];
     [self addAlimento:@"bolinho" linha:0 coluna:3 imagem:@"bolinho.png" grupo:7 grupoAux:0 porcao:1 porcaoAux:0 preco:30];
@@ -399,6 +400,8 @@
     [self addAlimento:@"cebola" linha:1 coluna:2 imagem:@"cebola.png" grupo:3 grupoAux:0 porcao:1 porcaoAux:0 preco:1090];
     [self addAlimento:@"berinjela" linha:1 coluna:3 imagem:@"berinjela.png" grupo:3 grupoAux:0 porcao:1 porcaoAux:0 preco:893];
     [self addAlimento:@"pimentao" linha:1 coluna:4 imagem:@"pimentao.png" grupo:3 grupoAux:0 porcao:1 porcaoAux:0 preco:246];
+    [self addAlimento:@"feijão" linha:1 coluna:5 imagem:@"feijao.png" grupo:3 grupoAux:0 porcao:1 porcaoAux:0 preco:10];
+    [self addAlimento:@"milho" linha:1 coluna:6 imagem:@"milho.png" grupo:3 grupoAux:0 porcao:1 porcaoAux:0 preco:90];
     
     //Frutas
     [self addAlimento:@"maça" linha:2 coluna:0 imagem:@"maca.png" grupo:2 grupoAux:0 porcao:1 porcaoAux:0 preco:734];
@@ -415,18 +418,23 @@
     [self addAlimento:@"tomate" linha:2 coluna:11 imagem:@"tomate3.png" grupo:2 grupoAux:0 porcao:1 porcaoAux:0 preco:3590];
     [self addAlimento:@"uva" linha:2 coluna:12 imagem:@"uva.png" grupo:2 grupoAux:0 porcao:0.1 porcaoAux:0 preco:2100];
     [self addAlimento:@"abobora" linha:2 coluna:13 imagem:@"abobora.png" grupo:2 grupoAux:0 porcao:1 porcaoAux:0 preco:632];
+    [self addAlimento:@"pessego" linha:2 coluna:14 imagem:@"pessego.png" grupo:2 grupoAux:0 porcao:1 porcaoAux:0 preco:234];
     
     //Leite e derivados
     [self addAlimento:@"queijo" linha:3 coluna:0 imagem:@"queijo.png" grupo:6 grupoAux:8 porcao:1 porcaoAux:0.5 preco:5];
+    [self addAlimento:@"leite" linha:3 coluna:1 imagem:@"leite.png" grupo:6 grupoAux:0 porcao:1 porcaoAux:0 preco:3];
+    [self addAlimento:@"danone" linha:3 coluna:2 imagem:@"danone.png" grupo:6 grupoAux:0 porcao:1 porcaoAux:0 preco:132];
+
     
     //Carnes e ovos
     [self addAlimento:@"carne" linha:3 coluna:1 imagem:@"carne.png" grupo:5 grupoAux:0 porcao:2 porcaoAux:0 preco:3];
     [self addAlimento:@"frango" linha:3 coluna:2 imagem:@"frango.png" grupo:5 grupoAux:0 porcao:2 porcaoAux:0 preco:9];
     [self addAlimento:@"ovo" linha:3 coluna:3 imagem:@"ovo.png" grupo:5 grupoAux:0 porcao:1 porcaoAux:0 preco:5];
+    [self addAlimento:@"peixe" linha:3 coluna:4 imagem:@"peixe.png" grupo:5 grupoAux:0 porcao:1 porcaoAux:0 preco:7];
+    [self addAlimento:@"burguer" linha:3 coluna:5 imagem:@"burg.png" grupo:5 grupoAux:0 porcao:1 porcaoAux:0 preco:4];
     
     //Leguminosas
-    [self addAlimento:@"feijão" linha:4 coluna:0 imagem:@"feijao.png" grupo:4 grupoAux:0 porcao:1 porcaoAux:0 preco:10];
-    [self addAlimento:@"milho" linha:4 coluna:1 imagem:@"milho.png" grupo:4 grupoAux:0 porcao:1 porcaoAux:0 preco:90];
+
     
     //Óledos e gorduras
     [self addAlimento:@"hamburger" linha:4 coluna:2 imagem:@"hamburguer.png" grupo:8 grupoAux:0 porcao:1 porcaoAux:0 preco:1];
@@ -468,22 +476,31 @@
 }
 
 -(float)processaAlimentosTempoReal {
-    
     NSDate *date = [NSDate date];
     NSCalendar *calendar = [NSCalendar currentCalendar];
     NSDateComponents *components = [calendar components:(NSHourCalendarUnit | NSMinuteCalendarUnit) fromDate:date];
     NSInteger hour = [components hour];
-    NSInteger minute = [components minute];
-    if (hour >= 16 && hour < 17) {
-        NSLog(@"entrou");
-        AnalisaCafe *analiseCafe = [[AnalisaCafe alloc] initWithAlimentos:alimentosPrato];
-            return [analiseCafe verificaSaude];
+    
+    if (hour >= 5 && hour < 10) {
+        NSLog(@"Entrou Café");
+        AnalisaCafe *analisaCafe = [[AnalisaCafe alloc] initWithAlimentos:alimentosPrato];
+        return [analisaCafe verificaSaude];
     }
+    
+    if (hour >= 11 && hour < 14) {
+        AnalisaAlmoco *analisaAlmoco = [[AnalisaAlmoco alloc] initWithAlimentos:alimentosPrato];
+        return [analisaAlmoco verificaSaude];
+    }
+    
+    if (hour >= 18 && hour < 21) {
+        AnalisaJanta *analisaJanta = [[AnalisaJanta alloc] initWithAlimentos:alimentosPrato];
+        return [analisaJanta verificaSaude];
+    }
+    
     else{
     AnalisaRefeicao *analiseRefeicao = [[AnalisaRefeicao alloc] initWithAlimentos:alimentosPrato];
     return [analiseRefeicao verificaSaude];
     }
-
 }
 
 - (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex {

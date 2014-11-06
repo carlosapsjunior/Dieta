@@ -18,6 +18,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *dinheiro;
 
 @property UICollectionView *collectionView;
+@property UIView *ofertasView;
 @property NSArray *imagens;
 @property GerenciadorCoreData *gerenciadorCoreData;
 @property PersonagemCoreData *personagemCoreData;
@@ -25,6 +26,8 @@
 @property NSArray *todosAlimentos;
 @property NSMutableArray *carrinho;
 @property AudioController *audioController;
+@property int controladorPag, indAtual, grupoAlimento;
+@property CGPoint pagina;
 -(void)pegaAlimentosCategoria:(int)grupoAlimento;
 
 @property (weak, nonatomic) IBOutlet UIButton *btnFrutasView;

@@ -11,6 +11,8 @@
 #import "MascoteView.h"
 #import "AnalisaRefeicao.h"
 #import "AnalisaCafe.h"
+#import "AnalisaAlmoco.h"
+#import "AnalisaJanta.h"
 #import "AudioController.h"
 #import "GerenciadorCoreData.h"
 #import "AudioController.h"

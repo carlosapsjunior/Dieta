@@ -1,14 +1,17 @@
 //
-//  AnalisaCafe.m
+//  AnalisaRefeicao.m
 //  Dieta
 //
-//  Created by DANIEL MISSIMA TEODORO on 25/09/14.
-//  Copyright (c) 2014 senac2012. All rights reserved.
+//  Created by Daniel Missima on 22/04/14.
+//  Copyright (c) 2014 Daniel Missima. All rights reserved.
 //
+
+// {5, 3, 3, 3, 2, 3, 1, 1}
 
 #import "AnalisaCafe.h"
 
 @implementation AnalisaCafe
+
 @synthesize  gruposAlimentos, refeicao, problemasAlimentares, gruposAlimentares;
 
 -(id)initWithAlimentos:(NSArray *)alimentos{
@@ -27,7 +30,7 @@
         //Maximo: 29
         //Porcao: 3.45
         
-        grupo = [[GrupoAlimentar alloc]initWithNome:@"Cereais" porcaoIdeal:2];
+        grupo = [[GrupoAlimentar alloc]initWithNome:@"Cereais" porcaoIdeal:1];
         [grupo setDescricaoExcedente:@"Você está comendo muitos cereais, eles são bons para o intestino, mas em excesso eles podem engordar."];
         [grupo setDescricaoDeficiencia:@"Coma mais cereais, eles contém muitas fibras, que são importantes para o funcionamento do seu intestino."];
         [gruposAlimentares addObject:grupo];
@@ -52,7 +55,7 @@
         [grupo setDescricaoDeficiencia:@"Coma mais carnes, é muito importante para o crescimento dos seus músculos."];
         [gruposAlimentares addObject:grupo];
         
-        grupo = [[GrupoAlimentar alloc]initWithNome:@"Derivados" porcaoIdeal:1];
+        grupo = [[GrupoAlimentar alloc]initWithNome:@"Derivados" porcaoIdeal:2];
         [grupo setDescricaoExcedente:@"Você está comendo muitos derivados de leite, eles são ótimas para os ossos mas também tem muita gordura."];
         [grupo setDescricaoDeficiencia:@"Coma mais derivados de leite, eles te ajudam a crescer e ter ossos mais fortes."];
         [gruposAlimentares addObject:grupo];

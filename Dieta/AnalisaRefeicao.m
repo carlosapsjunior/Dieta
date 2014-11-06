@@ -29,42 +29,42 @@
         //Maximo: 29
         //Porcao: 3.45
         
-        grupo = [[GrupoAlimentar alloc]initWithNome:@"Cereais" porcaoIdeal:5];
+        grupo = [[GrupoAlimentar alloc]initWithNome:@"Cereais" porcaoIdeal:0];
         [grupo setDescricaoExcedente:@"Você está comendo muitos cereais, eles são bons para o intestino, mas em excesso eles podem engordar."];
         [grupo setDescricaoDeficiencia:@"Coma mais cereais, eles contém muitas fibras, que são importantes para o funcionamento do seu intestino."];
         [gruposAlimentares addObject:grupo];
         
-        grupo = [[GrupoAlimentar alloc]initWithNome:@"Frutas" porcaoIdeal:3];
+        grupo = [[GrupoAlimentar alloc]initWithNome:@"Frutas" porcaoIdeal:1];
         [grupo setDescricaoExcedente:@"Você está comendo muitas frutas, elas são ricas fontes de vitamina mas contém açucar também."];
         [grupo setDescricaoDeficiencia:@"Coma mais frutas, elas são ricas em vitaminas importantes para a sua saúde."];
         [gruposAlimentares addObject:grupo];
         
-        grupo = [[GrupoAlimentar alloc]initWithNome:@"Hortaliças" porcaoIdeal:3];
+        grupo = [[GrupoAlimentar alloc]initWithNome:@"Hortaliças" porcaoIdeal:0];
         [grupo setDescricaoExcedente:nil];
         [grupo setDescricaoDeficiencia:@"Coma mais salada, eles contém muitas fibras, que são importantes para o funcionamento do seu intestino."];
         [gruposAlimentares addObject:grupo];
         
-        grupo = [[GrupoAlimentar alloc]initWithNome:@"Leguminosas" porcaoIdeal:3];
+        grupo = [[GrupoAlimentar alloc]initWithNome:@"Leguminosas" porcaoIdeal:0];
         [grupo setDescricaoExcedente:nil];
         [grupo setDescricaoDeficiencia:@"Coma mais legumes, eles são fontes de nutrientes, vitaminas e proteínas."];
         [gruposAlimentares addObject:grupo];
         
-        grupo = [[GrupoAlimentar alloc]initWithNome:@"Carnes" porcaoIdeal:2];
+        grupo = [[GrupoAlimentar alloc]initWithNome:@"Carnes" porcaoIdeal:0];
         [grupo setDescricaoExcedente:@"Você está comendo muita carne, elas são ótimas para os músculos mas também tem muita gordura."];
         [grupo setDescricaoDeficiencia:@"Coma mais carnes, é muito importante para o crescimento dos seus músculos."];
         [gruposAlimentares addObject:grupo];
         
-        grupo = [[GrupoAlimentar alloc]initWithNome:@"Derivados" porcaoIdeal:3];
+        grupo = [[GrupoAlimentar alloc]initWithNome:@"Derivados" porcaoIdeal:0];
         [grupo setDescricaoExcedente:@"Você está comendo muitos derivados de leite, eles são ótimas para os ossos mas também tem muita gordura."];
         [grupo setDescricaoDeficiencia:@"Coma mais derivados de leite, eles te ajudam a crescer e ter ossos mais fortes."];
         [gruposAlimentares addObject:grupo];
         
-        grupo = [[GrupoAlimentar alloc]initWithNome:@"Doces" porcaoIdeal:1];
+        grupo = [[GrupoAlimentar alloc]initWithNome:@"Doces" porcaoIdeal:0];
         [grupo setDescricaoExcedente:@"Você está comendo muitos doces, eles são ricos em açúcar e gordura e engordam"];
         [grupo setDescricaoDeficiencia:nil];
         [gruposAlimentares addObject:grupo];
         
-        grupo = [[GrupoAlimentar alloc]initWithNome:@"Gorduras" porcaoIdeal:1];
+        grupo = [[GrupoAlimentar alloc]initWithNome:@"Gorduras" porcaoIdeal:0];
         [grupo setDescricaoExcedente:@"Você está comendo muita gordura, isso pode fazer mal ao seu coração"];
         [grupo setDescricaoDeficiencia:nil];
         [gruposAlimentares addObject:grupo];

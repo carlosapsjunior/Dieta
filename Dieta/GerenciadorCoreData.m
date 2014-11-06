@@ -178,11 +178,15 @@
     //Cereais, pães, tubérculos, raízes e massas
     [self addAlimento:@"pão" imagem:@"pao.png" grupo:1 grupoAux:0 porcao:2 porcaoAux:0 preco:2];
     [self addAlimento:@"arroz" imagem:@"arroz.png" grupo:1 grupoAux:0 porcao:0.5 porcaoAux:0 preco:1];
+    [self addAlimento:@"farinha" imagem:@"farinha.png" grupo:1 grupoAux:0 porcao:1 porcaoAux:0 preco:3];
+    
     //Açúcares e doces
     [self addAlimento:@"bolacha" imagem:@"bolacha.png" grupo:7 grupoAux:1 porcao:0.5 porcaoAux:0.34 preco:4];
     [self addAlimento:@"bolinho" imagem:@"bolinho.png" grupo:7 grupoAux:0 porcao:1 porcaoAux:0 preco:13];
     [self addAlimento:@"sorvete" imagem:@"sorvete2.png" grupo:7 grupoAux:0 porcao:1 porcaoAux:0 preco:15];
     [self addAlimento:@"donut" imagem:@"donut2.png" grupo:7 grupoAux:0 porcao:1 porcaoAux:0 preco:16];
+    [self addAlimento:@"cupcake" imagem:@"cupcake.png" grupo:7 grupoAux:0 porcao:1 porcaoAux:0 preco:10];
+    [self addAlimento:@"refrigerante" imagem:@"refrigerante.png" grupo:7 grupoAux:0 porcao:1 porcaoAux:0 preco:5];
     
     //Hortaliças
     [self addAlimento:@"alface" imagem:@"alface.png" grupo:3 grupoAux:0 porcao:0.125 porcaoAux:0 preco:7];
@@ -190,6 +194,10 @@
     [self addAlimento:@"cebola" imagem:@"cebola.png" grupo:3 grupoAux:0 porcao:1 porcaoAux:0 preco:9];
     [self addAlimento:@"berinjela" imagem:@"berinjela.png" grupo:3 grupoAux:0 porcao:1 porcaoAux:0 preco:11];
     [self addAlimento:@"pimentao" imagem:@"pimentao.png" grupo:3 grupoAux:0 porcao:1 porcaoAux:0 preco:13];
+    [self addAlimento:@"feijão" imagem:@"feijao.png" grupo:3 grupoAux:0 porcao:1 porcaoAux:0 preco:1];
+    [self addAlimento:@"milho" imagem:@"milho.png" grupo:3 grupoAux:0 porcao:1 porcaoAux:0 preco:13];
+    [self addAlimento:@"brocolis" imagem:@"brocolis.png" grupo:3 grupoAux:0 porcao:1 porcaoAux:0 preco:7];
+    [self addAlimento:@"ervilha" imagem:@"ervilha.png" grupo:3 grupoAux:0 porcao:1 porcaoAux:0 preco:3];
     
     //Frutas
     [self addAlimento:@"maça" imagem:@"maca.png" grupo:2 grupoAux:0 porcao:1 porcaoAux:0 preco:3];
@@ -209,15 +217,18 @@
     
     //Leite e derivados
     [self addAlimento:@"queijo" imagem:@"queijo.png" grupo:6 grupoAux:8 porcao:1 porcaoAux:0.5 preco:7];
+    [self addAlimento:@"leite" imagem:@"leite.png" grupo:6 grupoAux:0 porcao:1 porcaoAux:0 preco:3];
+    [self addAlimento:@"danone" imagem:@"danone.png" grupo:6 grupoAux:0 porcao:1 porcaoAux:0 preco:5];
     
     //Carnes e ovos
     [self addAlimento:@"carne" imagem:@"carne.png" grupo:5 grupoAux:0 porcao:2 porcaoAux:0 preco:9];
     [self addAlimento:@"frango" imagem:@"frango.png" grupo:5 grupoAux:0 porcao:2 porcaoAux:0 preco:11];
     [self addAlimento:@"ovo" imagem:@"ovo.png" grupo:5 grupoAux:0 porcao:1 porcaoAux:0 preco:6];
+    [self addAlimento:@"peixe" imagem:@"peixe.png" grupo:5 grupoAux:0 porcao:1 porcaoAux:0 preco:10];
+    [self addAlimento:@"burguer" imagem:@"burg.png" grupo:5 grupoAux:0 porcao:1 porcaoAux:0 preco:7];
     
     //Leguminosas
-    [self addAlimento:@"feijão" imagem:@"feijao.png" grupo:4 grupoAux:0 porcao:1 porcaoAux:0 preco:1];
-    [self addAlimento:@"milho" imagem:@"milho.png" grupo:4 grupoAux:0 porcao:1 porcaoAux:0 preco:13];
+
     
     //Óledos e gorduras
     [self addAlimento:@"hamburger" imagem:@"hamburguer.png" grupo:8 grupoAux:0 porcao:1 porcaoAux:0 preco:26];

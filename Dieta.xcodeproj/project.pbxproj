@@ -12,6 +12,52 @@
 		3D83FAC419A78C99001D02F2 /* vida1.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D83FAC319A78C99001D02F2 /* vida1.png */; };
 		3D83FAC819A7B7C6001D02F2 /* tile01.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D83FAC719A7B7C6001D02F2 /* tile01.png */; };
 		3D83FACA19A7C496001D02F2 /* iconDrop.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D83FAC919A7C496001D02F2 /* iconDrop.png */; };
+		3D88500119E5B5E500F00A25 /* AnalisaCafe.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D88500019E5B5E500F00A25 /* AnalisaCafe.m */; };
+		3D88500419E5CEAC00F00A25 /* AnalisaAlmoco.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D88500319E5CEAC00F00A25 /* AnalisaAlmoco.m */; };
+		3D88500719E5D63A00F00A25 /* AnalisaJanta.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D88500619E5D63A00F00A25 /* AnalisaJanta.m */; };
+		3D88500F19E8617C00F00A25 /* carnes.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D88500919E8617C00F00A25 /* carnes.png */; };
+		3D88501019E8617C00F00A25 /* cereais.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D88500A19E8617C00F00A25 /* cereais.png */; };
+		3D88501119E8617C00F00A25 /* derivados.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D88500B19E8617C00F00A25 /* derivados.png */; };
+		3D88501219E8617C00F00A25 /* Doces.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D88500C19E8617C00F00A25 /* Doces.png */; };
+		3D88501319E8617C00F00A25 /* Frutas.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D88500D19E8617C00F00A25 /* Frutas.png */; };
+		3D88501419E8617C00F00A25 /* Hortaliças.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D88500E19E8617C00F00A25 /* Hortaliças.png */; };
+		3D88501619EC4DDF00F00A25 /* leite.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D88501519EC4DDF00F00A25 /* leite.png */; };
+		3D88501819EC4DF200F00A25 /* danone.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D88501719EC4DF200F00A25 /* danone.png */; };
+		3D88501A19EC4DFC00F00A25 /* queijo.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D88501919EC4DFC00F00A25 /* queijo.png */; };
+		3D88501C19EC4E4000F00A25 /* carne.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D88501B19EC4E4000F00A25 /* carne.png */; };
+		3D88501E19EC4E4600F00A25 /* frango.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D88501D19EC4E4600F00A25 /* frango.png */; };
+		3D88502019EC734300F00A25 /* cenoura.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D88501F19EC734300F00A25 /* cenoura.png */; };
+		3D88502219EC73C600F00A25 /* pimentao.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D88502119EC73C600F00A25 /* pimentao.png */; };
+		3D88502419EC746A00F00A25 /* abobora.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D88502319EC746A00F00A25 /* abobora.png */; };
+		3D88502619EC747200F00A25 /* banana.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D88502519EC747200F00A25 /* banana.png */; };
+		3D88502819EC747D00F00A25 /* kiwi.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D88502719EC747D00F00A25 /* kiwi.png */; };
+		3D88502A19EC748600F00A25 /* pera.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D88502919EC748600F00A25 /* pera.png */; };
+		3D88502C19EC748E00F00A25 /* melancia.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D88502B19EC748E00F00A25 /* melancia.png */; };
+		3D88502E19EC749B00F00A25 /* maca.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D88502D19EC749B00F00A25 /* maca.png */; };
+		3D88503019EC74AE00F00A25 /* limao.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D88502F19EC74AE00F00A25 /* limao.png */; };
+		3D88503219EC74B700F00A25 /* laranja.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D88503119EC74B700F00A25 /* laranja.png */; };
+		3D88503419EC74C100F00A25 /* uva.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D88503319EC74C100F00A25 /* uva.png */; };
+		3D88503619EC74CB00F00A25 /* tomate3.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D88503519EC74CB00F00A25 /* tomate3.png */; };
+		3D88503819EC74DD00F00A25 /* cereja.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D88503719EC74DD00F00A25 /* cereja.png */; };
+		3D88503A19EC763600F00A25 /* bolinho.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D88503919EC763600F00A25 /* bolinho.png */; };
+		3D88503C19EC765100F00A25 /* sorvete2.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D88503B19EC765100F00A25 /* sorvete2.png */; };
+		3D88503E19EC766900F00A25 /* bolacha.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D88503D19EC766900F00A25 /* bolacha.png */; };
+		3D88504019EC76B400F00A25 /* donut2.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D88503F19EC76B400F00A25 /* donut2.png */; };
+		3D88504219EC76CE00F00A25 /* refrigerante.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D88504119EC76CE00F00A25 /* refrigerante.png */; };
+		3D88504419EC76EE00F00A25 /* morango.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D88504319EC76EE00F00A25 /* morango.png */; };
+		3D88504619EEF2A200F00A25 /* cebola.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D88504519EEF2A200F00A25 /* cebola.png */; };
+		3D88504819EEF2F100F00A25 /* burg.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D88504719EEF2F100F00A25 /* burg.png */; };
+		3D88504A19EEF33800F00A25 /* feijao.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D88504919EEF33800F00A25 /* feijao.png */; };
+		3D88504C19EEF35F00F00A25 /* peixe.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D88504B19EEF35F00F00A25 /* peixe.png */; };
+		3D88504E19EEF38600F00A25 /* ervilha.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D88504D19EEF38600F00A25 /* ervilha.png */; };
+		3D88505019EEF3AA00F00A25 /* cupcake.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D88504F19EEF3AA00F00A25 /* cupcake.png */; };
+		3D88505219EEF41800F00A25 /* brocolis.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D88505119EEF41800F00A25 /* brocolis.png */; };
+		3D88505419EEFA9F00F00A25 /* beringela.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D88505319EEFA9F00F00A25 /* beringela.png */; };
+		3D88505619EEFABD00F00A25 /* farinha.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D88505519EEFABD00F00A25 /* farinha.png */; };
+		3D88505819EEFAD900F00A25 /* manga.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D88505719EEFAD900F00A25 /* manga.png */; };
+		3D88505A19EEFAF300F00A25 /* ovo.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D88505919EEFAF300F00A25 /* ovo.png */; };
+		3D88505C19EEFB1600F00A25 /* milho.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D88505B19EEFB1600F00A25 /* milho.png */; };
+		3D88505E19EEFB2100F00A25 /* pessego.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D88505D19EEFB2100F00A25 /* pessego.png */; };
 		3DA02AD61992A2A90098C507 /* JogoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DA02AD51992A2A90098C507 /* JogoViewController.m */; };
 		3DA02ADC1992C0C20098C507 /* FoodDrop.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DA02ADB1992C0C20098C507 /* FoodDrop.m */; };
 		3DA02B0E19941E980098C507 /* Cancela.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DA02B0819941E980098C507 /* Cancela.png */; };
@@ -22,6 +68,10 @@
 		3DA02B1319941E980098C507 /* Panela.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DA02B0D19941E980098C507 /* Panela.png */; };
 		3DA02B1519941EB80098C507 /* FundoPrato.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3DA02B1419941EB80098C507 /* FundoPrato.jpg */; };
 		3DA02B1719941F310098C507 /* Voltar.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DA02B1619941F310098C507 /* Voltar.png */; };
+		3DD472E819F5952800BCCDDC /* alface.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DD472E719F5952800BCCDDC /* alface.png */; };
+		3DD472EA19F5953000BCCDDC /* batata.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DD472E919F5953000BCCDDC /* batata.png */; };
+		3DD472EC19F5953B00BCCDDC /* pao.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DD472EB19F5953B00BCCDDC /* pao.png */; };
+		3DD472EE19F6D23200BCCDDC /* botcima-01.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DD472ED19F6D23200BCCDDC /* botcima-01.png */; };
 		75193D73197461B00071E959 /* background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 75193D70197461B00071E959 /* background.jpg */; };
 		75193D74197461B00071E959 /* block.png in Resources */ = {isa = PBXBuildFile; fileRef = 75193D71197461B00071E959 /* block.png */; };
 		75193D75197461B00071E959 /* normal1.png in Resources */ = {isa = PBXBuildFile; fileRef = 75193D72197461B00071E959 /* normal1.png */; };
@@ -74,7 +124,7 @@
 		7EE42287195B405200E9B7C1 /* MascoteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EE42286195B405200E9B7C1 /* MascoteViewController.m */; };
 		7EF219AD192E923E006B94D1 /* AlimentoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EF219AC192E923E006B94D1 /* AlimentoView.m */; };
 		7EF3BD5D192FD637006B6ABE /* Alimento.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EF3BD5C192FD637006B6ABE /* Alimento.m */; };
-		A90DDD5519D48C5500846303 /* AnalisaCafe.m in Sources */ = {isa = PBXBuildFile; fileRef = A90DDD5419D48C5500846303 /* AnalisaCafe.m */; };
+		A99C98A61A02C4E3005314B7 /* botbaixo.png in Resources */ = {isa = PBXBuildFile; fileRef = A99C98A51A02C4E3005314B7 /* botbaixo.png */; };
 		FC17FC2818FEF7B5000E9969 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC17FC2718FEF7B5000E9969 /* Foundation.framework */; };
 		FC17FC2A18FEF7B5000E9969 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC17FC2918FEF7B5000E9969 /* CoreGraphics.framework */; };
 		FC17FC2C18FEF7B5000E9969 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC17FC2B18FEF7B5000E9969 /* UIKit.framework */; };
@@ -105,24 +155,8 @@
 		FC699340193511D9002AF42A /* circulo.png in Resources */ = {isa = PBXBuildFile; fileRef = FC69933F193511D9002AF42A /* circulo.png */; };
 		FC6E01E71906F0A900C342F7 /* AnalisaRefeicao.m in Sources */ = {isa = PBXBuildFile; fileRef = FC6E01E61906F0A900C342F7 /* AnalisaRefeicao.m */; };
 		FC7A55301995680C00C47E91 /* toldo.png in Resources */ = {isa = PBXBuildFile; fileRef = FC7A552F1995680C00C47E91 /* toldo.png */; };
-		FC7AA580190989DB00883569 /* limao.png in Resources */ = {isa = PBXBuildFile; fileRef = FC7AA57F190989DB00883569 /* limao.png */; };
-		FC7AA58B19098C8D00883569 /* alface.png in Resources */ = {isa = PBXBuildFile; fileRef = FC7AA58A19098C8D00883569 /* alface.png */; };
-		FC7AA58D19098CAE00883569 /* cenoura.png in Resources */ = {isa = PBXBuildFile; fileRef = FC7AA58C19098CAE00883569 /* cenoura.png */; };
-		FC7AA58F19098CDA00883569 /* queijo.png in Resources */ = {isa = PBXBuildFile; fileRef = FC7AA58E19098CDA00883569 /* queijo.png */; };
-		FC7AA59119098CED00883569 /* frango.png in Resources */ = {isa = PBXBuildFile; fileRef = FC7AA59019098CED00883569 /* frango.png */; };
-		FC7AA59519098D1F00883569 /* milho.png in Resources */ = {isa = PBXBuildFile; fileRef = FC7AA59419098D1F00883569 /* milho.png */; };
-		FC7AA59919098D6300883569 /* berinjela.png in Resources */ = {isa = PBXBuildFile; fileRef = FC7AA59819098D6300883569 /* berinjela.png */; };
-		FC7AA59B19098D7D00883569 /* uva.png in Resources */ = {isa = PBXBuildFile; fileRef = FC7AA59A19098D7D00883569 /* uva.png */; };
-		FC7AA59F19098DD700883569 /* cebola.png in Resources */ = {isa = PBXBuildFile; fileRef = FC7AA59E19098DD700883569 /* cebola.png */; };
-		FC7AA5A119098DFF00883569 /* pimentao.png in Resources */ = {isa = PBXBuildFile; fileRef = FC7AA5A019098DFF00883569 /* pimentao.png */; };
-		FC7AA5A319098E2000883569 /* abobora.png in Resources */ = {isa = PBXBuildFile; fileRef = FC7AA5A219098E2000883569 /* abobora.png */; };
-		FC7AA5A519098E3600883569 /* refri.png in Resources */ = {isa = PBXBuildFile; fileRef = FC7AA5A419098E3600883569 /* refri.png */; };
 		FC7AA5A919098F1200883569 /* arroz.png in Resources */ = {isa = PBXBuildFile; fileRef = FC7AA5A819098F1200883569 /* arroz.png */; };
-		FC7AA5AB19098F2300883569 /* pao.png in Resources */ = {isa = PBXBuildFile; fileRef = FC7AA5AA19098F2300883569 /* pao.png */; };
-		FC7AA5AD19098F3200883569 /* feijao.png in Resources */ = {isa = PBXBuildFile; fileRef = FC7AA5AC19098F3200883569 /* feijao.png */; };
 		FC874EFC194629FF004A222C /* cesto.png in Resources */ = {isa = PBXBuildFile; fileRef = FC874EFB194629FF004A222C /* cesto.png */; };
-		FC948420190AEE9A007EFAAA /* bolacha.png in Resources */ = {isa = PBXBuildFile; fileRef = FC94841F190AEE9A007EFAAA /* bolacha.png */; };
-		FC948424190AF20B007EFAAA /* tomate3.png in Resources */ = {isa = PBXBuildFile; fileRef = FC948423190AF20B007EFAAA /* tomate3.png */; };
 		FC948427190AF670007EFAAA /* AudioController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC948426190AF670007EFAAA /* AudioController.m */; };
 		FC94842E190AF69A007EFAAA /* somClick.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FC948429190AF69A007EFAAA /* somClick.mp3 */; };
 		FC94842F190AF69A007EFAAA /* somConfirma.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FC94842A190AF69A007EFAAA /* somConfirma.mp3 */; };
@@ -136,26 +170,11 @@
 		FCAB44B9199D2EB200953009 /* errado.png in Resources */ = {isa = PBXBuildFile; fileRef = FCAB44B7199D2EB200953009 /* errado.png */; };
 		FCAB44BB199D379400953009 /* coracao_vazado.png in Resources */ = {isa = PBXBuildFile; fileRef = FCAB44BA199D379400953009 /* coracao_vazado.png */; };
 		FCAB44BD199D3A9F00953009 /* estomago.png in Resources */ = {isa = PBXBuildFile; fileRef = FCAB44BC199D3A9F00953009 /* estomago.png */; };
-		FCB7E8FB190995DA00F2F039 /* carne.png in Resources */ = {isa = PBXBuildFile; fileRef = FCB7E8FA190995DA00F2F039 /* carne.png */; };
 		FCB7E8FD190995F600F2F039 /* batatafrita.png in Resources */ = {isa = PBXBuildFile; fileRef = FCB7E8FC190995F600F2F039 /* batatafrita.png */; };
-		FCB7E8FF190999D400F2F039 /* sorvete2.png in Resources */ = {isa = PBXBuildFile; fileRef = FCB7E8FE190999D400F2F039 /* sorvete2.png */; };
-		FCB7E901190999F400F2F039 /* ovo.png in Resources */ = {isa = PBXBuildFile; fileRef = FCB7E900190999F400F2F039 /* ovo.png */; };
-		FCB7E90319099A0D00F2F039 /* bolinho.png in Resources */ = {isa = PBXBuildFile; fileRef = FCB7E90219099A0D00F2F039 /* bolinho.png */; };
-		FCB7E90519099AAE00F2F039 /* donut2.png in Resources */ = {isa = PBXBuildFile; fileRef = FCB7E90419099AAE00F2F039 /* donut2.png */; };
 		FCB7E9081909A2EA00F2F039 /* BalaoView.m in Sources */ = {isa = PBXBuildFile; fileRef = FCB7E9071909A2EA00F2F039 /* BalaoView.m */; };
-		FCBEC4A2190842F200FBE6D0 /* maca.png in Resources */ = {isa = PBXBuildFile; fileRef = FCBEC4A1190842F200FBE6D0 /* maca.png */; };
-		FCBEC4A41908434600FBE6D0 /* melancia.png in Resources */ = {isa = PBXBuildFile; fileRef = FCBEC4A31908434600FBE6D0 /* melancia.png */; };
 		FCBEC4A61908436500FBE6D0 /* pizza.png in Resources */ = {isa = PBXBuildFile; fileRef = FCBEC4A51908436500FBE6D0 /* pizza.png */; };
 		FCBEC4A81908437C00FBE6D0 /* hamburguer.png in Resources */ = {isa = PBXBuildFile; fileRef = FCBEC4A71908437C00FBE6D0 /* hamburguer.png */; };
 		FCBEC4AC190843B800FBE6D0 /* torta.png in Resources */ = {isa = PBXBuildFile; fileRef = FCBEC4AB190843B800FBE6D0 /* torta.png */; };
-		FCBEC4B0190843DF00FBE6D0 /* banana.png in Resources */ = {isa = PBXBuildFile; fileRef = FCBEC4AF190843DF00FBE6D0 /* banana.png */; };
-		FCBEC4B21908440600FBE6D0 /* pessego.png in Resources */ = {isa = PBXBuildFile; fileRef = FCBEC4B11908440600FBE6D0 /* pessego.png */; };
-		FCBEC4B41908441300FBE6D0 /* manga.png in Resources */ = {isa = PBXBuildFile; fileRef = FCBEC4B31908441300FBE6D0 /* manga.png */; };
-		FCBEC4B61908442C00FBE6D0 /* morango.png in Resources */ = {isa = PBXBuildFile; fileRef = FCBEC4B51908442C00FBE6D0 /* morango.png */; };
-		FCBEC4B81908449200FBE6D0 /* cereja.png in Resources */ = {isa = PBXBuildFile; fileRef = FCBEC4B71908449200FBE6D0 /* cereja.png */; };
-		FCBEC4BA190844AC00FBE6D0 /* laranja.png in Resources */ = {isa = PBXBuildFile; fileRef = FCBEC4B9190844AC00FBE6D0 /* laranja.png */; };
-		FCBEC4BE190845D300FBE6D0 /* kiwi.png in Resources */ = {isa = PBXBuildFile; fileRef = FCBEC4BD190845D300FBE6D0 /* kiwi.png */; };
-		FCBEC4C0190846C700FBE6D0 /* pera.png in Resources */ = {isa = PBXBuildFile; fileRef = FCBEC4BF190846C700FBE6D0 /* pera.png */; };
 		FCBEC4C419085A3500FBE6D0 /* PratoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCBEC4C319085A3500FBE6D0 /* PratoViewController.m */; };
 		FCBEC4C619085D9C00FBE6D0 /* 1398303537_N02.png in Resources */ = {isa = PBXBuildFile; fileRef = FCBEC4C519085D9C00FBE6D0 /* 1398303537_N02.png */; };
 		FCC1C4831999476000044C55 /* frango_icone.png in Resources */ = {isa = PBXBuildFile; fileRef = FCC1C4821999476000044C55 /* frango_icone.png */; };
@@ -188,6 +207,55 @@
 		3D83FAC319A78C99001D02F2 /* vida1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = vida1.png; sourceTree = "<group>"; };
 		3D83FAC719A7B7C6001D02F2 /* tile01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tile01.png; sourceTree = "<group>"; };
 		3D83FAC919A7C496001D02F2 /* iconDrop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iconDrop.png; sourceTree = "<group>"; };
+		3D884FFF19E5B5E500F00A25 /* AnalisaCafe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnalisaCafe.h; sourceTree = "<group>"; };
+		3D88500019E5B5E500F00A25 /* AnalisaCafe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnalisaCafe.m; sourceTree = "<group>"; };
+		3D88500219E5CEAC00F00A25 /* AnalisaAlmoco.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnalisaAlmoco.h; sourceTree = "<group>"; };
+		3D88500319E5CEAC00F00A25 /* AnalisaAlmoco.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnalisaAlmoco.m; sourceTree = "<group>"; };
+		3D88500519E5D63A00F00A25 /* AnalisaJanta.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnalisaJanta.h; sourceTree = "<group>"; };
+		3D88500619E5D63A00F00A25 /* AnalisaJanta.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnalisaJanta.m; sourceTree = "<group>"; };
+		3D88500919E8617C00F00A25 /* carnes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = carnes.png; sourceTree = "<group>"; };
+		3D88500A19E8617C00F00A25 /* cereais.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cereais.png; sourceTree = "<group>"; };
+		3D88500B19E8617C00F00A25 /* derivados.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = derivados.png; sourceTree = "<group>"; };
+		3D88500C19E8617C00F00A25 /* Doces.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Doces.png; sourceTree = "<group>"; };
+		3D88500D19E8617C00F00A25 /* Frutas.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Frutas.png; sourceTree = "<group>"; };
+		3D88500E19E8617C00F00A25 /* Hortaliças.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Hortaliças.png"; sourceTree = "<group>"; };
+		3D88501519EC4DDF00F00A25 /* leite.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = leite.png; sourceTree = "<group>"; };
+		3D88501719EC4DF200F00A25 /* danone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = danone.png; sourceTree = "<group>"; };
+		3D88501919EC4DFC00F00A25 /* queijo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = queijo.png; sourceTree = "<group>"; };
+		3D88501B19EC4E4000F00A25 /* carne.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = carne.png; sourceTree = "<group>"; };
+		3D88501D19EC4E4600F00A25 /* frango.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = frango.png; sourceTree = "<group>"; };
+		3D88501F19EC734300F00A25 /* cenoura.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cenoura.png; sourceTree = "<group>"; };
+		3D88502119EC73C600F00A25 /* pimentao.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pimentao.png; sourceTree = "<group>"; };
+		3D88502319EC746A00F00A25 /* abobora.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = abobora.png; sourceTree = "<group>"; };
+		3D88502519EC747200F00A25 /* banana.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = banana.png; sourceTree = "<group>"; };
+		3D88502719EC747D00F00A25 /* kiwi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kiwi.png; sourceTree = "<group>"; };
+		3D88502919EC748600F00A25 /* pera.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pera.png; sourceTree = "<group>"; };
+		3D88502B19EC748E00F00A25 /* melancia.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = melancia.png; sourceTree = "<group>"; };
+		3D88502D19EC749B00F00A25 /* maca.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = maca.png; sourceTree = "<group>"; };
+		3D88502F19EC74AE00F00A25 /* limao.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = limao.png; sourceTree = "<group>"; };
+		3D88503119EC74B700F00A25 /* laranja.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = laranja.png; sourceTree = "<group>"; };
+		3D88503319EC74C100F00A25 /* uva.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = uva.png; sourceTree = "<group>"; };
+		3D88503519EC74CB00F00A25 /* tomate3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tomate3.png; sourceTree = "<group>"; };
+		3D88503719EC74DD00F00A25 /* cereja.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cereja.png; sourceTree = "<group>"; };
+		3D88503919EC763600F00A25 /* bolinho.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bolinho.png; sourceTree = "<group>"; };
+		3D88503B19EC765100F00A25 /* sorvete2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sorvete2.png; sourceTree = "<group>"; };
+		3D88503D19EC766900F00A25 /* bolacha.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bolacha.png; sourceTree = "<group>"; };
+		3D88503F19EC76B400F00A25 /* donut2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = donut2.png; sourceTree = "<group>"; };
+		3D88504119EC76CE00F00A25 /* refrigerante.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = refrigerante.png; sourceTree = "<group>"; };
+		3D88504319EC76EE00F00A25 /* morango.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = morango.png; sourceTree = "<group>"; };
+		3D88504519EEF2A200F00A25 /* cebola.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cebola.png; sourceTree = "<group>"; };
+		3D88504719EEF2F100F00A25 /* burg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = burg.png; sourceTree = "<group>"; };
+		3D88504919EEF33800F00A25 /* feijao.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = feijao.png; sourceTree = "<group>"; };
+		3D88504B19EEF35F00F00A25 /* peixe.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = peixe.png; sourceTree = "<group>"; };
+		3D88504D19EEF38600F00A25 /* ervilha.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ervilha.png; sourceTree = "<group>"; };
+		3D88504F19EEF3AA00F00A25 /* cupcake.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cupcake.png; sourceTree = "<group>"; };
+		3D88505119EEF41800F00A25 /* brocolis.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = brocolis.png; sourceTree = "<group>"; };
+		3D88505319EEFA9F00F00A25 /* beringela.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = beringela.png; sourceTree = "<group>"; };
+		3D88505519EEFABD00F00A25 /* farinha.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = farinha.png; sourceTree = "<group>"; };
+		3D88505719EEFAD900F00A25 /* manga.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = manga.png; sourceTree = "<group>"; };
+		3D88505919EEFAF300F00A25 /* ovo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ovo.png; sourceTree = "<group>"; };
+		3D88505B19EEFB1600F00A25 /* milho.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = milho.png; sourceTree = "<group>"; };
+		3D88505D19EEFB2100F00A25 /* pessego.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pessego.png; sourceTree = "<group>"; };
 		3DA02AD41992A2A90098C507 /* JogoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JogoViewController.h; sourceTree = "<group>"; };
 		3DA02AD51992A2A90098C507 /* JogoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JogoViewController.m; sourceTree = "<group>"; };
 		3DA02ADA1992C0C20098C507 /* FoodDrop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoodDrop.h; sourceTree = "<group>"; };
@@ -200,6 +268,10 @@
 		3DA02B0D19941E980098C507 /* Panela.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Panela.png; sourceTree = "<group>"; };
 		3DA02B1419941EB80098C507 /* FundoPrato.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = FundoPrato.jpg; sourceTree = "<group>"; };
 		3DA02B1619941F310098C507 /* Voltar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Voltar.png; sourceTree = "<group>"; };
+		3DD472E719F5952800BCCDDC /* alface.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = alface.png; sourceTree = "<group>"; };
+		3DD472E919F5953000BCCDDC /* batata.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = batata.png; sourceTree = "<group>"; };
+		3DD472EB19F5953B00BCCDDC /* pao.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pao.png; sourceTree = "<group>"; };
+		3DD472ED19F6D23200BCCDDC /* botcima-01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "botcima-01.png"; sourceTree = "<group>"; };
 		75193D70197461B00071E959 /* background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = background.jpg; sourceTree = "<group>"; };
 		75193D71197461B00071E959 /* block.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = block.png; sourceTree = "<group>"; };
 		75193D72197461B00071E959 /* normal1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = normal1.png; sourceTree = "<group>"; };
@@ -269,8 +341,7 @@
 		7EF219AC192E923E006B94D1 /* AlimentoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlimentoView.m; sourceTree = "<group>"; };
 		7EF3BD5B192FD637006B6ABE /* Alimento.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Alimento.h; sourceTree = "<group>"; };
 		7EF3BD5C192FD637006B6ABE /* Alimento.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Alimento.m; sourceTree = "<group>"; };
-		A90DDD5319D48C5500846303 /* AnalisaCafe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnalisaCafe.h; sourceTree = "<group>"; };
-		A90DDD5419D48C5500846303 /* AnalisaCafe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnalisaCafe.m; sourceTree = "<group>"; };
+		A99C98A51A02C4E3005314B7 /* botbaixo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = botbaixo.png; sourceTree = "<group>"; };
 		FC17FC2418FEF7B5000E9969 /* Dieta.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dieta.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC17FC2718FEF7B5000E9969 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		FC17FC2918FEF7B5000E9969 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -308,24 +379,8 @@
 		FC6E01E51906F0A900C342F7 /* AnalisaRefeicao.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnalisaRefeicao.h; sourceTree = "<group>"; };
 		FC6E01E61906F0A900C342F7 /* AnalisaRefeicao.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnalisaRefeicao.m; sourceTree = "<group>"; };
 		FC7A552F1995680C00C47E91 /* toldo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = toldo.png; sourceTree = "<group>"; };
-		FC7AA57F190989DB00883569 /* limao.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = limao.png; sourceTree = "<group>"; };
-		FC7AA58A19098C8D00883569 /* alface.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = alface.png; sourceTree = "<group>"; };
-		FC7AA58C19098CAE00883569 /* cenoura.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cenoura.png; sourceTree = "<group>"; };
-		FC7AA58E19098CDA00883569 /* queijo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = queijo.png; sourceTree = "<group>"; };
-		FC7AA59019098CED00883569 /* frango.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = frango.png; sourceTree = "<group>"; };
-		FC7AA59419098D1F00883569 /* milho.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = milho.png; sourceTree = "<group>"; };
-		FC7AA59819098D6300883569 /* berinjela.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = berinjela.png; sourceTree = "<group>"; };
-		FC7AA59A19098D7D00883569 /* uva.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = uva.png; sourceTree = "<group>"; };
-		FC7AA59E19098DD700883569 /* cebola.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cebola.png; sourceTree = "<group>"; };
-		FC7AA5A019098DFF00883569 /* pimentao.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pimentao.png; sourceTree = "<group>"; };
-		FC7AA5A219098E2000883569 /* abobora.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = abobora.png; sourceTree = "<group>"; };
-		FC7AA5A419098E3600883569 /* refri.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = refri.png; sourceTree = "<group>"; };
 		FC7AA5A819098F1200883569 /* arroz.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arroz.png; sourceTree = "<group>"; };
-		FC7AA5AA19098F2300883569 /* pao.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pao.png; sourceTree = "<group>"; };
-		FC7AA5AC19098F3200883569 /* feijao.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = feijao.png; sourceTree = "<group>"; };
 		FC874EFB194629FF004A222C /* cesto.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cesto.png; sourceTree = "<group>"; };
-		FC94841F190AEE9A007EFAAA /* bolacha.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bolacha.png; sourceTree = "<group>"; };
-		FC948423190AF20B007EFAAA /* tomate3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tomate3.png; sourceTree = "<group>"; };
 		FC948425190AF670007EFAAA /* AudioController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AudioController.h; path = ../AudioController.h; sourceTree = "<group>"; };
 		FC948426190AF670007EFAAA /* AudioController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AudioController.m; path = ../AudioController.m; sourceTree = "<group>"; };
 		FC948429190AF69A007EFAAA /* somClick.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = somClick.mp3; sourceTree = "<group>"; };
@@ -341,27 +396,12 @@
 		FCAB44B7199D2EB200953009 /* errado.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = errado.png; sourceTree = "<group>"; };
 		FCAB44BA199D379400953009 /* coracao_vazado.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = coracao_vazado.png; sourceTree = "<group>"; };
 		FCAB44BC199D3A9F00953009 /* estomago.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = estomago.png; sourceTree = "<group>"; };
-		FCB7E8FA190995DA00F2F039 /* carne.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = carne.png; sourceTree = "<group>"; };
 		FCB7E8FC190995F600F2F039 /* batatafrita.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = batatafrita.png; sourceTree = "<group>"; };
-		FCB7E8FE190999D400F2F039 /* sorvete2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sorvete2.png; sourceTree = "<group>"; };
-		FCB7E900190999F400F2F039 /* ovo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ovo.png; sourceTree = "<group>"; };
-		FCB7E90219099A0D00F2F039 /* bolinho.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bolinho.png; sourceTree = "<group>"; };
-		FCB7E90419099AAE00F2F039 /* donut2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = donut2.png; sourceTree = "<group>"; };
 		FCB7E9061909A2EA00F2F039 /* BalaoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BalaoView.h; sourceTree = "<group>"; };
 		FCB7E9071909A2EA00F2F039 /* BalaoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BalaoView.m; sourceTree = "<group>"; };
-		FCBEC4A1190842F200FBE6D0 /* maca.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = maca.png; sourceTree = "<group>"; };
-		FCBEC4A31908434600FBE6D0 /* melancia.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = melancia.png; sourceTree = "<group>"; };
 		FCBEC4A51908436500FBE6D0 /* pizza.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pizza.png; sourceTree = "<group>"; };
 		FCBEC4A71908437C00FBE6D0 /* hamburguer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hamburguer.png; sourceTree = "<group>"; };
 		FCBEC4AB190843B800FBE6D0 /* torta.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = torta.png; sourceTree = "<group>"; };
-		FCBEC4AF190843DF00FBE6D0 /* banana.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = banana.png; sourceTree = "<group>"; };
-		FCBEC4B11908440600FBE6D0 /* pessego.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pessego.png; sourceTree = "<group>"; };
-		FCBEC4B31908441300FBE6D0 /* manga.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = manga.png; sourceTree = "<group>"; };
-		FCBEC4B51908442C00FBE6D0 /* morango.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = morango.png; sourceTree = "<group>"; };
-		FCBEC4B71908449200FBE6D0 /* cereja.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cereja.png; sourceTree = "<group>"; };
-		FCBEC4B9190844AC00FBE6D0 /* laranja.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = laranja.png; sourceTree = "<group>"; };
-		FCBEC4BD190845D300FBE6D0 /* kiwi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kiwi.png; sourceTree = "<group>"; };
-		FCBEC4BF190846C700FBE6D0 /* pera.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pera.png; sourceTree = "<group>"; };
 		FCBEC4C219085A3500FBE6D0 /* PratoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PratoViewController.h; sourceTree = "<group>"; };
 		FCBEC4C319085A3500FBE6D0 /* PratoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PratoViewController.m; sourceTree = "<group>"; };
 		FCBEC4C519085D9C00FBE6D0 /* 1398303537_N02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1398303537_N02.png; sourceTree = "<group>"; };
@@ -407,6 +447,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3D88500819E8614D00F00A25 /* NovosBtn */ = {
+			isa = PBXGroup;
+			children = (
+				A99C98A51A02C4E3005314B7 /* botbaixo.png */,
+				3DD472ED19F6D23200BCCDDC /* botcima-01.png */,
+				3D88500919E8617C00F00A25 /* carnes.png */,
+				3D88500A19E8617C00F00A25 /* cereais.png */,
+				3D88500B19E8617C00F00A25 /* derivados.png */,
+				3D88500C19E8617C00F00A25 /* Doces.png */,
+				3D88500D19E8617C00F00A25 /* Frutas.png */,
+				3D88500E19E8617C00F00A25 /* Hortaliças.png */,
+			);
+			name = NovosBtn;
+			sourceTree = "<group>";
+		};
 		3DA02AF7199410D40098C507 /* Icones */ = {
 			isa = PBXGroup;
 			children = (
@@ -510,6 +565,7 @@
 		FC17FC2D18FEF7B5000E9969 /* Dieta */ = {
 			isa = PBXGroup;
 			children = (
+				3D88500819E8614D00F00A25 /* NovosBtn */,
 				FCC517A619004A470001BCEA /* Imagens */,
 				FC948428190AF685007EFAAA /* Sons */,
 				7E25A5071926AF670005568F /* Testes */,
@@ -521,8 +577,12 @@
 				7EF219AC192E923E006B94D1 /* AlimentoView.m */,
 				FC6E01E51906F0A900C342F7 /* AnalisaRefeicao.h */,
 				FC6E01E61906F0A900C342F7 /* AnalisaRefeicao.m */,
-				A90DDD5319D48C5500846303 /* AnalisaCafe.h */,
-				A90DDD5419D48C5500846303 /* AnalisaCafe.m */,
+				3D884FFF19E5B5E500F00A25 /* AnalisaCafe.h */,
+				3D88500019E5B5E500F00A25 /* AnalisaCafe.m */,
+				3D88500219E5CEAC00F00A25 /* AnalisaAlmoco.h */,
+				3D88500319E5CEAC00F00A25 /* AnalisaAlmoco.m */,
+				3D88500519E5D63A00F00A25 /* AnalisaJanta.h */,
+				3D88500619E5D63A00F00A25 /* AnalisaJanta.m */,
 				7EBF1455190EDD2400832A13 /* AppDelegate.h */,
 				7EBF1456190EDD2400832A13 /* AppDelegate.m */,
 				FC948425190AF670007EFAAA /* AudioController.h */,
@@ -609,7 +669,8 @@
 		FC7AA58119098B3800883569 /* CereaisMassas */ = {
 			isa = PBXGroup;
 			children = (
-				FC7AA5AA19098F2300883569 /* pao.png */,
+				3DD472EB19F5953B00BCCDDC /* pao.png */,
+				3D88505519EEFABD00F00A25 /* farinha.png */,
 			);
 			name = CereaisMassas;
 			sourceTree = "<group>";
@@ -633,11 +694,13 @@
 		FC7AA58319098B8500883569 /* Hortalicas */ = {
 			isa = PBXGroup;
 			children = (
-				FC7AA5A019098DFF00883569 /* pimentao.png */,
-				FC7AA59E19098DD700883569 /* cebola.png */,
-				FC7AA59819098D6300883569 /* berinjela.png */,
-				FC7AA58C19098CAE00883569 /* cenoura.png */,
-				FC7AA58A19098C8D00883569 /* alface.png */,
+				3DD472E919F5953000BCCDDC /* batata.png */,
+				3DD472E719F5952800BCCDDC /* alface.png */,
+				3D88502119EC73C600F00A25 /* pimentao.png */,
+				3D88504519EEF2A200F00A25 /* cebola.png */,
+				3D88505319EEFA9F00F00A25 /* beringela.png */,
+				3D88501F19EC734300F00A25 /* cenoura.png */,
+				3D88505119EEF41800F00A25 /* brocolis.png */,
 			);
 			name = Hortalicas;
 			sourceTree = "<group>";
@@ -645,7 +708,9 @@
 		FC7AA58519098BB100883569 /* LeiteDerivados */ = {
 			isa = PBXGroup;
 			children = (
-				FC7AA58E19098CDA00883569 /* queijo.png */,
+				3D88501519EC4DDF00F00A25 /* leite.png */,
+				3D88501719EC4DF200F00A25 /* danone.png */,
+				3D88501919EC4DFC00F00A25 /* queijo.png */,
 			);
 			name = LeiteDerivados;
 			sourceTree = "<group>";
@@ -653,8 +718,9 @@
 		FC7AA58619098C2F00883569 /* Leguminosas */ = {
 			isa = PBXGroup;
 			children = (
-				FC7AA59419098D1F00883569 /* milho.png */,
-				FC7AA5AC19098F3200883569 /* feijao.png */,
+				3D88504D19EEF38600F00A25 /* ervilha.png */,
+				3D88505B19EEFB1600F00A25 /* milho.png */,
+				3D88504919EEF33800F00A25 /* feijao.png */,
 				FC7AA5A819098F1200883569 /* arroz.png */,
 			);
 			name = Leguminosas;
@@ -663,9 +729,11 @@
 		FC7AA58719098C3F00883569 /* CarnesOvos */ = {
 			isa = PBXGroup;
 			children = (
-				FCB7E8FA190995DA00F2F039 /* carne.png */,
-				FC7AA59019098CED00883569 /* frango.png */,
-				FCB7E900190999F400F2F039 /* ovo.png */,
+				3D88501B19EC4E4000F00A25 /* carne.png */,
+				3D88501D19EC4E4600F00A25 /* frango.png */,
+				3D88504719EEF2F100F00A25 /* burg.png */,
+				3D88504B19EEF35F00F00A25 /* peixe.png */,
+				3D88505919EEFAF300F00A25 /* ovo.png */,
 			);
 			name = CarnesOvos;
 			sourceTree = "<group>";
@@ -683,11 +751,12 @@
 		FC7AA58919098C6000883569 /* AcucaresDoces */ = {
 			isa = PBXGroup;
 			children = (
-				FCB7E90219099A0D00F2F039 /* bolinho.png */,
-				FCB7E8FE190999D400F2F039 /* sorvete2.png */,
-				FC94841F190AEE9A007EFAAA /* bolacha.png */,
-				FC7AA5A419098E3600883569 /* refri.png */,
-				FCB7E90419099AAE00F2F039 /* donut2.png */,
+				3D88503919EC763600F00A25 /* bolinho.png */,
+				3D88503B19EC765100F00A25 /* sorvete2.png */,
+				3D88503D19EC766900F00A25 /* bolacha.png */,
+				3D88504119EC76CE00F00A25 /* refrigerante.png */,
+				3D88503F19EC76B400F00A25 /* donut2.png */,
+				3D88504F19EEF3AA00F00A25 /* cupcake.png */,
 			);
 			name = AcucaresDoces;
 			sourceTree = "<group>";
@@ -716,20 +785,20 @@
 		FCBEC49C1908420500FBE6D0 /* Frutas */ = {
 			isa = PBXGroup;
 			children = (
-				FC7AA5A219098E2000883569 /* abobora.png */,
-				FC948423190AF20B007EFAAA /* tomate3.png */,
-				FC7AA59A19098D7D00883569 /* uva.png */,
-				FCBEC4B9190844AC00FBE6D0 /* laranja.png */,
-				FCBEC4BF190846C700FBE6D0 /* pera.png */,
-				FCBEC4B71908449200FBE6D0 /* cereja.png */,
-				FCBEC4B51908442C00FBE6D0 /* morango.png */,
-				FCBEC4BD190845D300FBE6D0 /* kiwi.png */,
-				FCBEC4B31908441300FBE6D0 /* manga.png */,
-				FCBEC4B11908440600FBE6D0 /* pessego.png */,
-				FCBEC4AF190843DF00FBE6D0 /* banana.png */,
-				FC7AA57F190989DB00883569 /* limao.png */,
-				FCBEC4A31908434600FBE6D0 /* melancia.png */,
-				FCBEC4A1190842F200FBE6D0 /* maca.png */,
+				3D88502319EC746A00F00A25 /* abobora.png */,
+				3D88503519EC74CB00F00A25 /* tomate3.png */,
+				3D88503319EC74C100F00A25 /* uva.png */,
+				3D88503119EC74B700F00A25 /* laranja.png */,
+				3D88502919EC748600F00A25 /* pera.png */,
+				3D88503719EC74DD00F00A25 /* cereja.png */,
+				3D88504319EC76EE00F00A25 /* morango.png */,
+				3D88502719EC747D00F00A25 /* kiwi.png */,
+				3D88505719EEFAD900F00A25 /* manga.png */,
+				3D88505D19EEFB2100F00A25 /* pessego.png */,
+				3D88502519EC747200F00A25 /* banana.png */,
+				3D88502F19EC74AE00F00A25 /* limao.png */,
+				3D88502B19EC748E00F00A25 /* melancia.png */,
+				3D88502D19EC749B00F00A25 /* maca.png */,
 			);
 			name = Frutas;
 			sourceTree = "<group>";
@@ -873,120 +942,137 @@
 			files = (
 				FC6961A0194783050043FB66 /* moeda.png in Resources */,
 				FC45358E19A7B7CA000F07E6 /* alface1.mp3 in Resources */,
+				3D88504C19EEF35F00F00A25 /* peixe.png in Resources */,
+				3D88502E19EC749B00F00A25 /* maca.png in Resources */,
 				FCAB44BB199D379400953009 /* coracao_vazado.png in Resources */,
 				FCDD607C199942650078E3D1 /* maca_icone3.png in Resources */,
 				7E82B19F1990288000640AE1 /* mascote4_1.png in Resources */,
 				FC874EFC194629FF004A222C /* cesto.png in Resources */,
+				3D88501019E8617C00F00A25 /* cereais.png in Resources */,
 				FC948430190AF69A007EFAAA /* somLixo.mp3 in Resources */,
+				3DD472EE19F6D23200BCCDDC /* botcima-01.png in Resources */,
 				FCB7E8FD190995F600F2F039 /* batatafrita.png in Resources */,
 				79DD78A61900935A00119A28 /* lixo.png in Resources */,
-				FCBEC4C0190846C700FBE6D0 /* pera.png in Resources */,
 				FC45358F19A7B7CA000F07E6 /* cebola1.mp3 in Resources */,
 				FCDD607719993BB60078E3D1 /* feijao_icone.png in Resources */,
-				FCB7E8FF190999D400F2F039 /* sorvete2.png in Resources */,
+				3D88502C19EC748E00F00A25 /* melancia.png in Resources */,
 				FCAB44B9199D2EB200953009 /* errado.png in Resources */,
+				3D88500F19E8617C00F00A25 /* carnes.png in Resources */,
 				FCDD607619993BB60078E3D1 /* bolinho_icone.png in Resources */,
 				FC17FC6918FF07FE000E9969 /* prato2.png in Resources */,
-				FCBEC4BA190844AC00FBE6D0 /* laranja.png in Resources */,
-				FCBEC4B21908440600FBE6D0 /* pessego.png in Resources */,
+				3D88503619EC74CB00F00A25 /* tomate3.png in Resources */,
+				3DD472EC19F5953B00BCCDDC /* pao.png in Resources */,
+				3D88502A19EC748600F00A25 /* pera.png in Resources */,
 				FCBEC4A81908437C00FBE6D0 /* hamburguer.png in Resources */,
-				FCB7E8FB190995DA00F2F039 /* carne.png in Resources */,
-				FCB7E90319099A0D00F2F039 /* bolinho.png in Resources */,
-				FC7AA580190989DB00883569 /* limao.png in Resources */,
 				3D83FAC419A78C99001D02F2 /* vida1.png in Resources */,
+				3D88504619EEF2A200F00A25 /* cebola.png in Resources */,
 				79DD78AA1900BD7300119A28 /* thumbsUp.png in Resources */,
 				7E82B1A01990288000640AE1 /* mascote3_1.png in Resources */,
 				79FA5A0519019BD4000BD111 /* personagem.png in Resources */,
-				FC7AA59B19098D7D00883569 /* uva.png in Resources */,
+				3D88502819EC747D00F00A25 /* kiwi.png in Resources */,
 				FC699340193511D9002AF42A /* circulo.png in Resources */,
+				3D88505819EEFAD900F00A25 /* manga.png in Resources */,
 				3DA02B1319941E980098C507 /* Panela.png in Resources */,
 				FCDD607919993BB60078E3D1 /* queijo_icone2.png in Resources */,
 				3DA02B1019941E980098C507 /* Games.png in Resources */,
+				3D88505A19EEFAF300F00A25 /* ovo.png in Resources */,
 				FCDD607519993BB60078E3D1 /* cenoura_icone.png in Resources */,
+				3D88505219EEF41800F00A25 /* brocolis.png in Resources */,
 				3DA02B0F19941E980098C507 /* Confirma.png in Resources */,
+				3D88501819EC4DF200F00A25 /* danone.png in Resources */,
 				FCDD607A19993BB60078E3D1 /* batatafrita_icone2.png in Resources */,
 				7E26070219A674C90036FC41 /* prato02.mp3 in Resources */,
 				FC94842E190AF69A007EFAAA /* somClick.mp3 in Resources */,
 				3DA02B1219941E980098C507 /* Mercado.png in Resources */,
 				3DA02B1119941E980098C507 /* iconPrato.png in Resources */,
 				FCBEC4A61908436500FBE6D0 /* pizza.png in Resources */,
-				FCB7E901190999F400F2F039 /* ovo.png in Resources */,
 				7E82B1A61990288000640AE1 /* mascote4_3.png in Resources */,
-				FCBEC4A41908434600FBE6D0 /* melancia.png in Resources */,
 				3DA02B0E19941E980098C507 /* Cancela.png in Resources */,
 				75193D75197461B00071E959 /* normal1.png in Resources */,
 				3DA02B1519941EB80098C507 /* FundoPrato.jpg in Resources */,
 				7E2606FE19A674C90036FC41 /* mercado02.mp3 in Resources */,
+				3D88503219EC74B700F00A25 /* laranja.png in Resources */,
 				7E82B1A31990288000640AE1 /* mascote2_1.png in Resources */,
 				FCDD607819993BB60078E3D1 /* pao_icone.png in Resources */,
+				3D88501119E8617C00F00A25 /* derivados.png in Resources */,
 				FC1C5D6419A699DE0096E2BB /* carne.mp3 in Resources */,
+				3D88504A19EEF33800F00A25 /* feijao.png in Resources */,
+				3D88502419EC746A00F00A25 /* abobora.png in Resources */,
 				FC45359019A7B7CA000F07E6 /* frango1.mp3 in Resources */,
-				FCBEC4BE190845D300FBE6D0 /* kiwi.png in Resources */,
-				FC7AA5A519098E3600883569 /* refri.png in Resources */,
+				3D88504019EC76B400F00A25 /* donut2.png in Resources */,
+				3D88501A19EC4DFC00F00A25 /* queijo.png in Resources */,
+				3D88503819EC74DD00F00A25 /* cereja.png in Resources */,
 				7E2606FF19A674C90036FC41 /* panela01.mp3 in Resources */,
-				FC7AA59119098CED00883569 /* frango.png in Resources */,
+				3D88504E19EEF38600F00A25 /* ervilha.png in Resources */,
 				7E26070119A674C90036FC41 /* prato01.mp3 in Resources */,
+				3D88501C19EC4E4000F00A25 /* carne.png in Resources */,
 				7E82B19119901A5A00640AE1 /* MASCOTE.png in Resources */,
 				FCBEC4AC190843B800FBE6D0 /* torta.png in Resources */,
 				7E2606FB19A674C90036FC41 /* intro01.mp3 in Resources */,
-				FC7AA5AD19098F3200883569 /* feijao.png in Resources */,
-				FCBEC4A2190842F200FBE6D0 /* maca.png in Resources */,
+				3D88502619EC747200F00A25 /* banana.png in Resources */,
 				7E2606FD19A674C90036FC41 /* mercado01.mp3 in Resources */,
 				FC94842F190AF69A007EFAAA /* somConfirma.mp3 in Resources */,
+				3D88505C19EEFB1600F00A25 /* milho.png in Resources */,
 				FC17FC4318FEF7B5000E9969 /* Images.xcassets in Resources */,
 				FC45359219A7B7CA000F07E6 /* tomate1.mp3 in Resources */,
+				3D88503019EC74AE00F00A25 /* limao.png in Resources */,
 				FC1C2F6A199C008D005186C2 /* panela2.png in Resources */,
+				3DD472EA19F5953000BCCDDC /* batata.png in Resources */,
 				79DD78A81900947800119A28 /* vassoura.png in Resources */,
-				FC7AA5AB19098F2300883569 /* pao.png in Resources */,
 				FC1C2F6C199C048E005186C2 /* cozinha.png in Resources */,
-				FCBEC4B0190843DF00FBE6D0 /* banana.png in Resources */,
-				FC7AA58B19098C8D00883569 /* alface.png in Resources */,
+				3D88504819EEF2F100F00A25 /* burg.png in Resources */,
 				7E82B1AA1990288000640AE1 /* mascote1_3.png in Resources */,
+				3D88501219E8617C00F00A25 /* Doces.png in Resources */,
 				FCAB44BD199D3A9F00953009 /* estomago.png in Resources */,
 				7E82B1A81990288000640AE1 /* mascote1_1.png in Resources */,
 				7E2606FC19A674C90036FC41 /* intro02.mp3 in Resources */,
+				3D88504419EC76EE00F00A25 /* morango.png in Resources */,
 				FC948432190AF69A007EFAAA /* somVassoura.mp3 in Resources */,
-				FCBEC4B61908442C00FBE6D0 /* morango.png in Resources */,
+				3D88505619EEFABD00F00A25 /* farinha.png in Resources */,
 				FCAB44B8199D2EB200953009 /* certo.png in Resources */,
+				3D88501319E8617C00F00A25 /* Frutas.png in Resources */,
 				75193D73197461B00071E959 /* background.jpg in Resources */,
 				7E82B1A51990288000640AE1 /* mascote2_3.png in Resources */,
 				3DA02B1719941F310098C507 /* Voltar.png in Resources */,
+				A99C98A61A02C4E3005314B7 /* botbaixo.png in Resources */,
+				3D88501419E8617C00F00A25 /* Hortaliças.png in Resources */,
 				7E82B1A91990288000640AE1 /* mascote1_2.png in Resources */,
+				3D88503C19EC765100F00A25 /* sorvete2.png in Resources */,
 				FC6961A2194787250043FB66 /* moeda2.png in Resources */,
-				FC7AA58D19098CAE00883569 /* cenoura.png in Resources */,
-				FC7AA59519098D1F00883569 /* milho.png in Resources */,
 				7E9FAD5419915D5200E363AB /* moeda3.png in Resources */,
-				FC7AA59919098D6300883569 /* berinjela.png in Resources */,
 				FCDD606E19993A860078E3D1 /* toldoHD.png in Resources */,
 				7E679F03190EFA1E00F99B59 /* Main_iPad.storyboard in Resources */,
-				FC7AA59F19098DD700883569 /* cebola.png in Resources */,
+				3D88501619EC4DDF00F00A25 /* leite.png in Resources */,
 				FC45359119A7B7CA000F07E6 /* queijo1.mp3 in Resources */,
 				7EDCD276199952BA006B7F20 /* doutora.png in Resources */,
+				3DD472E819F5952800BCCDDC /* alface.png in Resources */,
 				7E26070A19A683DB0036FC41 /* icon.png in Resources */,
 				3D83FAC819A7B7C6001D02F2 /* tile01.png in Resources */,
 				FC7AA5A919098F1200883569 /* arroz.png in Resources */,
 				7E82B1A21990288000640AE1 /* mascote3_2.png in Resources */,
 				FC17FC3218FEF7B5000E9969 /* InfoPlist.strings in Resources */,
-				FCB7E90519099AAE00F2F039 /* donut2.png in Resources */,
 				7E82B1A71990288000640AE1 /* mascote3_3.png in Resources */,
 				3D83FACA19A7C496001D02F2 /* iconDrop.png in Resources */,
-				FCBEC4B41908441300FBE6D0 /* manga.png in Resources */,
-				FC7AA58F19098CDA00883569 /* queijo.png in Resources */,
+				3D88502019EC734300F00A25 /* cenoura.png in Resources */,
+				3D88503E19EC766900F00A25 /* bolacha.png in Resources */,
+				3D88501E19EC4E4600F00A25 /* frango.png in Resources */,
+				3D88505419EEFA9F00F00A25 /* beringela.png in Resources */,
+				3D88505E19EEFB2100F00A25 /* pessego.png in Resources */,
 				FC45358819A7B40C000F07E6 /* pao.mp3 in Resources */,
 				FC948431190AF69A007EFAAA /* somPrato.mp3 in Resources */,
 				7E82B1A41990288000640AE1 /* mascote2_2.png in Resources */,
+				3D88502219EC73C600F00A25 /* pimentao.png in Resources */,
 				FC7A55301995680C00C47E91 /* toldo.png in Resources */,
+				3D88503419EC74C100F00A25 /* uva.png in Resources */,
 				FCBEC4C619085D9C00FBE6D0 /* 1398303537_N02.png in Resources */,
-				FC7AA5A319098E2000883569 /* abobora.png in Resources */,
 				7E26070019A674C90036FC41 /* panela02.mp3 in Resources */,
 				7E82B1A11990288000640AE1 /* mascote4_2.png in Resources */,
-				FC948424190AF20B007EFAAA /* tomate3.png in Resources */,
+				3D88505019EEF3AA00F00A25 /* cupcake.png in Resources */,
 				75193D74197461B00071E959 /* block.png in Resources */,
 				FCC1C4831999476000044C55 /* frango_icone.png in Resources */,
-				FC7AA5A119098DFF00883569 /* pimentao.png in Resources */,
-				FC948420190AEE9A007EFAAA /* bolacha.png in Resources */,
 				79FA5A0419019BD4000BD111 /* balaoDialogo.png in Resources */,
-				FCBEC4B81908449200FBE6D0 /* cereja.png in Resources */,
+				3D88503A19EC763600F00A25 /* bolinho.png in Resources */,
+				3D88504219EC76CE00F00A25 /* refrigerante.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1007,14 +1093,16 @@
 			files = (
 				7EBF1457190EDD2400832A13 /* AppDelegate.m in Sources */,
 				7EAB0E7B192406B300EDD4A7 /* ProblemaAlimentar.m in Sources */,
+				3D88500119E5B5E500F00A25 /* AnalisaCafe.m in Sources */,
 				FC50CD9419915430002ADAF0 /* Receita.m in Sources */,
 				FCBEC4C419085A3500FBE6D0 /* PratoViewController.m in Sources */,
 				7E27E417192FE54A00C05CF7 /* CategoriaMercadoView.m in Sources */,
 				7EC2156E199178AC000F6D6A /* PersonagemCoreData.m in Sources */,
 				FC6E01E71906F0A900C342F7 /* AnalisaRefeicao.m in Sources */,
-				A90DDD5519D48C5500846303 /* AnalisaCafe.m in Sources */,
 				7EF219AD192E923E006B94D1 /* AlimentoView.m in Sources */,
 				7E26070519A67C1F0036FC41 /* TutorialCoreData.m in Sources */,
+				3D88500719E5D63A00F00A25 /* AnalisaJanta.m in Sources */,
+				3D88500419E5CEAC00F00A25 /* AnalisaAlmoco.m in Sources */,
 				7EAB0E7E192406F800EDD4A7 /* GrupoAlimentar.m in Sources */,
 				FC948427190AF670007EFAAA /* AudioController.m in Sources */,
 				3D353D0019C2247400B70306 /* SkateViewController.m in Sources */,

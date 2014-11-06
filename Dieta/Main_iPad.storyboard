@@ -635,7 +635,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="ANJ-Ub-eRd">
-                                <rect key="frame" x="20" y="85" width="50" height="50"/>
+                                <rect key="frame" x="16" y="86" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Voltar" image="Voltar.png">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -646,120 +646,13 @@
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="moeda3.png" id="I2S-tH-Ojd">
-                                <rect key="frame" x="807" y="86" width="64" height="64"/>
+                                <rect key="frame" x="85" y="216" width="64" height="64"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0000" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="bTT-bE-rcS">
-                                <rect key="frame" x="893" y="83" width="131" height="70"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="55"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <view contentMode="scaleToFill" id="4Df-JE-k14">
-                                <rect key="frame" x="0.0" y="608" width="1024" height="160"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <subviews>
-                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="JCQ-vd-D0S">
-                                        <rect key="frame" x="236" y="0.0" width="120" height="160"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
-                                        <inset key="titleEdgeInsets" minX="-58" minY="90" maxX="0.0" maxY="0.0"/>
-                                        <inset key="imageEdgeInsets" minX="21" minY="-40" maxX="0.0" maxY="0.0"/>
-                                        <state key="normal" title="Verduras" image="cenoura_icone.png">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                    </button>
-                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="99o-to-wCM">
-                                        <rect key="frame" x="118" y="0.0" width="110" height="160"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
-                                        <inset key="titleEdgeInsets" minX="-59" minY="90" maxX="0.0" maxY="0.0"/>
-                                        <inset key="imageEdgeInsets" minX="20" minY="-40" maxX="0.0" maxY="0.0"/>
-                                        <state key="normal" title="Frutas" image="maca_icone3.png">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                    </button>
-                                    <button opaque="NO" clearsContextBeforeDrawing="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="apJ-bQ-dLs">
-                                        <rect key="frame" x="0.0" y="0.0" width="110" height="160"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
-                                        <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                        <inset key="titleEdgeInsets" minX="-65" minY="90" maxX="0.0" maxY="0.0"/>
-                                        <inset key="imageEdgeInsets" minX="17" minY="-40" maxX="0.0" maxY="0.0"/>
-                                        <state key="normal" title="Cereais" image="pao_icone.png">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                    </button>
-                                    <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="YVk-yR-NBj">
-                                        <rect key="frame" x="364" y="0.0" width="120" height="160"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
-                                        <inset key="titleEdgeInsets" minX="-63" minY="90" maxX="0.0" maxY="0.0"/>
-                                        <inset key="imageEdgeInsets" minX="23" minY="-40" maxX="0.0" maxY="0.0"/>
-                                        <state key="normal" title="Leguminosas" image="feijao_icone.png">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                    </button>
-                                    <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="elM-Xe-7AE">
-                                        <rect key="frame" x="492" y="0.0" width="128" height="160"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
-                                        <inset key="titleEdgeInsets" minX="-58" minY="90" maxX="0.0" maxY="0.0"/>
-                                        <inset key="imageEdgeInsets" minX="25" minY="-40" maxX="0.0" maxY="0.0"/>
-                                        <state key="normal" title="Carnes e ovos" image="frango_icone.png">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                    </button>
-                                    <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="n8E-5l-dIm">
-                                        <rect key="frame" x="628" y="2" width="160" height="160"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
-                                        <inset key="titleEdgeInsets" minX="-50" minY="90" maxX="0.0" maxY="0.0"/>
-                                        <inset key="imageEdgeInsets" minX="40" minY="-40" maxX="0.0" maxY="0.0"/>
-                                        <state key="normal" title="Leite e derivados" image="queijo_icone2.png">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                    </button>
-                                    <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="4jE-Hd-Sx4">
-                                        <rect key="frame" x="796" y="0.0" width="110" height="160"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
-                                        <inset key="titleEdgeInsets" minX="-61" minY="90" maxX="0.0" maxY="0.0"/>
-                                        <inset key="imageEdgeInsets" minX="24" minY="-40" maxX="0.0" maxY="0.0"/>
-                                        <state key="normal" title="Doces" image="bolinho_icone.png">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                    </button>
-                                    <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="GYb-OO-MAJ">
-                                        <rect key="frame" x="914" y="0.0" width="110" height="160"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
-                                        <inset key="titleEdgeInsets" minX="-50" minY="90" maxX="0.0" maxY="0.0"/>
-                                        <inset key="imageEdgeInsets" minX="24" minY="-40" maxX="0.0" maxY="0.0"/>
-                                        <state key="normal" title="Gorduras" image="batatafrita_icone2.png">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                    </button>
-                                </subviews>
-                                <color key="backgroundColor" white="1" alpha="0.29999999999999999" colorSpace="calibratedWhite"/>
-                            </view>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="doutora.png" id="PeQ-D3-goi">
                                 <rect key="frame" x="363" y="30" width="250" height="250"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <view contentMode="scaleToFill" id="EJ5-Jf-gjh">
-                                <rect key="frame" x="0.0" y="277" width="1024" height="105"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.94181528141361259" green="0.6548551732571537" blue="0.41045202174276446" alpha="1" colorSpace="calibratedRGB"/>
-                            </view>
                             <view contentMode="scaleToFill" id="WkE-TZ-Pb3">
                                 <rect key="frame" x="0.0" y="382" width="1024" height="5"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -771,9 +664,94 @@
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="toldoHD.png" id="mlm-H2-JJo">
-                                <rect key="frame" x="-5" y="-56" width="1034" height="128"/>
+                                <rect key="frame" x="-367" y="-50" width="1034" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="99o-to-wCM">
+                                <rect key="frame" x="828" y="128" width="196" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
+                                <inset key="titleEdgeInsets" minX="0.0" minY="90" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="Frutas" image="Frutas.png">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="JCQ-vd-D0S">
+                                <rect key="frame" x="828" y="256" width="196" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
+                                <inset key="titleEdgeInsets" minX="0.0" minY="90" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="Verduras" image="Hortaliças.png">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="n8E-5l-dIm">
+                                <rect key="frame" x="828" y="384" width="196" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
+                                <state key="normal" title="Leite e derivados" image="derivados.png">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="elM-Xe-7AE">
+                                <rect key="frame" x="828" y="512" width="196" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
+                                <inset key="titleEdgeInsets" minX="0.0" minY="90" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="Carnes e ovos" image="carnes.png">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="4jE-Hd-Sx4">
+                                <rect key="frame" x="828" y="640" width="196" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
+                                <state key="normal" title="Doces" image="Doces.png">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0000" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="bTT-bE-rcS">
+                                <rect key="frame" x="157" y="207" width="131" height="70"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="55"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" clearsContextBeforeDrawing="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="apJ-bQ-dLs">
+                                <rect key="frame" x="828" y="0.0" width="196" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
+                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <inset key="titleEdgeInsets" minX="0.0" minY="90" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="Cereais" image="cereais.png">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Gon-38-HNL">
+                                <rect key="frame" x="0.0" y="539" width="160" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <inset key="contentEdgeInsets" minX="16" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <inset key="imageEdgeInsets" minX="-18" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" image="botcima-01.png">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="D4O-qP-y9r">
+                                <rect key="frame" x="669" y="718" width="160" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="botbaixo.png">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="paraBaixo:" destination="Uam-QU-ekg" eventType="touchUpInside" id="7Zl-eJ-0VG"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.60250327225130884" green="0.41743186057136888" blue="0.25778104435220595" alpha="1" colorSpace="calibratedRGB"/>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
@@ -784,9 +762,7 @@
                         <outlet property="btnAcucaresView" destination="4jE-Hd-Sx4" id="70q-fn-Kd4"/>
                         <outlet property="btnCarnesFrangoPeixesOvosView" destination="elM-Xe-7AE" id="Zai-ig-N0P"/>
                         <outlet property="btnFrutasView" destination="apJ-bQ-dLs" id="oYp-9E-MYo"/>
-                        <outlet property="btnLeguminosasView" destination="YVk-yR-NBj" id="q8Z-xr-TIJ"/>
                         <outlet property="btnLeitesQueijosIorgutesView" destination="n8E-5l-dIm" id="SfR-mO-b1x"/>
-                        <outlet property="btnOleosGordurasView" destination="GYb-OO-MAJ" id="pCS-A8-wbT"/>
                         <outlet property="btnPaosCereaisTuberculosRaizesView" destination="99o-to-wCM" id="tMl-8N-mTZ"/>
                         <outlet property="btnVerdurasLegumesHortalicasView" destination="JCQ-vd-D0S" id="I7S-5w-brT"/>
                         <outlet property="dinheiro" destination="bTT-bE-rcS" id="Ugk-sT-mfi"/>
@@ -794,7 +770,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ff0-KI-ogw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3932" y="389"/>
+            <point key="canvasLocation" x="-4184" y="525"/>
         </scene>
         <!--Prato View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -857,40 +833,40 @@
     <resources>
         <image name="Cancela.png" width="512" height="512"/>
         <image name="Confirma.png" width="512" height="512"/>
+        <image name="Doces.png" width="199" height="129"/>
+        <image name="Frutas.png" width="199" height="129"/>
         <image name="Games.png" width="512" height="512"/>
+        <image name="Hortaliças.png" width="199" height="129"/>
         <image name="Mercado.png" width="512" height="512"/>
         <image name="Panela.png" width="512" height="512"/>
         <image name="Voltar.png" width="512" height="512"/>
         <image name="batatafrita.png" width="128" height="128"/>
-        <image name="batatafrita_icone2.png" width="64" height="64"/>
         <image name="bolacha.png" width="128" height="128"/>
         <image name="bolinho.png" width="128" height="128"/>
-        <image name="bolinho_icone.png" width="64" height="64"/>
+        <image name="botbaixo.png" width="161" height="49"/>
+        <image name="botcima-01.png" width="161" height="49"/>
         <image name="carne.png" width="128" height="128"/>
-        <image name="cenoura_icone.png" width="64" height="64"/>
+        <image name="carnes.png" width="199" height="129"/>
+        <image name="cereais.png" width="199" height="129"/>
         <image name="certo.png" width="256" height="256"/>
         <image name="coracao_vazado.png" width="512" height="512"/>
+        <image name="derivados.png" width="199" height="129"/>
         <image name="donut2.png" width="128" height="128"/>
         <image name="doutora.png" width="215" height="215"/>
         <image name="errado.png" width="256" height="256"/>
         <image name="estomago.png" width="600" height="758"/>
-        <image name="feijao_icone.png" width="64" height="64"/>
         <image name="frango.png" width="128" height="128"/>
-        <image name="frango_icone.png" width="64" height="64"/>
         <image name="hamburguer.png" width="128" height="128"/>
         <image name="iconDrop.png" width="300" height="300"/>
         <image name="iconPrato.png" width="512" height="512"/>
-        <image name="maca_icone3.png" width="64" height="64"/>
         <image name="mascote1_1.png" width="215" height="215"/>
         <image name="mascote2_1.png" width="215" height="215"/>
         <image name="mascote3_1.png" width="215" height="215"/>
         <image name="mascote4_1.png" width="215" height="215"/>
         <image name="moeda3.png" width="64" height="64"/>
         <image name="panela2.png" width="1280" height="740"/>
-        <image name="pao_icone.png" width="64" height="64"/>
         <image name="pizza.png" width="128" height="128"/>
         <image name="prato2.png" width="674" height="673"/>
-        <image name="queijo_icone2.png" width="64" height="64"/>
         <image name="refri.png" width="128" height="128"/>
         <image name="sorvete2.png" width="128" height="128"/>
         <image name="toldoHD.png" width="3074" height="302"/>
